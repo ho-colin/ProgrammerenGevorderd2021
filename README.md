@@ -1,24 +1,24 @@
 # Programmeren Gevorderd 2021
 
-* [OOP](./OOP.md)
+* [OOP](./1. OOP.md)
 
-* [Objecten](./Objecten.md)
+* [Objecten](./2. Objecten.md)
 
-* [Overerving](./Overerving.md)
+* [Overerving](./3. Overerving.md)
 
-* [System.Object](./System.Object.md)
+* [System.Object](./4. System.Object.md)
 
-* [Compositie](./Compositie.md)
+* [Compositie](./5. Compositie.md)
 
-* [UML naar code](./UML naar code.md)
+* [UML naar code](./5. UML naar code.md)
 
-* [Polymorfisme](./Polymorfisme.md)
+* [Polymorfisme](./6. Polymorfisme.md)
 
-* [Interfaces](./Interfaces.md)
+* [Interfaces](./7. Interfaces.md)
 
-* [Exception handling](./Exception handling.md)
+* [Exception handling](./8. Exception handling.md)
 
-* [Generics](./Generics.md)
+* [Generics](./9. Generics.md)
 
 * [Abstracte klassen](./Abstracte klassen.md)
 
