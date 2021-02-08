@@ -239,7 +239,7 @@ Properties kunnen virtual gemaakt, en dus ook `abstract`. Volgende voorbeeld too
     }
 ```
 
-# Book
+# Book (*)
 
 ## Deel 1
 
@@ -268,7 +268,7 @@ In beide child-klassen, override de Price-setter zodat: a) Bij Textbook de prijs
 
 **Toon de werking aan van je 3 klassen:** Maak boeken aan van de 3 klassen, toon dat de prijs niet altijd zomaar ingesteld kan worden en (PRO) toon aan dat je Equals –methode werkt (ook wanneer je bijvoorbeeld een Book en TextBook wil vergelijken).
 
-# Money, money, money
+# Money, money, money (*)
 
 Maak enkele klassen die een bank kan gebruiken.
 
@@ -279,7 +279,7 @@ Maak enkele klassen die een bank kan gebruiken.
 
 Schrijf deze klassen en toon de werking ervan in je main.
 
-# Geometric figures
+# Geometric figures (*)
 
 Maak een abstracte klasse `GeometricFigure`. Iedere figuur heeft een hoogte, breedte en oppervlakte. Maak autoproperties voor van `Hoogte` en `Breedte`. De oppervlakte is een read-only property want deze wordt berekend gebaseerd op de hoogte en breedte.
 
@@ -313,9 +313,9 @@ De enclave die je moet uitbouwen zal bestaan uit enkele essentiële gebouwen. We
 
 # Abstracte klasse Gebouw
 
-Deze klasse is...je raadt het nooit. Abtract.
+Deze klasse is ... je raadt het nooit. Abstract.
 
-De klasse heeft 3 autoproperties:
+De klasse heeft 3 auto properties:
 
 - Ieder gebouw heeft een X en Y locatie (via int property) waar het gebouw zal verschijnen op de kaart.
 - Ieder gebouw heeft een Naam (`string`)
@@ -355,7 +355,7 @@ Iedere groene klasse heeft:
   - Bij een woonst is dit karakter een `w`
   - Bij een flat is dit karakter een `W`
   - Bij een Hospitaal is dit karakter een `H`
-  - Bij een Genererator is dit karakter een `g`
+  - Bij een Generator is dit karakter een `g`
   - Bij een Waterkrachtcentrale is dit karakter een `G`
 
 # Maak een enclave
@@ -385,7 +385,7 @@ wg
 
 # Extra 1
 
-Voeg kleur toe. Zorg ervoor dat ieder type gebouw in een andere kleur op het scherm komt. Dus de woonst geeft bijvoorbeeld een blauwe w.Een hospitaal een rode H.
+Voeg kleur toe. Zorg ervoor dat ieder type gebouw in een andere kleur op het scherm komt. Dus de woonst geeft bijvoorbeeld een blauwe w. Een hospitaal een rode H.
 
 # Bonuspoints:
 
@@ -395,7 +395,3 @@ Mail je coolste stad naar mij met straten en gebouw. Mail me:
 
 - Een screenshot
 - Je code in zip
-
-Je prijs? Dit moet ik nog bepalen!
-
-ruiken.

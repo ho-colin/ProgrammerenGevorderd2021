@@ -644,7 +644,7 @@ De regel is eenvoudig:
 
 # Oefeningen
 
-## RapportModule
+## RapportModule (*)
 
 Ontwerp een klasse Resultaat die je zal tonen wat je graad is gegeven een bepaald behaald percentage. Het enige dat je aan een Resultaat-object moet kunnen geven is het behaalde percentage. Enkel het totaal behaalde % wordt bijgehouden via een auto-property. Via een methode PrintGraad kan de behaalde graad weergegeven worden. Dit zijn de mogelijkheden:
 
@@ -662,7 +662,7 @@ mijnpunten.Percentage=65;
 mijnpunten.PrintGraad();
 ```
 
-## Nummers
+## Nummers (*)
 
 Maak een klasse Nummers. Deze klasse bevat 2 getallen (type int) die via een autoproperty kunnen aangepast worden. Er zijn 4 methoden:
 
@@ -697,7 +697,7 @@ Product = 408
 Quotient = 0,352941176470588
 ```
 
-## Studentklasse
+## Studentklasse (*)
 
 Maak een nieuwe klasse `Student`.
 
@@ -742,7 +742,7 @@ Web Technology:           13
 Gemiddelde:               13.3
 ```
 
-## PizzaTime
+## PizzaTime (*)
 
 Maak een klasse Pizza. Deze klasse heeft een aantal private fields:
 

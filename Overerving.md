@@ -571,7 +571,7 @@ Kan je nu sneller het vaccin vinden?
 
 ## Dictionary
 
-We gaan de centra over de 7 continenten verspreiden. Maar we gaan hiervoor een nieuw concept gebruiken, een zogenaamde `Dictionary` dit is hetzelfde als een `List` maar in plaats van een index heeft ieder element een key van een type dat je zelf bepaald. [Lees even dit na.](https://timdams.gitbooks.io/csharpfromantwerp/content/11_arraysvanklassen/dict.html)
+We gaan de centra over de 7 continenten verspreiden. Maar we gaan hiervoor een nieuw concept gebruiken, een zogenaamde `Dictionary` dit is hetzelfde als een `List` maar in plaats van een index heeft ieder element een key van een type dat je zelf bepaalt. 
 
 Maak de Dictionary als volgt:
 
