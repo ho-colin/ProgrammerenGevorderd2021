@@ -819,8 +819,8 @@ Pas de WithdrawFunds methode aan zodat als returntype het bedrag (int) wordt ter
 Maak 2 instanties van het type Account aan en toon aan dat je geld van de ene account aan de andere kunt geven, als volgt:
 
 ```csharp
-BankAccount rekening1=new BankAccount();
-BankAccount rekening2=new BankAccount();
+BankAccount rekening1 = new BankAccount();
+BankAccount rekening2 = new BankAccount();
 ```
 
 Voeg aan de Account-klasse een private field toe zijnde van het type accountState dat een enumeratie bevat. De account kan in volgende states zijn "Geldig", "Geblokkeerd"). Maak een bijhorende publieke Methode waarmee je de account van state kunt veranderen. Deze methode (noem ze ChangeState) vereist één parameter van het type accountState natuurlijk.

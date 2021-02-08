@@ -1115,13 +1115,15 @@ public static int Width
 }
 ```
 
-# Meetlat constructor
+# Oefeningen
 
-Vul de `Meetlat` klasse uit het vorige hoofdstuk aan met een constructor. De constructor laat toe om de lengte in meter als parameter mee te geven. De `LengteInMeter` write-only property vervang je door een private datafield `double lengteInMeter`.
+## Meetlat constructor
 
-# Sport simulator
+Vul de `Meetlat` klasse aan met een constructor. De constructor laat toe om de lengte in meter als parameter mee te geven. De `LengteInMeter` write-only property vervang je door een private datafield `double lengteInMeter`.
 
-Haal je Sport klasse van hoofdstuk 8 (oefeningen) boven en voeg volgende statische methode er aan toe (vervang het soort speler door de naam van jouw klasse. Mijn klasse noemde `Waterpolospeler`)
+## Sport simulator
+
+Haal je Sport klasse boven en voeg volgende statische methode er aan toe (vervang het soort speler door de naam van jouw klasse. Mijn klasse noemde `Waterpolospeler`)
 
 Schrijf een methode genaamd: `static void SimuleerSpeler(Waterpolospeler testspeler)`
 
