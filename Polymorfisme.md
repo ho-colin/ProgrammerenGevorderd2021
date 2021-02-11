@@ -1,6 +1,6 @@
 # Polymorfisme
 
-**Polymorfisme** oftewel "meerdere vormen" is een programmeertechniek waarbij je code schrijft die door objecten van verschillende klasse, kan gebruikt worden. Hierdoor kan je dus compactere code schrijven en hoef je niet voor iedere klasse apart (deel)code te schrijven. Samen met encapsulatie en overerving is polymorfisme een derde belangrijke eigenschap van object georiënteerd programmeren.
+**Polymorfisme** oftewel "meerdere vormen" is een programmeertechniek waarbij je code schrijft die door objecten van verschillende klasse, kan gebruikt worden. Hierdoor kan je dus compactere code schrijven en hoef je niet voor iedere klasse apart (deel)code te schrijven. Samen met **encapsulatie** en overerving is polymorfisme een derde belangrijke eigenschap van object georiënteerd programmeren.
 
 We tonen het nut van polymorfisme aan de hand van drie voorbeelden:
 
@@ -72,12 +72,12 @@ Polymorfisme is een heel krachtig concept. Door objecten te bewaren in hun basis
 
 ![Gezocht: wie weet waar deze still vandaan komt? Ik heb geen flauw benul. We zien Robert Redford en Bush Senior, uit een film ofzo?](./pg013.jfif)
 
-Beeld je in dat je een klasse President hebt met een methode "RunTheCountry" (voorbeeld van [StackOverflow](https://stackoverflow.com/questions/1031273/what-is-polymorphism-what-is-it-for-and-how-is-it-used)). De President heeft toegang tot tal van adviseurs die hem kunnen helpen (inzake miltair, binnenlands beleid, economie). Zonder de voordelen van polymorfisme zou de klasse President er zo kunnen uitzien, **slechte manier**:
+Beeld je in dat je een klasse President hebt met een methode "RunTheCountry" (voorbeeld van [StackOverflow](https://stackoverflow.com/questions/1031273/what-is-polymorphism-what-is-it-for-and-how-is-it-used)). De President heeft toegang tot tal van adviseurs die hem kunnen helpen (inzake militair, binnenlands beleid, economie). Zonder de voordelen van polymorfisme zou de klasse President er zo kunnen uitzien (**slechte manier**):
 
 ```csharp
 public class President
 {
-    MilitaryMinister Petraeus= new MilitaryMinister();
+    MilitaryMinister Petraeus = new MilitaryMinister();
     ForeignSecretary Condi = new ForeignSecretary();
     HealthOfficial MrX = new HealthOfficial();
 
@@ -198,7 +198,7 @@ public class MisterPresident
 }
 ```
 
-En wie zei dat het presidentsschap moeilijk was?!
+En wie zei dat het presidentschap moeilijk was?!
 
 ## Nog voorbeelden van polymorfisme nodig?
 
@@ -236,8 +236,8 @@ Een Car **is** een Vehicle. Een Person **is geen** Vehicle.
 Stel dat we enkele variabelen hebben als volgt:
 
 ```csharp
-Car myCar= new Car();
-Person rambo= new Person();
+Car myCar = new Car();
+Person rambo = new Person();
 ```
 
 We kunnen nu de objecten met `is` bevragen of ze van een bepaalde type zijn:
@@ -271,11 +271,11 @@ Het `as` keyword lost dit op. Het keyword zegt aan de compiler 'probeer dit obje
 De code van daarnet herschrijven we dan naar:
 
 ```csharp
-Student fritz= new Student();
-Mens jos =fritz as Mens;
+Student fritz = new Student();
+Mens jos = fritz as Mens;
 ```
 
-Indien nu de casting niet lukt (omdat ´´Student´´ misschien geen childklasse van ´´Mens´´ blijkt te zijn) dan zal `jos` de waarde `null` hebben gekregen.
+Indien nu de casting niet lukt (omdat ´´Student´´ misschien geen child klasse van ´´Mens´´ blijkt te zijn) dan zal `jos` de waarde `null` hebben gekregen.
 
 We kunnen dan vervolgens bijvoorbeeld schrijven:
 
@@ -304,7 +304,7 @@ Als leuk zij-effect krijgen we het feit dat deze uitleg aardig wat reeds opgedan
 
 ## Heap en stack
 
-C# programma’s gebruiken twee soorten geheugens zoals we reeds [in dit hoofdstuk lazen](https://timdams.gitbooks.io/csharpfromantwerp/content/9_meminoop/6_memorymanagement.html)
+C# programma’s gebruiken twee soorten geheugens:
 
 - De stack
 - De heap
@@ -430,7 +430,7 @@ In de wereld waar we overerving nog niet kennen zou dit een mooi einde zijn van 
 
 # System.Object: De grondlegger van alles
 
-Uit een [vorige hoofdstuk](https://timdams.gitbooks.io/csharpfromantwerp/content/13_advancedovererving/4_System_Object.html) weten we dat alle klassen overerven van `System.Object` en dat deze een methode Equals bevat. Deze werd speciaal toegevoegd om objecten op gelijkheid te testen. We moeten echter de implementatie zelf schrijven, daar .NET niet kan voorspellen hoe jij vindt dat objecten dezelfde zijn.
+Uit een vorige hoofdstuk weten we dat alle klassen overerven van `System.Object` en dat deze een methode Equals bevat. Deze werd speciaal toegevoegd om objecten op gelijkheid te testen. We moeten echter de implementatie zelf schrijven, daar .NET niet kan voorspellen hoe jij vindt dat objecten dezelfde zijn.
 
 Wat we vorige keer niet zagen is dat er twee versies van de `Equals` methode beschikbaar zijn in `System.Object`:
 
@@ -438,8 +438,8 @@ Wat we vorige keer niet zagen is dat er twee versies van de `Equals` methode bes
 - Een gewone object-methode versie
 
 ```csharp
-object object1= new object();
-object object2= new object();
+object object1 = new object();
+object object2 = new object();
 
 //object methode versie
 if(object1.Equals(object2))
@@ -461,13 +461,13 @@ public virtual bool Equals(Object obj)
 Met andere woorden, deze methode is `virtual` gemaakt zodat andere klasse deze methode kunnen override`'n. Laten we dit eerst eens **niet** doen. Daar Point van `System.Object` overerft kunnen we schrijven:
 
 ```csharp
-Point punt1= new Point();
-punt1.X=3;
-punt1.Y=5;
+Point punt1 = new Point();
+punt1.X = 3;
+punt1.Y = 5;
 
 Point punt2= new Point();
-punt2.X=3;
-punt2.Y=5;
+punt2.X = 3;
+punt2.Y = 5;
 
 if(punt1.Equals(punt2))
 {
@@ -478,7 +478,7 @@ if(punt1.Equals(punt2))
 Standaard zal de `Equals` methode van `System.Object` simpelweg kijken of beide objecten naar hetzelfde geheugenadres wijzen (zoals eerder reeds aangehaald). Dit is hier niet het geval. Volgende code uitvoeren zal wél ``Punten zijn gelijk´´ op het scherm tonen:
 
 ```csharp
-punt1=punt2;
+punt1 = punt2;
 if(punt1.Equals(punt2))
 {
     Console.WriteLine("Punten zijn gelijk");
@@ -504,7 +504,7 @@ class Point: System.Object
 }
 ```
 
-Daar we steevast `true` returnen hierboven zal onderstaande code altijd in de if gaan. Alle Point objecten zouden gelijk zijn, ongeacht of dat nu is of niet:
+Daar we steevast `true` teruggeven hierboven zal onderstaande code altijd in de if gaan. Alle Point objecten zouden gelijk zijn, ongeacht of dat nu is of niet:
 
 ```csharp
 if(punt1.Equals(punt2))
@@ -598,12 +598,12 @@ public override bool Equals (object obj)
     {
         if(obj is Point)
         {
-            Point tijdelijk= (Point)obj;
-            if(X==tijdelijk.X && Y== tijdelijk.Y) 
+            Point tijdelijk = (Point)obj;
+            if(X == tijdelijk.X && Y == tijdelijk.Y) 
                 return true;
         }
     }
-    else {return false; }
+    else { return false; }
 }
 ```
 
