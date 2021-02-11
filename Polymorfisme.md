@@ -6,7 +6,7 @@ We tonen het nut van polymorfisme aan de hand van drie voorbeelden:
 
 ## Polymorfisme in de praktijk: Dieren
 
-Een voorbeeld maakt veel duidelijk. Stel dat we een een aantal Dier-gerelateerde klassen hebben die allemaal op hun eigen manier een geluid voortbrengen. We hanteren de klasse dier uit een eerder hoofdstuk ([abstracte klassen in overerving](https://timdams.gitbooks.io/csharpfromantwerp/content/13_advancedovererving/5_abstract.html)):
+Een voorbeeld maakt veel duidelijk. Stel dat we een een aantal Dier-gerelateerde klassen hebben die allemaal op hun eigen manier een geluid voortbrengen. We hanteren de klasse dier uit een eerder hoofdstuk (abstracte klassen in overerving):
 
 ```csharp
 abstract class  Dier
@@ -122,9 +122,9 @@ class MilitaryMinister
 }
 ```
 
-De HealthOfficial-klasse heeft dan weer heel andere publieke methoden. En die Foreignminister ook weer totaal andere.
+De HealthOfficial-klasse heeft dan weer heel andere publieke methoden. En die ForeignMinister ook weer totaal andere.
 
-Je merkt dat de President (of de programmeur van deze klasse) aardig wat specifieke kennis moet hebben van de vele verschillende departementen van het land. Uiteraard is dat onmogelijk (een fictief voorbeeld: stel je Trump voor...Denk je echt dat die zo veel weet?) . Bovenstaande code is dus zeer slecht. Telkens er zaken binnen een specifiek landsonderdeel wijzigen moet dit ook in de klasse President aangepast worden.
+Je merkt dat de President (of de programmeur van deze klasse) aardig wat specifieke kennis moet hebben van de vele verschillende departementen van het land. Uiteraard is dat onmogelijk (een fictief voorbeeld: stel je Trump voor... denk je echt dat die zo veel weet?) . Bovenstaande code is dus zeer slecht. Telkens er zaken binnen een specifiek landsonderdeel wijzigen moet dit ook in de klasse President aangepast worden.
 
 Dankzij polymorfisme kunnen we dit alles veel mooier oplossen:
 
