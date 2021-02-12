@@ -354,6 +354,69 @@ class Frituur:Restaurant
 }
 ```
 
+# Non-polymorphism: new keyword
+
+* **virtual** en **override** gaan samen: polymorfisme
+* zonder keyword virtual: de method wordt toegepast zoals deze gedefinieerd is op niveau van het class type. Je kan dit expliciet aangeven door gebruik te maken van het keyword **new**. Dit is echter ook zonder new het geval ... .
+* het is mogelijk om via een zogenaamde "**cast**" de method van je keuze op te roepen
+
+```C#
+class A 
+{
+    public string Foo() 
+    {
+        return "A";
+    }
+
+    public virtual string Test()
+    {
+        return "base test";
+    }
+}
+
+class B: A
+{
+    public new string Foo() 
+    {
+        return "B";
+    }
+}
+
+class C: B 
+{
+    public string Foo() 
+    {
+        return "C";
+    }
+
+    public override string Test() {
+        return "derived test";
+    }
+}
+```
+
+```C#
+A AClass = new B();
+Console.WriteLine(AClass.Foo());
+B BClass = new B();
+Console.WriteLine(BClass.Foo());
+B BClassWithC = new C();
+Console.WriteLine(BClassWithC.Foo());
+
+Console.WriteLine(AClass.Test());
+Console.WriteLine(BClassWithC.Test());
+```
+
+```
+A
+B
+B
+base test
+derived test
+```
+
+
+
 # Oefeningen
 
 ## Het dierenrijk
