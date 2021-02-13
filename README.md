@@ -28,13 +28,12 @@
 * [Begeleide oefening: een bierwinkel...](./Documents/PG_OObasics_oef1_opdracht.pdf)
 * [Scheepvaart](./Documents/_OefeningCollectionsOvererving.pdf)
 
-## 3. Exceptions (19/2)
+## 3. Exceptions (week 2: 19/2)
 
 - [Exception handling](./Documents/ExceptionHandling.md)
 
-## 4. Unit testing (23/2)
+## 4. Unit testing (week 3: 23/2)
 
-1. Video:
   1. [Business code en test assemblies](https://www.youtube.com/watch?v=ayJYhxs4e6I&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=6&t=151s)
   2. [Code quality](https://www.youtube.com/watch?v=WAVBJhTV4Ms&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=7)
   3. [Running and debugging tests](https://www.youtube.com/watch?v=tKhnw61JC6U&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=8)
@@ -47,29 +46,34 @@
 5. [Test methods: beknopt overzicht](./UnitTestingTestMethods.pdf)
 6. [Bank account walkthrough: TDD](./UnitTestingWalkthrough.pdf)
 
-## 5. Git (23/2)
+## 5. Git (week 3: 23/2)
 
-* YouTube Video:
-  1. [Git in VS2019](https://www.youtube.com/watch?v=wQdGC8HvKBE&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=1&t=2s)
-  2. [Git Commit](https://www.youtube.com/watch?v=jYiIBGsu3SI&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=2&t=22s)
-  3. [Git Push](https://www.youtube.com/watch?v=yxJDqfXhNAQ&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=3&t=1s)
-  4. [Git Command Line](https://www.youtube.com/watch?v=npqBMnmahs4&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=4&t=7s)
+1. [Git in VS2019](https://www.youtube.com/watch?v=wQdGC8HvKBE&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=1&t=2s)
+2. [Git Commit](https://www.youtube.com/watch?v=jYiIBGsu3SI&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=2&t=22s)
+3. [Git Push](https://www.youtube.com/watch?v=yxJDqfXhNAQ&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=3&t=1s)
+4. [Git Command Line](https://www.youtube.com/watch?v=npqBMnmahs4&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=4&t=7s)
 
-## 6. Lambda
+## 6. Lambda (week 3)
 
-## 7. Delegates en events
+## 7. Extension methods (week 3)
 
-## 8. Extension methods
+## 8. Delegates en events (week 4)
 
-## 9. LINQ
+## 9. LINQ (week 5)
 
 ```
 16/3/2021: eindopdracht - deel 1: domeinmodel, inclusief unit testing
 ```
 
-## 10. File I/O
+## 10. File I/O (week 6)
 
-## 11. ADO .NET
+## 11. ADO .NET (week 7)
+
+```
+Week 8 (30/3 - 2/4): tussentijdse evaluatie (tweede kans mogelijk tot en met eerste kans eindevaluatie)
+```
+
+
 
 ```
 3/4/2021 - 18/4/2021: paasvakantie
@@ -79,7 +83,7 @@
 2/4/2021: eindopdracht - deel 2: UI
 ```
 
-## 12. WPF
+## 12. WPF (week 9 - week 12)
 
 ## 13. SOLID
 
