@@ -14,23 +14,23 @@
 
 ## 1. Object oriented programming (week 1: 9/2 - 12/2)
 
-1. [OOP](./documents/OOP.md)
+1. [OOP](./Documents/OOP.md)
 2. [Objecten](./Documents/Objecten.md)
-3. [Overerving](./Overerving.md)
-4. [System.Object](./SystemObject.md)
-5. [Compositie](./Compositie.md)
-6. [UML naar code](./UMLNaarCode.md)
-7. [Polymorfisme](./Polymorfisme.md)
-8. [Abstracte klassen](./AbstracteKlassen.md)
+3. [Overerving](./Documents/Overerving.md)
+4. [System.Object](./Documents/SystemObject.md)
+5. [Compositie](./Documents/Compositie.md)
+6. [UML naar code](./Documents/UMLNaarCode.md)
+7. [Polymorfisme](./Documents/Polymorfisme.md)
+8. [Abstracte klassen](./Documents/AbstracteKlassen.md)
 
 ## 2. Herhalingsoefening (week 2: 16/2)
 
-* [Begeleide oefening: een bierwinkel...](./PG_OObasics_oef1_opdracht.pdf)
-* [Scheepvaart](./_OefeningCollectionsOvererving.pdf)
+* [Begeleide oefening: een bierwinkel...](./Documents/PG_OObasics_oef1_opdracht.pdf)
+* [Scheepvaart](./Documents/_OefeningCollectionsOvererving.pdf)
 
 ## 3. Exceptions (19/2)
 
-- [Exception handling](./ExceptionHandling.md)
+- [Exception handling](./Documents/ExceptionHandling.md)
 
 ## 4. Unit testing (23/2)
 
@@ -83,17 +83,17 @@
 
 ## 13. SOLID
 
-* [Interfaces](./Interfaces.md)
-* [5 principes](./SOLID.md)
+* [Interfaces](./Documents/Interfaces.md)
+* [5 principes](./Documents/SOLID.md)
 
 ## 14. Nuttige extra's
 
-* [Overzicht boeken, tutorials, websites, ...](./NuttigeExtras.md)
+* [Overzicht boeken, tutorials, websites, ...](./Documents/NuttigeExtras.md)
 
 ## 15. Uitdieping
 
-1. [Interfaces](./Interfaces1.md)
-2. [Generics](./Generics.md)
+1. [Interfaces](./Documents/Interfaces1.md)
+2. [Generics](./Documents/Generics.md)
 
 ```
 - Laatste week mei, eerste week juni: eindevaluatie - voorstelling eindopdracht (twee kansen)
