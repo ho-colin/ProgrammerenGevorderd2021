@@ -14,8 +14,8 @@
 
 ## 1. Object oriented programming (week 1: 9/2 - 12/2)
 
-1. [OOP](./OOP.md)
-2. [Objecten](./Objecten.md)
+1. [OOP](./documents/OOP.md)
+2. [Objecten](./Documents/Objecten.md)
 3. [Overerving](./Overerving.md)
 4. [System.Object](./SystemObject.md)
 5. [Compositie](./Compositie.md)
