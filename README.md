@@ -32,6 +32,8 @@
 
 - [Exception handling](./Documents/ExceptionHandling.md)
 
+  <!--
+
 ## 4. Unit testing (week 3: 23/2)
 
   1. [Business code en test assemblies](https://www.youtube.com/watch?v=ayJYhxs4e6I&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=6&t=151s)
@@ -53,13 +55,13 @@
 3. [Git Push](https://www.youtube.com/watch?v=yxJDqfXhNAQ&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=3&t=1s)
 4. [Git Command Line](https://www.youtube.com/watch?v=npqBMnmahs4&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=4&t=7s)
 
-## 6. Lambda (week 3)
+## 6. Lambda (week 3: 26/2)
 
-## 7. Extension methods (week 3)
+## 7. Extension methods (week 3: 26/2)
 
-## 8. Delegates en events (week 4)
+## 8. Delegates en events (week 4: 2/3)
 
-## 9. LINQ (week 5)
+## 9. LINQ (week 4: 5/3 en week 5: 9/3)
 
 ```
 16/3/2021: eindopdracht - deel 1: domeinmodel, inclusief unit testing
@@ -105,3 +107,4 @@ Week 8 (30/3 - 2/4): tussentijdse evaluatie (tweede kans mogelijk tot en met eer
 - Laatste examendag: 22/6/2021
 ```
 
+-->
