@@ -16,12 +16,16 @@
 
 1. [OOP](./Documents/OOP.md)
 2. [Objecten](./Documents/Objecten.md)
-3. [Overerving](./Documents/Overerving.md)
-4. [System.Object](./Documents/SystemObject.md)
-5. [Compositie](./Documents/Compositie.md)
-6. [UML naar code](./Documents/UMLNaarCode.md)
-7. [Polymorfisme](./Documents/Polymorfisme.md)
-8. [Abstracte klassen](./Documents/AbstracteKlassen.md)
+3. [Constructor](./Documents/Constructors.md)
+4. [Static](./Documents/Static.md)
+5. [Overerving](./Documents/Overerving.md)
+6. [Null reference](./Documents/NullReference.md)
+7. [System.Object](./Documents/SystemObject.md)
+8. [Compositie](./Documents/Compositie.md)
+9. [UML naar code](./Documents/UMLNaarCode.md)
+10. [Polymorfisme](./Documents/Polymorfisme.md)
+11. [Abstracte klassen](./Documents/AbstracteKlassen.md)
+12. [Geheugen management](./Documents/GeheugenManagement.md)
 
 ## 2. Herhalingsoefening (week 2: 16/2)
 

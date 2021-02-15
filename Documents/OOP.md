@@ -644,6 +644,8 @@ De regel is eenvoudig:
 
 # Oefeningen
 
+<!--
+
 ## RapportModule (*)
 
 Ontwerp een klasse Resultaat die je zal tonen wat je graad is gegeven een bepaald behaald percentage. Het enige dat je aan een Resultaat-object moet kunnen geven is het behaalde percentage. Enkel het totaal behaalde % wordt bijgehouden via een auto-property. Via een methode PrintGraad kan de behaalde graad weergegeven worden. Dit zijn de mogelijkheden:
@@ -697,6 +699,8 @@ Product = 408
 Quotient = 0,352941176470588
 ```
 
+-->
+
 ## Studentklasse (*)
 
 Maak een nieuwe klasse `Student`.
@@ -741,6 +745,8 @@ Programming Principles:   15
 Web Technology:           13
 Gemiddelde:               13.3
 ```
+
+<!--
 
 ## PizzaTime (*)
 
@@ -837,3 +843,4 @@ Test je klasse.
 
 Voorzie extra functionaliteit naar keuze.
 
+-->
