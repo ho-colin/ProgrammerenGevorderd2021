@@ -14,10 +14,10 @@
 
 ## 1. Object oriented programming (week 1: 9/2 - 12/2)
 
-1. [OOP](./Documents/OOP.md)
-2. [Objecten](./Documents/Objecten.md)
-3. [Constructor](./Documents/Constructors.md)
-4. [Static](./Documents/Static.md)
+1. [OOP](./Documents/OOP.md) (Herhaling)
+2. [Objecten](./Documents/Objecten.md) (Herhaling)
+3. [Constructor](./Documents/Constructors.md) (Herhaling)
+4. [Static](./Documents/Static.md) (Herhaling)
 5. [Overerving](./Documents/Overerving.md)
 6. [Null reference](./Documents/NullReference.md)
 7. [System.Object](./Documents/SystemObject.md)
@@ -79,8 +79,6 @@
 Week 8 (30/3 - 2/4): tussentijdse evaluatie (tweede kans mogelijk tot en met eerste kans eindevaluatie)
 ```
 
-
-
 ```
 3/4/2021 - 18/4/2021: paasvakantie
 ```
@@ -103,7 +101,10 @@ Week 8 (30/3 - 2/4): tussentijdse evaluatie (tweede kans mogelijk tot en met eer
 ## 15. Uitdieping
 
 1. [Interfaces](./Documents/Interfaces1.md)
+
 2. [Generics](./Documents/Generics.md)
+
+   -->
 
 ```
 - Laatste week mei, eerste week juni: eindevaluatie - voorstelling eindopdracht (twee kansen)
@@ -111,4 +112,3 @@ Week 8 (30/3 - 2/4): tussentijdse evaluatie (tweede kans mogelijk tot en met eer
 - Laatste examendag: 22/6/2021
 ```
 
--->
