@@ -371,6 +371,8 @@ public static int Width
 }
 ```
 
+<!--
+
 # Oefeningen
 
 ## Meetlat constructor
@@ -397,3 +399,4 @@ Maak een derde methode `static Waterpolospeler BesteSpeler(Waterpolospeler spele
 
 Deze methode gaat ook random bepalen welke speler de beste is. Vervolgens geef je deze speler terug als resultaat. In de main roep je vervolgens iedere methode van dit object aan.
 
+-->

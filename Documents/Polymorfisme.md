@@ -15,7 +15,7 @@ abstract class  Dier
 }
 ```
 
-Twee child-klassen:
+Twee child klassen:
 
 ```csharp
 class Paard: Dier
@@ -200,11 +200,15 @@ public class MisterPresident
 
 En wie zei dat het presidentschap moeilijk was?!
 
+<!--
+
 ## Nog voorbeelden van polymorfisme nodig?
 
 Volgende tekst heeft een leuke insteek om polymorfisme uit te leggen... aan de hand van...wait for it... Zeemeerminnen! :) [Lezen maar!](http://www.techoschool.com/Technology/Dotnet/Csharp-for-Beginners_Csharp-Polymorphism)
 
 Volgende voorbeeld is iets praktischer: [Arena with a mage in C# .NET (inheritance and polymorphism)](https://www.ict.social/csharp/oop/arena-with-mage-in-csharp-net-inheritance-and-polymorphism)
+
+-->
 
 # Is en As
 
@@ -280,9 +284,9 @@ Indien nu de casting niet lukt (omdat ´´Student´´ misschien geen child klass
 We kunnen dan vervolgens bijvoorbeeld schrijven:
 
 ```csharp
-Student fritz= new Student();
-Mens jos =fritz as Mens;
-if(jos!=null)
+Student fritz = new Student();
+Mens jos = fritz as Mens;
+if(jos!= null)
 {
     //Doe Mens-zaken   
 }
@@ -325,7 +329,7 @@ Wanneer we twee variabele van een van de ingebouwde .NET types (behalve string) 
 
 ```csharp
 int getal1 = 4;
-int getal2= 5;
+int getal2 = 5;
 if(getal1 == getal2)
 {
     Console.WriteLine("Getallen zijn gelijk"):
@@ -349,15 +353,15 @@ class Point
 We zouden nu kunnen denken dat volgende code `Punten zijn gelijk` op het scherm zal tonen:
 
 ```csharp
-Point punt1= new Point();
-punt1.X=3;
-punt1.Y=5;
+Point punt1 = new Point();
+punt1.X = 3;
+punt1.Y = 5;
 
-Point punt2= new Point();
-punt2.X=3;
-punt2.Y=5;
+Point punt2 = new Point();
+punt2.X = 3;
+punt2.Y = 5;
 
-if(punt1==punt2)
+if(punt1 == punt2)
 {
     Console.WriteLine("Punten zijn gelijk");
 }
@@ -365,12 +369,12 @@ if(punt1==punt2)
 
 Echter, objecten worden we weten dat objecten "by reference" in het geheugen worden bewaard. Wat dit wil zeggen is dat de variabelen `punt1` en `punt2` in het geheugen niet het volledig object bevatten. Ze bevatten enkel een geheugenadres (pointer, referentie) naar een andere plaats (in de heap) waar het volledige object zich bevindt.
 
-Wanneer we dus de expressie `punt1==punt2` schrijven dan zal de inhoud van die 2 variabelen worden vergeleken, zijnde de 2 adressen. Daar beide variabelen naar een ander adres wijzen zal deze test dus fout teruggeven. Als we 1 extra lijn voor de if toevoegen:
+Wanneer we dus de expressie `punt1 == punt2` schrijven dan zal de inhoud van die 2 variabelen worden vergeleken, zijnde de 2 adressen. Daar beide variabelen naar een ander adres wijzen zal deze test dus fout teruggeven. Als we 1 extra lijn voor de if toevoegen:
 
 ```csharp
 punt1 = punt2;
 
-if(punt1==punt2)
+if(punt1 == punt2)
 {
     Console.WriteLine("Punten zijn gelijk");
 }
@@ -383,19 +387,19 @@ Dan zal de test wel `true` teruggeven: we hebben vlak voor de test gezegd dat er
 Hoe kunnen we dan wel 2 objecten vergelijken? Hiervoor dienen we, manueel, alle properties en private fields te vergelijken met elkaar van beide objecten. Althans, jij als programmeur moet beslissen wanneer 2 objecten gelijk zijn. Mogelijk vind je dat 2 punten gelijk zijn als ze beide dezelfde X-waarde hebben ongeacht de Y-waarde. Maar wij prefereren natuurlijk dat zowel de X als de Y-waarde dezelfde is en kunnen dus schrijven:
 
 ```csharp
-if(punt1.X== punt2.X && punt1.Y== punt2.Y)
+if(punt1.X == punt2.X && punt1.Y == punt2.Y)
 ```
 
 We zouden dit dan in een handige [static methode](https://timdams.gitbooks.io/csharpfromantwerp/content/10_advancedklassen/5_static.html) kunnen plaatsen :
 
 ```csharp
-static bool VergelijkPunten(Point p1, Point p2)
+static bool VergelijkPunten( Point p1, Point p2 )
 {
-    if(punt1.X== punt2.X && punt1.Y== punt2.Y)
+    if( punt1.X == punt2.X && punt1.Y == punt2.Y )
     {
         return true;
     }
-    else{return false; }
+    else{ return false; }
 }
 ```
 
@@ -404,16 +408,16 @@ Nog leuker zou natuurlijk zijn als we de vergelijking **in** het object zelf kun
 ```csharp
 class Point
 {
-    public int X {get;set;}
-    public int Y {get;set;}
+    public int X { get; set; }
+    public int Y { get; set; }
 
     public bool IsDitPuntGelijk(Point anderePunt)
     {
-        if(X== anderePunt.X && Y== anderePunt.Y)
+        if(X == anderePunt.X && Y == anderePunt.Y)
         {
             return true;
         }
-        else{return false;}
+        else { return false; }
     }
 }
 ```
@@ -529,8 +533,8 @@ public override bool Equals (object obj)
 
 Inderdaad. De `obj` parameter is van de `Object` klasse, en deze klasse heeft geen `X` en `Y` properties. We zullen dus die obj parameter naar een punt moeten transformeren. Dit kan op twee manieren:
 
-- Via casting: `Point t= (Point)obj;`
-- Via `as`: `Point t= obj as Point;`
+- Via casting: `Point t = (Point)obj;`
+- Via `as`: `Point t = obj as Point;`
 
 Laten we even veronderstellen dat we de Equals methode in onze Point klasse altijd gebruiken om 2 Points te vergelijken niets anders: we weten dan dat de obj parameter ook kan aanschouwd worden als een Point. En we kunnen dus de obj parameter casten naar een (tijdelijk) Point:
 

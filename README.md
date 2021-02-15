@@ -15,28 +15,29 @@
 ## 1. Object oriented programming (week 1: 9/2 - 12/2)
 
 1. [OOP](./Documents/OOP.md) (Herhaling)
-2. [Objecten](./Documents/Objecten.md) (Herhaling)
-3. [Constructor](./Documents/Constructors.md) (Herhaling)
+2. [Object als argument en return value](./Documents/Objecten.md) (Herhaling)
+3. [Constructor, destructor](./Documents/Constructors.md) (Herhaling)
 4. [Static](./Documents/Static.md) (Herhaling)
 5. [Overerving](./Documents/Overerving.md)
-6. [Null reference](./Documents/NullReference.md)
-7. [System.Object](./Documents/SystemObject.md)
-8. [Compositie](./Documents/Compositie.md)
-9. [UML naar code](./Documents/UMLNaarCode.md)
-10. [Polymorfisme](./Documents/Polymorfisme.md)
-11. [Abstracte klassen](./Documents/AbstracteKlassen.md)
-12. [Geheugen management](./Documents/GeheugenManagement.md)
+6. [Polymorfisme](./Documents/Polymorfisme.md)
+7. [Null reference](./Documents/NullReference.md)
+8. [System.Object](./Documents/SystemObject.md)
+9. [Compositie](./Documents/Compositie.md)
+10. [Abstracte klassen](./Documents/AbstracteKlassen.md)
+11. [Geheugen management](./Documents/GeheugenManagement.md)
+12. [UML naar code](./Documents/UMLNaarCode.md)
 
 ## 2. Herhalingsoefening (week 2: 16/2)
 
 * [Begeleide oefening: een bierwinkel...](./Documents/PG_OObasics_oef1_opdracht.pdf)
+
 * [Scheepvaart](./Documents/_OefeningCollectionsOvererving.pdf)
+
+  <!--
 
 ## 3. Exceptions (week 2: 19/2)
 
 - [Exception handling](./Documents/ExceptionHandling.md)
-
-  <!--
 
 ## 4. Unit testing (week 3: 23/2)
 

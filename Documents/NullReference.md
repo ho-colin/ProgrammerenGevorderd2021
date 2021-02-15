@@ -4,7 +4,7 @@ Zoals nu duidelijk is bevatten variabelen steeds een referentie naar een object.
 
 ```csharp
 Student stud1;
-stud1.Naam= "Test";
+stud1.Naam = "Test";
 ```
 
 Dit zal een fout geven. `stud1` bevat namelijk nog geen referentie. Maar wat dan wel?
@@ -82,7 +82,7 @@ static Student ZoekStudent(Student[] array, string naam)
 }
 ```
 
-# Oefeningen - Meetlat
+# Oefeningen - Meetlat (*)
 
 Maak een klasse "Meetlat". Via een write-only property BeginLengte kan de gebruiker de lengte van een voorwerp instellen (in meter). Via een reeks read-only properties (die transformeren) kan de gebruiker deze lengte in verschillende eenheden uitlezen namelijk:
 
