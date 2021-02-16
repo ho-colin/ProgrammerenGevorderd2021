@@ -10,7 +10,9 @@
   4. Een **bestand per klasse**
   5. **Method volledig zichtbaar** op je VS scherm
   6. Unit testing **code coverage: >= 80%**
-  7. Voorzie je code van zinvolle **commentaar**
+  7. Voorzie je code van zinvolle **commentaar** en #region markeringen
+  8. Plaats je properties eerst
+  9. Gebruik een _ voor private variabelen
 
 ## 1. Object oriented programming (week 1: 9/2 - 12/2)
 
