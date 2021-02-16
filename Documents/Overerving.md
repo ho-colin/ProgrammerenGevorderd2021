@@ -684,13 +684,15 @@ Zorg ervoor dat de Vaccin klasse een extra constructor heeft die toelaat dat je 
 
 Maak in de VaccinatieCentrum een methode `GeefVaccin` aan die geen parameters aanvaardt en een Vaccin als return type geeft. Deze methode zal null teruggeven in indien `Killcode` nog op -1 staat. Indien de killcode een andere waarde heeft dan zal deze methode een nieuw Vaccin teruggeven waarbij de killcode al juist werd gezet.
 
-#### Centra verspreiden (*)
+#### Centra verspreiden
 
 We gaan nu VaccinatieCentra over de hele wereld verspreiden. Stel eerst via `BewaarVaccin` eenmalig in welk vaccin alle centra moeten gebruiken (i.e. het vaccin dat gevonden werd in fase 1)
 
 Plaats nu 5 nieuwe centra aan in je lijst en roep op ieder centra 7x `GeefVaccin` aan die een vaccin teruggeeft. Plaats ieder vaccin in een grote lijst.
 
 Overloop finaal de hele lijst (die normaal 35 vaccins moet bevatten) en roep van ieder vaccin de tooninfo op.Je zou nu 35x dezelfde oplossing op het scherm moeten zien. Controleer via een breakpoint of deze oplossing/killcode overeen komt de killcode in je virus dat aan de start van fase 1 werd gemaakt.
+
+<!--
 
 ### Nieuwe vaccins en virussen
 
@@ -760,3 +762,5 @@ foreach (VaccinatieCentrum item in centraDV)
 ```
 
 Kan je hier een programma rond bouwen waarbij de operator ook kan kiezen welk land/centrum Vaccins moet genereren?
+
+-->

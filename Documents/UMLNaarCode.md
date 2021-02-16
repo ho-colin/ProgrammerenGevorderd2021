@@ -1,4 +1,6 @@
-# UML naar code (*)
+# Oefeningen (facultatief)
+
+## UML naar code (*)
 
 Kan je volgende 2 UML-diagrammen implementeren in code? Uiteraard kan je dat: make it happen!
 
@@ -6,7 +8,7 @@ Kan je volgende 2 UML-diagrammen implementeren in code? Uiteraard kan je dat: ma
 
 ![img](./pg010.png) 
 
-# Politiek
+## Politiek
 
 Maak een programma om de politieke situatie van een land te simuleren.
 
@@ -16,15 +18,15 @@ Maak volgende klassen:
 - Minister
 - President
 
-## Minister
+### Minister
 
 Een Minister heeft geen speciale eigenschappen. Enkel een autoproperty om de Naam van de minister in bij te houden
 
-## President
+### President
 
 Een President is een minister maar met 1 extra property met private setter: hij heeft een teller die start op 4 alsook een methode `JaarVerder`die deze teller met 1 iedere aanroep verlaagt.
 
-## Land
+### Land
 
 - Een land heeft 0 of 1 president (of koning, kies zelf)
 - Een land heeft 0 of 1 eerste minister
@@ -32,7 +34,7 @@ Een President is een minister maar met 1 extra property met private setter: hij 
 
 Al deze compositieobjecten zijn private. Een land heeft volgende publieke methoden:
 
-### `MaakRegering`
+#### `MaakRegering`
 
 Deze methode aanvaardt volgende parameters:
 
@@ -41,15 +43,15 @@ Deze methode aanvaardt volgende parameters:
 
 Deze methode zal enkel iets doen indien er geen president in het land is (`null`). Indien er reeds een regering is dan zal er een foutboodschap ,verschijnen.
 
-### `JaarVerder`
+#### `JaarVerder`
 
 Deze methode aanroepen zal de `JaarVerder` aanroepen op de president indien deze er is (en dus niet `null` is). Deze methode controleert ook of de teller van de president na deze aanroep op 0 staat. Als dat het geval is dan worden alle ministers en president in het land op `null` gezet.
 
-## Eindfase
+### Eindfase
 
 Controleer je klasse Land door enkele ministers en een president te maken en deze in een object van het type Land via `MaakRegering` door te geven. Test dan wat er gebeurt indien je enkele malen `JaarVerder` op het land aanroept.
 
-# Moederbord
+## Moederbord
 
 Maak een klasse `Moederbord` die een, je raadt het nooit, moederbord van een computer voorstelt. Kies een van de vele moederborden die je online vindt ([enkele voorbeelden](https://www.google.com/search?biw=1368&bih=802&tbm=isch&sa=1&ei=4oK9XNqCKt3UmwXbk5-4Cg&q=motherboard+parts&oq=motherboard+parts&gs_l=img.3..0l10.1974.2413..2560...0.0..0.68.290.5......1....1..gws-wiz-img.aurN6S4Da0I#imgrc=_)) en bekijk uit welke delen een moederbord bestaat ('heeft een').
 
@@ -68,7 +70,7 @@ Z390E_GAMING.CPU= new CPUSlot("IntelCorei9_9900K");
 
 Kan je zelf een computer samenstellen door enkele objecten van verschillende types aan te maken en deze aan je moederbord-object toe te wijzen?
 
-# Een eigen huis (*)
+## Een eigen huis
 
 Gebruik compositie én overerving om een klasse `Huis` te voorzien van enkele kamers, waarbij iedere kamer een klasse op zich is (denk aan `BadKamer`, `Salon`, etc). Alle kamers erven over van de klasse `Kamer`. Iedere kamer heeft een oppervlakte (in vierkante meter), een naam en prijs. Standaard is de prijs van een kamer 400euro, maar mogelijke child-klassen zullen deze property soms overriden.
 
@@ -84,7 +86,7 @@ Test je klasse door enkele huizen te maken en er enkele kamers in te plaatsen (b
 
 
 
-# Maak volgende klassen
+## Maak volgende klassen
 
 Maak 2 klassen: `Enclave` en `StadsEnclave` ![img](./pg011.jfif)
 
@@ -100,11 +102,11 @@ De stadsenclave override `BouwWoonst`. Deze zal nog steeds een woonst toevoegen,
 
 De stadsenclave override `ToonEnclave` om ook de andere gebouwen (flat, extra hospitaal, waterkrachtcentrale) op het scherm te tekenen.
 
-# Applicatie
+## Applicatie
 
 Maak een eenvoudig programma dat 2 enclaves en 2 stadsenclaves aanmaakt. De gebruiker kan per enclave/stadenclave kiezen van welke enclave de bouwwoonst methode moet aangeroepen worden. Vervolgens wordt deze enclave op het scherm getoond m.b.v. toonenclave. Vervolgens verschijnt terug het keuze menu waarin gebruiker kan kiezen welke enclave nu een woonst moet bouwen. Dit blijft oneindig duren.
 
-# Dictionary
+## Dictionary
 
 Maak nu een dictionary aan: `Dictionary<string, Enclave>`. De string is de naam van de enclave (bv "Antwerpen"). Merk op dat je zowel `Enclave` als `StadsEnclave` objecten aan deze lijst kunt toevoegen.
 

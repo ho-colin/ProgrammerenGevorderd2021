@@ -31,7 +31,7 @@
 
 * [Begeleide oefening: een bierwinkel...](./Documents/PG_OObasics_oef1_opdracht.pdf)
 
-* [Scheepvaart](./Documents/_OefeningCollectionsOvererving.pdf)
+* [Scheepvaart](./Documents/OefeningCollectionsOvererving.pdf)
 
   <!--
 
