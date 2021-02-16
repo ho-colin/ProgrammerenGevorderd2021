@@ -9,7 +9,7 @@ We tonen het nut van polymorfisme aan de hand van drie voorbeelden:
 Een voorbeeld maakt veel duidelijk. Stel dat we een een aantal Dier-gerelateerde klassen hebben die allemaal op hun eigen manier een geluid voortbrengen. We hanteren de klasse dier uit een eerder hoofdstuk (abstracte klassen in overerving):
 
 ```csharp
-abstract class  Dier
+abstract class Dier
 {
    public abstract string MaakGeluid();
 }
@@ -77,9 +77,9 @@ Beeld je in dat je een klasse President hebt met een methode "RunTheCountry" (vo
 ```csharp
 public class President
 {
-    MilitaryMinister Petraeus = new MilitaryMinister();
-    ForeignSecretary Condi = new ForeignSecretary();
-    HealthOfficial MrX = new HealthOfficial();
+    public MilitaryMinister Petraeus = new MilitaryMinister();
+    public ForeignSecretary Condi = new ForeignSecretary();
+    public HealthOfficial MrX = new HealthOfficial();
 
     public void RunTheCountry()
     {
@@ -108,7 +108,7 @@ public class President
 De MilitaryMinister zou er zo kunnen uitzien:
 
 ```csharp
-class MilitaryMinister
+public class MilitaryMinister
 {
   public void IncreaseTroopNumbers()
   {
@@ -118,7 +118,7 @@ class MilitaryMinister
   {
     //..
   }
-  etc
+  //etc
 }
 ```
 
@@ -136,25 +136,26 @@ abstract class Advisor
   abstract public void Advise();
 }
 
-class MilitaryMinister:Advisor
+public class MilitaryMinister:Advisor
 {
   public override void Advise()
   {
-       increaseTroopNumbers();
-       improveSecurity();
-       payContractors();
+       IncreaseTroopNumbers();
+       ImproveSecurity();
+       PayContractors();
   }
-  private void increaseTroopNumbers(){ ... }
-  private void improveSecurity(){ ... }
-  private void payContractors(){ ... }
+  private void IncreaseTroopNumbers() { ... }
+  private void ImproveSecurity() { ... }
+  private void PayContractors() { ... }
   }
 }
 
-class ForeignSecretary:Advisor
+public class ForeignSecretary:Advisor
 {
   //...
 }
-class HealthOfficial:Advisor
+
+public class HealthOfficial:Advisor
 {
   //...
 }
@@ -170,6 +171,7 @@ public class MisterPresident
         Advisor Petraeus = new MilitaryAdvisor();
         Advisor Condi = new ForeignSecretary();
         Advisor mrX= new HealthOfficial();
+        
         Petraeus.Advise(); // # Petraeus says send 100,000 troops to Fallujah
         Condi.Advise(); // # she says negotiate trade deal with Iran
         mrX.Advise(); // # they say we need to spend $50 billion on ObamaCare
@@ -184,7 +186,7 @@ public class MisterPresident
 {
     public void RunTheCountry()
     {   
-        List<Advisor> allMinisters= new List<Advisor>();
+        List<Advisor> allMinisters = new List<Advisor>();
         allMinisters.Add(new MilitaryAdvisor());
         allMinisters.Add(new ForeignSecretary());
         allMinisters.Add(new HealthOfficial());
@@ -541,14 +543,14 @@ Laten we even veronderstellen dat we de Equals methode in onze Point klasse alti
 ```csharp
 public override bool Equals (object obj)
 {
-    Point tijdelijk= (Point)obj;
-    if(X==tijdelijk.X && Y== tijdelijk.Y) 
-        {return true; }
-    else {return false; }
+    Point tijdelijk = (Point)obj;
+    if(X == tijdelijk.X && Y == tijdelijk.Y) 
+    { return true; }
+    else { return false; }
 }
 ```
 
-We maken dus een tijdelijke variabele aan en zetten daarin het adres van de binnenkomende obj object. Als we namelijk naar `obj` zouden gaan zien in het geheugen (de heap) dan zouden we daar effectief een object van het type System.Object zien staan, maar vlak erachter staan de X en de Y-waarden. We zeggen dus eigenlijk: *"beste variabele `tijdelijk`, jij verwijst naar het geheugenadres van de obj parameter, maar ik weet dat die obj-parameter van het type Point is...Kijk dus maar verder in het geheugen en beschouw de obj parameter als een `Point`*.
+We maken dus een tijdelijke variabele aan en zetten daarin het adres van de binnenkomende obj object. Als we namelijk naar `obj` zouden gaan zien in het geheugen (de heap) dan zouden we daar effectief een object van het type System.Object zien staan, maar vlak erachter staan de X en de Y-waarden. We zeggen dus eigenlijk: *"beste variabele `tijdelijk`, jij verwijst naar het geheugenadres van de obj parameter, maar ik weet dat die obj-parameter van het type Point is... Kijk dus maar verder in het geheugen en beschouw de obj parameter als een `Point`*.
 
 We kunnen dus nu obj vergelijken met het punt zelf. Wanneer we dus schrijven: `if(punt1.Equals(punt2))`.
 
@@ -573,11 +575,11 @@ public override bool Equals (object obj)
 {
     if(obj is Point)
     {
-        Point tijdelijk= (Point)obj;
-        if(X==tijdelijk.X && Y== tijdelijk.Y) 
+        Point tijdelijk = (Point)obj;
+        if(X == tijdelijk.X && Y == tijdelijk.Y) 
             return true;
     }
-    else {return false; }
+    else { return false; }
 }
 ```
 
@@ -591,7 +593,7 @@ proberen om `"mijn locatie is hier"` om te zetten (casten) naar een Point, wat z
 
 # Checken op null
 
-Als finale check moeten we ook controleren of we geen null-object als parameter aan de methode meegeven. Mogelijk probeer je een bestaand object te vergelijken met een nog niet geïnstantieerd object en dan krijgen we een `NullReferenceException`.
+Als finale check moeten we ook controleren of we geen null object als parameter aan de methode meegeven. Mogelijk probeer je een bestaand object te vergelijken met een nog niet geïnstantieerd object en dan krijgen we een `NullReferenceException`.
 
 Onze finale `Equals` methode wordt:
 
