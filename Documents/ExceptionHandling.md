@@ -303,4 +303,4 @@ static public void MyMethod()
 }
 ```
 
-# [Uitdieping](./Documents/CSharpExceptionHandling.pdf)
+# [Uitdieping](./CSharpExceptionHandling.pdf)
