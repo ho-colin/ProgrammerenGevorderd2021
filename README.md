@@ -39,7 +39,7 @@
 
 ## 4. Interfaces
 
-* [Interfaces](./Documents/Interfaces.md)
+* [Interfaces](./Documents/Interfaces1.md)
 
 <!--
 
@@ -77,13 +77,19 @@
 
 ## 10. LINQ (week 4: 5/3 en week 5: 9/3)
 
+-->
+
 ```
 16/3/2021: eindopdracht - deel 1: domeinmodel, inclusief unit testing
 ```
 
+<!--
+
 ## 11. File I/O (week 6)
 
 ## 12. ADO .NET (week 7)
+
+-->
 
 ```
 Week 8 (30/3 - 2/4): tussentijdse evaluatie (tweede kans mogelijk tot en met eerste kans eindevaluatie)
@@ -97,11 +103,13 @@ Week 8 (30/3 - 2/4): tussentijdse evaluatie (tweede kans mogelijk tot en met eer
 2/4/2021: eindopdracht - deel 2: UI
 ```
 
+<!--
+
 ## 13. WPF (week 9 - week 12)
 
 ## 14. SOLID
 
-* [Interfaces](./Documents/Interfaces.md)
+* [Interfaces](./Documents/Interfaces1.md)
 * [5 principes](./Documents/SOLID.md)
 
 ## 15. Nuttige extra's
@@ -122,3 +130,6 @@ Week 8 (30/3 - 2/4): tussentijdse evaluatie (tweede kans mogelijk tot en met eer
 - Laatste examendag: 22/6/2021
 ```
 
+## Oefeningen
+
+* [Opdrachten](./Documents/Oefeningen.md)
