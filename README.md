@@ -132,4 +132,4 @@ Week 8 (30/3 - 2/4): tussentijdse evaluatie (tweede kans mogelijk tot en met eer
 
 ## Oefeningen
 
-* [Opdrachten](./Documents/Oefeningen.md)
+* [Opdrachten](./Documents/Opdrachten.md)
