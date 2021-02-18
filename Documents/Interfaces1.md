@@ -13,7 +13,7 @@ interface ISuperHeld
 {
     void SchietLasers();
     int VerlaagKracht(bool isZwak);
-    int Power{get;set;}
+    int Power{ get;set; }
 }
 ```
 
@@ -45,8 +45,8 @@ Volgende code toont dit:
 ```csharp
 class Zorro: ISuperHeld
 {
-    public void RoepPaard(){...}
-    public bool HeeftSnor{get;set;}
+    public void RoepPaard() { }
+    public bool HeeftSnor{ get; set; }
     public void SchietLasers() //interface ISuperHeld
     {
         Console.WriteLine("pewpew");
@@ -64,9 +64,7 @@ Zolang de klasse Zorro niet exact de interface inhoud implementeert zal deze kla
 
 ## Interface notatie
 
-Een "lolly" op een klein geeft aan dat deze een bepaalde interface heeft. In volgende tekening hebben we een klasse Meeuw en een interface IVliegt. We gebruiken de UML notatie voor een interface om aan te geven dat de Meeuw klasse de interface IVliegt heeft:
-
-![Interface uml notatie](./pg016.png)
+![Interface uml notatie](./interface001.jpg)
 
 ## Is keyword met interfaces
 
@@ -75,52 +73,52 @@ We kunnen``is`gebruiken om te weten of een klasse een specifieke interface heeft
 Stel:
 
 ```csharp
-interface IDeletable{ ...};
+interface IDeletable{ };
 
-class Book: IDeletable { ... };
+class Book: IDeletable { };
 
-class Person { ... };
+class Person { };
 ```
 
 In actie:
 
 ```csharp
-Person tim= new Person();
+Person luke = new Person();
 Book gameofthrones = new Book();
 
 if(gameofthrones is IDeletable)
 {
     Console.WriteLine("I can delete game of thrones");
 }
-if(tim is IDeletable)
+if(luke is IDeletable)
 {
-    Console.WriteLine("I can delete tim");
+    Console.WriteLine("I can delete luke");
 }
 ```
 
-Ouput: `I can delete game of thrones`.
+Output: `I can delete game of thrones`.
 
 ## Meerder interfaces
 
 Een nadeel van overerving is dat een klasse maar van 1 klasse kan overerven. Een klasse mag echter wel meerdere interfaces met zich meedragen:
 
 ```csharp
-interface ISuperHeld{...}
-interface ICoureur{...} 
-class Man {...}
+interface ISuperHeld{ }
+interface ICoureur { } 
+class Man { }
 
-class Zorro:Man, ISuperHeld
-{...}
+class Zorro: Man, ISuperHeld
+{ }
 
 class Batman:Man, ISuperHeld, ICoureur 
-{...}
+{ }
 ```
 
 Ook mogen interfaces van elkaar overerven:
 
 ```csharp
 interface IGod:ISuperHeld
-{...}
+{ }
 ```
 
 # Why should I care?
@@ -152,7 +150,7 @@ interface IAdvisor
 }
 ```
 
-Vanaf nu kan eender *wie* die deze interface implementeert de President advies geven.Hoera! En daarnaast kan die klasse echter ook nog tal van andere zaken doen. Beeld je bijvoorbeeld een CEO van een bedrijf in die ook adviseur van de President wilt zijn. De bestaande klasse is bijvoorbeeld:
+Vanaf nu kan eender *wie* die deze interface implementeert de President advies geven. Hoera! En daarnaast kan die klasse echter ook nog tal van andere zaken doen. Beeld je bijvoorbeeld een CEO van een bedrijf in die ook adviseur van de President wilt zijn. De bestaande klasse is bijvoorbeeld:
 
 ```csharp
 class MicrosoftCEO: CEO   //CEO kan een parentklasse zijn die elders bijvoorbeeld algemene CEO-concepten beschrijft
@@ -173,7 +171,6 @@ Nu we de interface `IAdvisor` hebben kunnen we deze klasse aanvullen met deze in
 ```csharp
 class MicrosoftCEO: CEO, IAdvisor
 {
-
     public void Advise()
     { 
         Console.WriteLine("I think you should allow our monopoly. *Grin*");
@@ -183,8 +180,9 @@ class MicrosoftCEO: CEO, IAdvisor
     { 
        Console.WriteLine("I'm getting rich!!!");       
     }
+    
     public void FireDepartement()
-     { 
+    { 
        Console.WriteLine("You're all fired!");       
     }
 }
@@ -200,10 +198,10 @@ public class MisterPresident
     public void RunTheCountry()
     {
 
-        List<IAdvisor> allMinisters= new List<IAdvisor>();
+        List<IAdvisor> allMinisters = new List<IAdvisor>();
         allMinisters.Add(new MicrosoftCEO);
         //Ask advise from each:
-        foreach (IAdvisor minister in allMinisters)
+        foreach(IAdvisor minister in allMinisters)
         {
             minister.Advise();
         }
@@ -223,15 +221,15 @@ class MilitaryAdvisor:IAdvisor
         payContractors();
     }
 
-    private void increaseTroopNumbers() 
+    private void IncreaseTroopNumbers() 
     {
       //...
     }
-    private void improveSecurity() 
+    private void ImproveSecurity() 
     {
        //...
     }
-    private void improveSecurity() 
+    private void ImproveSecurity() 
     {
       //...
  }
