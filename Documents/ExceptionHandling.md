@@ -8,13 +8,15 @@ Veel fouten in code zijn het gevolg van:
 
 In de voorgaande gevallen zijn dan *exceptions* (uitzonderingen) nuttig. Door zogenaamde exceptions af te handelen (*exception handling*) kunnen we ons programma alternatieve opdrachten geven bij het optreden van een uitzondering.
 
+Het concept van "Exception handling" moet je goed beheersen in .NET: het .NET framework werpt exceptions op bij probleemsituaties.
+
 ## Code zonder exception handling
 
-Je zal zelf al geregeld exceptions zijn tegengekomen in je console programma. Wanneer je je programma gewoon uitvoert en er verschijnt plots een hele hoop tekst (met ondere andere het woord Exception in) gevolgd door het prompt afsluiten ervan, dan heb je dus een exception gegenereerd die je niet hebt afgehandeld.
+Je zal zelf al geregeld *exceptions* zijn tegengekomen in je console programma. Wanneer je je programma gewoon uitvoert en er verschijnt plots een hele hoop tekst (met ondere andere het woord Exception in) gevolgd door het prompt afsluiten ervan, dan heb je dus een *exception* gegenereerd die je niet hebt afgehandeld.
 
 ![img](./pg017.png)
 
-Vooral het eerste zinnetje van zo’n exception is altijd veel verklarender dan je denkt!
+Vooral het eerste zinnetje van zo’n *exception* is altijd veel verklarender dan je denkt!
 
 Indien je aan het debuggen bent en je krijgt een exception dan zal deze anders getoond worden, maar het gaat wel degelijk om dezelfde fout:
 
@@ -25,9 +27,9 @@ Indien je aan het debuggen bent en je krijgt een exception dan zal deze anders g
 Het mechanisme om exceptions af te handelen in C# bestaat uit 2 delen:
 
 - Een `try` blok: binnen dit blok staat de code die je wil controleren op uitzonderingen
-- Een of meerdere `catch`-blokken: dit blok zal mogelijk exceptions die in het bijhorende try-block voorkomen opvangen. Met andere woorden: in dit blok staat de code die de uitzondering zal ‘verwerken’ zodat het programma op een deftige manier verder kan.
+- Een of meerdere `catch`-blokken: dit blok zal mogelijk exceptions die in het bijhorende try block voorkomen opvangen. Met andere woorden: in dit blok staat de code die de uitzondering zal ‘verwerken’ zodat het programma op een deftige manier verder kan.
 
-De syntax is als volgt (let er op dat de catch blok onmiddellijk na het try-blok komt!):
+De syntax is als volgt (let er op dat de catch blok onmiddellijk na het try blok komt):
 
 ```csharp
 try
@@ -88,7 +90,7 @@ catch (Exception e)
 
 Hiermee vangen we dus **alle** Exceptions op, daar alle Exceptions van de klasse `Exception` afgeleid zijn en dus ook zelf een `Exception` zijn (=polymorfisme eigenschap).
 
-We kunnen nu echter ook specifieke exceptions opvangen. De truk is om de meest algemene exception onderaan te zetten en naar boven toe steeds specifieker te worden. Stel bijvoorbeeld dat we weten dat de `FormatException` kan voorkomen en we willen daar iets mee doen. Volgende code toont hoe dit kan:
+We kunnen nu echter ook specifieke *exceptions* opvangen. De truuk is om de meest algemene *exception* onderaan te zetten en naar boven toe steeds specifieker te worden. Stel bijvoorbeeld dat we weten dat de `FormatException` kan voorkomen en we willen daar iets mee doen. Volgende code toont hoe dit kan:
 
 ```csharp
 try
@@ -115,7 +117,7 @@ De MSDN bibliotheek is de manier om te weten te komen welke exceptions een metho
 
 ## Werken met de exception parameter
 
-De Exceptions die worden ‘gegooid’ door het programma zijn objecten van de Exception-klasse. Deze klasse bevat standaard een aantal interessante zaken, die je kan oproepen in je code.
+De Exceptions die worden ‘gegooid’ door het programma zijn objecten van de Exception klasse. Deze klasse bevat standaard een aantal interessante zaken, die je kan oproepen in je code.
 
 Bovenaan de declaratie van het catch-blok geef je aan hoe het exception object in het blok zal heten. In de vorige voorbeelden was dit altijd `e` (standaardnaam)
 
@@ -227,7 +229,7 @@ Met andere woorden, indien een bepaalde url niet geldig is dan zal deze overgesl
 
 # Zelf exceptions opwerpen
 
-Je kan ook in je eigen code uitzonderingen ‘opgooien’, zodat deze elders opgevangen worden. Je kan hierbij zelf exceptions maken (zie volgende hoofdstukje) of gewoon gebruik maken van een bestaande Exception-klasse.
+Je kan ook in je eigen code uitzonderingen ‘opgooien’, zodat deze elders opgevangen worden. Je kan hierbij zelf exceptions maken (zie volgende hoofdstukje) of gewoon gebruik maken van een bestaande Exception klasse.
 
 Een voorbeeld:
 
@@ -277,14 +279,14 @@ class MyException: Exception
 }
 ```
 
-Om deze exception nu zelf op te ‘gooien’ gebruiken we het keyword `throw`. In volgende voorbeeld gooien we onze eigen exception op een bepaald punt in de code en vangen deze dan op (de reden van de exception moet je zelf verzinnen, het is maar een onnozel voorbeeld):
+Om deze exception nu zelf op te ‘gooien’ gebruiken we het keyword `throw`. In volgende voorbeeld gooien we onze eigen exception op een bepaald punt in de code en vangen deze dan op (de reden van de exception moet je zelf verzinnen, het is maar een simplistisch voorbeeld):
 
 ```csharp
 static void Main(string[] args)
 {
     try
     {
-        TimsMethod();
+        MyMethod();
     }
 
     catch (Exception e)
@@ -292,7 +294,7 @@ static void Main(string[] args)
        Console.WriteLine(e.ToString());
     }     
 }
-static public void TimsMethod()
+static public void MyMethod()
 {
     //do stuff
     //when suddenly: an exception! 
@@ -301,5 +303,4 @@ static public void TimsMethod()
 }
 ```
 
-![img](./pg025.png)
-
+# [Uitdieping](./Documents/CSharpExceptionHandling)
