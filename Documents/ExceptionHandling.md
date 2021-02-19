@@ -2,13 +2,19 @@
 
 Veel fouten in code zijn het gevolg van:
 
-- Het aanroepen van data die er niet is (bijvoorbeeld een bestand dat werd verplaatst of hernoemd)
-- Invoerfouten door de gebruiker (bijvoorbeeld de gebruiker voert een letter in terwijl het programma aan getal verwacht)
-- Programmeerfouten (bijvoorbeeld de programmeur gebruikt een object dat nog niet met de new operator werd geïnitialiseerd). Deling door nul is een andere klassieke fout!
+- Het aanroepen van **data die er niet is** (bijvoorbeeld een bestand dat werd verplaatst of hernoemd)
+- **Invoerfouten** door de gebruiker (bijvoorbeeld de gebruiker voert een letter in terwijl het programma aan getal verwacht)
+- **Programmeerfouten** (bijvoorbeeld de programmeur gebruikt een object dat nog niet met de new operator werd geïnitialiseerd). Deling door nul is een andere klassieke fout!
 
 In de voorgaande gevallen zijn dan *exceptions* (uitzonderingen) nuttig. Door zogenaamde exceptions af te handelen (*exception handling*) kunnen we ons programma alternatieve opdrachten geven bij het optreden van een uitzondering.
 
 Het concept van "Exception handling" moet je goed beheersen in .NET: het .NET framework werpt exceptions op bij probleemsituaties.
+
+Het zoeken naar en oplossen van fouten beschrijven we in programmeerjargon met het begrip “debuggen”. In Visual Studio zijn in dit opzicht handig:
+
+* F5
+* F10
+* F11
 
 ## Code zonder exception handling
 
@@ -42,6 +48,8 @@ catch (Exception e)
 }
 ```
 
+De constructie “Try … Catch” is bedoeld om te beletten dat het programma crasht bij een onvoorziene fout. Het programma probeert elk statement van de code na elkaar uit te voeren. Wanneer in het Try-blok een fout optreedt, dan wordt de uitvoering van de code verdergezet in het Catch-blok. In het Catch-blok staat de code van om mogelijke fouten af te handelen.
+
 ## Een try catch voorbeeld
 
 In volgend stukje code kunnen uitzonderingen optreden:
@@ -53,7 +61,7 @@ int converted = Convert.ToInt32(input)
 
 Een `FormatException` zal optreden wanneer de gebruiker tekst invoert of wanneer een komma-getal wordt ingevoegd. De conversie verwacht dit niet. `Convert.ToInt16()` kan enkel werken met gehele getallen.
 
-We tonen nu hoe we dit met exception handling kunnen opvangen:
+We tonen nu hoe we dit met *exception handling* kunnen opvangen:
 
 ```csharp
 try
@@ -69,7 +77,7 @@ catch (Exception e)
 
 Indien er nu een uitzondering optreedt dan zal de tekst “Verkeerde invoer” getoond worden. Vervolgens gaat het programma verder met de code die mogelijk na het catch-blok staat.
 
-## Meerdere catchblokken
+## Meerdere catch blokken
 
 `Exception` is een klasse van het .NET framework. Er zijn van deze basis-klasse meerdere exception-klassen afgeleid die een specifieke uitzondering behelsen. Enkele veelvoorkomende zijn:
 
@@ -176,7 +184,7 @@ static public void DownloadAllUris(string[] urlstodownload)
 
 We bekijken nu een aantal mogelijk try/catch locaties in deze code en zien welke impact deze hebben op de totale uitvoer van het programma.
 
-## Rondom methode-aanroep in z'n geheel
+## Rondom methode aanroep in z'n geheel
 
 ```csharp
 try

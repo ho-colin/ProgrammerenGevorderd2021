@@ -733,3 +733,10 @@ mijnLat.BeginLengte = 2;
 Console.WriteLine($"{mijnLat.LengteInM} meter is {mijnLat.LengteInVoet} voet.");
 ```
 
+# Exception handling
+
+## Deling
+
+Ontwerp een consoletoepassing waarmee je het quotiënt berekent van een ingegeven deeltal en deler. Bij een deling mag de deler niet gelijk zijn aan nul. Maak eerst een console toepassing zonder hiermee rekening te houden. Welke foutmelding krijg je in C#?
+
+Pas de consoletoepassing aan. Indien de gebruiker als deler 0 ingeeft, verschijnt de tekst: “Wie deelt door nul is een snul!”.
