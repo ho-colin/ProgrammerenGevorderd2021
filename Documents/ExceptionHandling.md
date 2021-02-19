@@ -12,9 +12,9 @@ Het concept van "Exception handling" moet je goed beheersen in .NET: het .NET fr
 
 Het zoeken naar en oplossen van fouten beschrijven we in programmeerjargon met het begrip “debuggen”. In Visual Studio zijn in dit opzicht handig:
 
-* F5
-* F10
-* F11
+* F5: start en voer uit (tot aan volgend breakpoint)
+* F10: stap over volgende method
+* F11: stap in volgende method
 
 ## Code zonder exception handling
 
@@ -165,7 +165,7 @@ static void Main(string[] args)
     string[] urllist= new string[3];
     urllist[0] = "http://www.ap.be";
     urllist[1] = "http:\\www.humo.be";
-    urllist[2] = "timdams.com";
+    urllist[2] = "lucvervoort.com";
     DownloadAllUris(urllist);
 }
 
@@ -274,7 +274,7 @@ De lijn `throw new DivideByZeroException("Getal equals 0.You shouldn't do that!"
 
 # Een eigen exception ontwerpen
 
-Je kan ook eigen klassen afleiden van Exception zodat je eigen uitzonderingen kan maken en gooien in je programma. Je maakt hiervoor gewoon een nieuwe klasse aan die je laat overerven van de Exception-klasse. Een voorbeeld:
+Je kan ook eigen klassen afleiden van Exception zodat je eigen uitzonderingen kan maken en gooien in je programma. Je maakt hiervoor gewoon een nieuwe klasse aan die je laat overerven van de Exception klasse. Een voorbeeld:
 
 ```csharp
 class MyException: Exception
@@ -296,7 +296,6 @@ static void Main(string[] args)
     {
         MyMethod();
     }
-
     catch (Exception e)
     {
        Console.WriteLine(e.ToString());
@@ -310,5 +309,17 @@ static public void MyMethod()
     throw exp;
 }
 ```
+
+# Finally
+
+Na het *catch* blok kan je een *finally* blok opnemen: de code in dit blok zal steeds uitgevoerd worden, of je nu in het *catch* blok komt of niet. 
+
+Wat is het nut van *finally*? Indien je resources (geheugen, connecties, ...) wenst vrij te geven, dan gebeurt dit best in het *finally* blok omdat ze dan steeds worden vrijgegeven - of er nu al dan niet een *exception* optreedt die afgehandeld wordt of niet.
+
+# Hoe stoppen bij een bepaalde exception in Visual Studio?
+
+* Menu: Debug > Windows > Exception Settings > Common Language Runtime Exceptions
+* Vink aan bij welke exceptions je wil stoppen wanneer deze optreedt
+* Je kan zelfs definieren in welke module(s) je wenst te stoppen
 
 # [Uitdieping](./CSharpExceptionHandling.pdf)
