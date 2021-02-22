@@ -55,7 +55,7 @@ Bekijk volgende video's (YouTube):
 Lees volgende pagina's:
 
   1. [Unit testing](./Documents/UnitTestingTDD2.md)
-  4. [Test methods: beknopt overzicht](./Documents/UnitTestingTestMethods.pdf)
+  4. [Test methods: beknopt overzicht](./Documents/UnitTestingTestMethods.md)
 
 Oefen op volgende *walk through* en werk de oplossing zelfstandig uit met Visual Studio 2019:
 
