@@ -54,18 +54,18 @@ Bekijk volgende video's (YouTube):
 
 Lees volgende pagina's:
 
-  1. [Inleiding](./UnitTestingIntro.pdf)
-  2. [TDD](./UnitTestingTDD.pdf)
-  3. [AAA](./UnitTestingAAA.pdf)
+  1. [Inleiding](./Documents/UnitTestingIntro.pdf)
+  2. [TDD](./Documents/UnitTestingTDD.pdf)
+  3. [AAA](./Documents/UnitTestingAAA.pdf)
   4. [Test methods: beknopt overzicht](./UnitTestingTestMethods.pdf)
 
 Oefen op volgende *walk through* en werk de oplossing zelfstandig uit met Visual Studio 2019:
 
-  1. [Bank account: TDD](./UnitTestingWalkthrough.pdf)
+  1. [Bank account: TDD](./Documents/UnitTestingWalkthrough.pdf)
 
 Maak volgende oefening en dien deze in:
 
-* [Kata 1](./unittestkata1.md) <!-- https://osherove.com/tdd-kata-1/ -->
+* [Kata 1](./Documents/unittestkata1.md) <!-- https://osherove.com/tdd-kata-1/ -->
 
 ## 6. Git (week 3: 23/2)
 
