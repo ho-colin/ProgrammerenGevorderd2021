@@ -45,12 +45,12 @@
 
 Bekijk volgende video's (YouTube):
 
-  1. [Business code en test assemblies](https://www.youtube.com/watch?v=ayJYhxs4e6I&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=6&t=151s)
-  2. [Code quality](https://www.youtube.com/watch?v=WAVBJhTV4Ms&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=7)
-  3. [Running and debugging tests](https://www.youtube.com/watch?v=tKhnw61JC6U&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=8)
-  4. [Test logger](https://www.youtube.com/watch?v=mSJ3up_2Ecs&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=9)
-  5. [Assembly dependencies](https://www.youtube.com/watch?v=pDinrXTXoI8&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=10)
-  6. [Unit testing snippets](https://www.youtube.com/watch?v=3pyTcAzONMw&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=11&t=39s)
+  1. [Business code en test assemblies (12:13)](https://www.youtube.com/watch?v=ayJYhxs4e6I&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=6&t=151s)
+  2. [Code quality (3:51)](https://www.youtube.com/watch?v=WAVBJhTV4Ms&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=7)
+  3. [Running and debugging tests (8:20)](https://www.youtube.com/watch?v=tKhnw61JC6U&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=8)
+  4. [Test logger (2:01)](https://www.youtube.com/watch?v=mSJ3up_2Ecs&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=9)
+  5. [Assembly dependencies (1:37)](https://www.youtube.com/watch?v=pDinrXTXoI8&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=10)
+  6. [Unit testing snippets (4:58)](https://www.youtube.com/watch?v=3pyTcAzONMw&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=11&t=39s)
 
 Lees volgende pagina's:
 
@@ -59,20 +59,22 @@ Lees volgende pagina's:
   3. [AAA](./UnitTestingAAA.pdf)
   4. [Test methods: beknopt overzicht](./UnitTestingTestMethods.pdf)
 
-Voer volgende walkthrough uit:
+Oefen op volgende *walk through* en werk de oplossing zelfstandig uit met Visual Studio 2019:
 
-  1. [Bank account walkthrough: TDD](./UnitTestingWalkthrough.pdf)
+  1. [Bank account: TDD](./UnitTestingWalkthrough.pdf)
 
 Maak volgende oefening en dien deze in:
+
+* [Kata 1](./unittestkata1.md) <!-- https://osherove.com/tdd-kata-1/ -->
 
 ## 6. Git (week 3: 23/2)
 
 Bekijk volgende video's:
 
-1. [Git in VS2019](https://www.youtube.com/watch?v=wQdGC8HvKBE&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=1&t=2s)
-2. [Git Commit](https://www.youtube.com/watch?v=jYiIBGsu3SI&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=2&t=22s)
-3. [Git Push](https://www.youtube.com/watch?v=yxJDqfXhNAQ&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=3&t=1s)
-4. [Git Command Line](https://www.youtube.com/watch?v=npqBMnmahs4&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=4&t=7s)
+1. [Git in VS2019 (3:34)](https://www.youtube.com/watch?v=wQdGC8HvKBE&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=1&t=2s)
+2. [Git Commit (3:17)](https://www.youtube.com/watch?v=jYiIBGsu3SI&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=2&t=22s)
+3. [Git Push (1:12)](https://www.youtube.com/watch?v=yxJDqfXhNAQ&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=3&t=1s)
+4. [Git Command Line (1:56)](https://www.youtube.com/watch?v=npqBMnmahs4&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=4&t=7s)
 
 <!--
 
