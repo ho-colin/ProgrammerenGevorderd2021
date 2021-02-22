@@ -14,14 +14,16 @@ Testen worden in opgenomen in een build omgeving, waardoor alle testen automatis
 
 Stel dat een programma een notie van periodes nodig heeft, waarvan elke periode een start- en einddatum heeft, die al dan niet ingevuld kunnen zijn. Een contract bijvoorbeeld geldt voor een periode van *bepaalde duur*, waarvan beide data ingevuld zijn, of voor gelukkige werknemers voor een periode van *onbepaalde duur*, waarvan de einddatum ontbreekt:
 
-```java
-public class Contract {
-    private Periode periode;
+```csharp
+public class Contract 
+{
+    private Periode _periode;
 }
 
-public class Periode {
-    private Date startDatum;
-    private Date eindDatum; 
+public class Periode 
+{
+    private DateTime _startDatum;
+    private DateTime _eindDatum; 
 }
 ```
 
@@ -34,42 +36,50 @@ Voordat de methode wordt opgevuld met een implementatie dienen we na te denken o
 - Het standaard geval: beide periodes hebben start- en einddatum ingevuld, en de periodes overlappen.
 
 ```java
-@Test
-public void overlaptMet_biedePeriodesDatumIngevuld_overlaptIsTrue() {
-    var jandec19 = new Periode(new Date(2019, 01, 01), 
-            new Date(2019, 12, 31));
-    var maartnov19 = new Periode(new Date(2019, 03, 01),
-            new Date(2019, 11, 31));
+        [TestMethod()]
+        public void OverlaptMetBeidePeriodesDatumIngevuldOverlaptIsTrue()
+        {
+            var jandec19 = new Periode(new DateTime(2019, 01, 01),
+                    new DateTime(2019, 12, 31));
+            var maartnov19 = new Periode(new DateTime(2019, 03, 01),
+                    new DateTime(2019, 11, 30));
 
-    assertThat(jandec19.overlaptMet(maartnov19), is(true));
-}
+            Assert.IsTrue(maartnov19.OverlaptMet(jandec19));
+        }
 ```
 
 - Beide periodes hebben start- en einddatum ingevuld, en periodes overlappen niet.
 
-```java
-@Test
-public void overlaptMet_biedePeriodesDatumIngevuld_overlaptNietIsFalse() {
-    var jandec19 = new Periode(new Date(2019, 01, 01), 
-            new Date(2019, 12, 31));
-    var maartnov20 = new Periode(new Date(2020, 03, 01),
-            new Date(2020, 11, 31));
+```C#
+        [TestMethod()]
+        public void OverlaptMetBeidePeriodesDatumIngevuldOverlaptNietIsFalse()
+        {
+            var jandec19 = new Periode(new DateTime(2019, 01, 01),
+                    new DateTime(2019, 12, 31));
+            var maartnov20 = new Periode(new DateTime(2020, 03, 01),
+                    new DateTime(2020, 11, 30));
 
-    assertThat(jandec19.overlaptMet(maartnov20), is(false));
-}
+            Assert.IsFalse(jandec19.OverlaptMet(maartnov20));
+        }
 ```
 
 - … Er zijn nog tal van mogelijkheden, waarvan voornamelijk de extreme gevallen belangrijk zijn om **de kans op bugs te minimaliseren**. Immers, gebruikers van onze `Periode` klasse kunnen onbewust `null` mee doorgeven, waardoor de methode onverwachte waardes teruggeeft.
 
 De testen compileren niet, omdat de methode `overlaptMet()` nog niet bestaat. Voordat we overschakelen naar het schrijven van de implementatie willen we eerst de testen zien ROOD kleuren, waarbij wel de bestaande code nog compileert:
 
-```java
-public class Periode {
-    private Date startDatum;
-    private Date eindDatum; 
-    public boolean overlaptMet(Periode anderePeriode) {
-        throw new UnsupportedOperationException();
-    }
+```c#
+public class Periode 
+{
+        private DateTime _startDatum;
+        private DateTime _eindDatum;
+
+        public Periode(DateTime startDatum, DateTime eindDatum)
+        {
+            _startDatum = startDatum;
+            _eindDatum = eindDatum;
+        }
+
+        public bool OverlaptMet(Periode anderePeriode) { throw new NotImplementedException();  return false; }
 }
 ```
 
@@ -79,11 +89,12 @@ De aanwezigheid van het skelet van de methode zorgt er voor dat de testen compil
 
 Pas nadat er minstens 4 verschillende testen werden voorzien (standaard gevallen, edge cases, null cases, …), kan aan met een gerust hart aan de implementatie worden gewerkt:
 
-```java
-public boolean overlaptMet(Periode anderePeriode) {
-    return startDatum.after(anderePeriode.startDatum) && 
-        eindDatum.before(anderePeriode.eindDatum);
-}
+```C#
+        public bool OverlaptMet(Periode anderePeriode)
+        {
+            return _startDatum > anderePeriode._startDatum &&
+                _eindDatum < anderePeriode._eindDatum;
+        }
 ```
 
 #### 3. Voer Testen uit
@@ -118,19 +129,17 @@ Elke unit test is **F.I.R.S.T.**:
 2. **Isolated.** Elke test bevat zijn eigen test scenario dat géén invloed heeft op een andere test. Vermijd ten allen tijden het gebruik van het keyword `static`, en kuis tijdelijk aangemaakte data op, om te vermijden dat andere testen worden beïnvloed.
 3. **Repeatable**. Elke test dient hetzelfde resultaat te tonen, of die nu éénmalig wordt uitgevoerd, of honderden keren achter elkaar. State kan hier typisch roet in het eten gooien.
 4. **Self-Validating**. Geen manuele inspectie is vereist om te controleren wat de status van de test is. Een falende foutboodschap is een duidelijke foutboodschap.
-5. **Thorough**. Testen moeten alle scenarios dekken: denk terug aan *edge cases*, randgevallen, het gebruik van `null`, het opvangen van mogelijke `Exception`s, …
+5. **Thorough**. Testen moeten alle scenarios dekken: denk terug aan *edge cases*, randgevallen, het gebruik van `null`, het opvangen van mogelijke exceptions, …
 
 ### Het Raamwerk van een test
 
 #### Test Libraries bestaande uit twee componenten
 
-Een test framework, zoals JUnit voor Java, MSUnit/NUnit voor C#, of Jasmine voor Javascript, bevat twee delen:
+Een test framework bevat twee delen:
 
 ##### 1. Het Test Harnas
 
-Een ‘harnas’ is het concept waar alle testen aan worden opgehangen. Het harnas identificeert en verzamelt testen, en het harnas stelt het mogelijk om bepaalde of alle testen uit te voeren. De ingebouwde Test UI in IntelliJ fungeert hier als visueel harnas. Elke test methode, een `public void` methode geannoteerd met `@Test`, wordt herkent als mogelijke test. Bovenstaande screenshot van NUnit in C# is een visuele weergave van de resultaten, verzameld door dit systeem.
-
-Gradle en het JUnit harnas verzamelen data van testen in de vorm van HTML rapporten.
+Een ‘harnas’ is het concept waar alle testen aan worden opgehangen. Het harnas identificeert en verzamelt testen, en het harnas stelt het mogelijk om bepaalde of alle testen uit te voeren. De ingebouwde Test UI in IntelliJ fungeert hier als visueel harnas. Elke test methode, een `public void` methode geannoteerd, wordt herkent als mogelijke test. 
 
 ##### 2. Het Assertion Framework
 
@@ -140,9 +149,9 @@ Naast het harnas, die zorgt voor het uitvoeren van testen, hebben we ook een *ve
 
 De body van een test bestaat typisch uit drie delen:
 
-```java
-@Test
-public void testMethod() {
+```C#
+public void TestMethod() 
+{
     // 1. Arrange 
     var instance = new ClassToTest(arg1, arg2);
 
@@ -150,7 +159,7 @@ public void testMethod() {
     var result = instance.callStuff();
 
     // 3. Assert
-    assertThat(result, is(true));
+    Assert.IsTrue(result);
 }
 ```
 
@@ -162,9 +171,9 @@ public void testMethod() {
 
 Er zijn drie grote types van testen:
 
+[![De drie soorten van testen.](C:\Users\u2389\source\repos\ProgrammerenGevorderd2021\Documents\testniveaus.jpg)](./testniveaus.jpg)
 
-
-[![De drie soorten van testen.](C:\Users\u2389\source\repos\ProgrammerenGevorderd2021\Documents\testniveaus.jpg)](./testniveaus.jpg)De drie soorten van testen.
+*De drie soorten van testen.*
 
 
 
@@ -188,22 +197,25 @@ Typische eigenschappen van integration testen:
 Stel dat we een `Service` en een `Repository` klasse hebben gemaakt, waarvan de tweede gegevens wegschrijft naar een database. Als we de eerste klasse willen testen, willen we niet weer een verbinding opstellen, omdat dit te traag is (1), én omdat dit al getest is (2):
 
 ```java
-public class Repository {
-    public void save(Customer c) {
+public class Repository 
+{
+    public void Save(Customer c) 
+    {
         // insert into ... 
     }
 }
-public class Service {
-    private Repository repository;
 
-    public void updateCustomerWallet(Customer c, double balance) {
+public class Service {
+    private Repository _repository;
+
+    public void UpdateCustomerWallet(Customer c, double balance) {
         c.setBalance(balance);
-        repository.save(c);
+        _repository.save(c);
     }
 }
 ```
 
-Hoe testen we de `updateCustomerWallet()` methode, zonder de effectieve implementatie van `save()` te moeten gebruiken? Door middel van *test doubles*.
+Hoe testen we de `updateCustomerWallet()` methode, zonder de effectieve implementatie van `Save()` te moeten gebruiken? Door middel van *test doubles*.
 
 
 
@@ -211,28 +223,34 @@ Hoe testen we de `updateCustomerWallet()` methode, zonder de effectieve implemen
 
 
 
-Zoals Arnie in zijn films bij gevaarlijke scenes een stuntman lookalike gebruikt, zo gaan wij in onze code een `Repository` lookalike gebruiken, zodat de `Service` dénkt dat hij `save()` aanroept, terwijl dit in werkelijkheid niet zo is. Daarvoor moet de repository een interface zijn. We passen in principe een design pattern toe, waarbij in de service een repository instantie wordt geïnjecteerd:
+Zoals Arnie in zijn films bij gevaarlijke scenes een stuntman lookalike gebruikt, zo gaan wij in onze code een `Repository` lookalike gebruiken, zodat de `Service` dénkt dat hij `Save()` aanroept, terwijl dit in werkelijkheid niet zo is. Daarvoor moet de repository een interface zijn. We passen in principe een design pattern toe, waarbij in de service een repository instantie wordt geïnjecteerd:
 
 ```java
-public interface Repository {
-    void save(Customer c);
+public interface Repository 
+{
+    virtual void Save(Customer c);
 }
-public class RepositoryDBImpl implements Repository {
-    @Override
-    void save(Customer c) {
+public class RepositoryDBImpl: Repository 
+{
+    void override Save(Customer c) {
         // insert into...
     }
 }
-public class RepositoryForTesting implements Repository {
-    @Override
-    public void save(Customer c) {
+public class RepositoryForTesting: Repository 
+{   
+    public override void Save(Customer c) 
+    {
         // do nothing!
     }
 }
-public class Service {
-    private Repository repository;
-    public Service(Repository r) {
-        this.repository = r;
+
+public class Service 
+{
+    private Repository _repository;
+    
+    public Service(Repository r) 
+    {
+        this._repository = r;
     }
 }
 ```
@@ -249,36 +267,6 @@ Typische eigenschappen van end-to-end testen:
 - Niet alle limieten.
 - Traag, moeilijker onderhoudbaar.
 - Test integratie van alle lagen.
-
-## Labo oefeningen
-
-Download de startprojecten.
-
-### Opgave 1
-
-De Artisanale Bakkers Associatie vertrouwt op uw technische bekwaamheid om hun probleem op te lossen. Er wordt veel Hasseltse [Speculaas](https://en.wikipedia.org/wiki/Speculaas) gebakken, maar niemand weet precies wat de **beste** Speculaas is. Schrijf een methode die *speculaas* beoordeelt op basis van de ingrediënten. De methode, in de klasse `Speculaas`, zou er zo uit moeten zien:
-
-```java
-    public int beoordeel() {
-        // TODO ...
-    }
-```
-
-De functie geeft een nummer terug - hoe hoger dit nummer, hoe beter de beoordeling en hoe gelukkiger de bakker. Een speculaas kan de volgende ingrediënten bevatten: kruiden, boter, suiker, eieren, melk, honing, bloem, zout. Elke eigenschap is een nummer dat de hoeveelheid in gram uitdrukt.
-
-Het principe is simpel: hoe meer ingrediënten, hoe beter de beoordeling.
-
-Kijk naar een voorbeeld test hoe de methodes te hanteren. Er zijn al enkele testen voorzien. Die kan je uitvoeren met IntelliJ door op het groen pijltje te drukken, of met Gralde: `./gradlew.bat test` (Op Unix: `./gradlew test`). Dit genereert een **test rapport** HTML bestand in de `build/test` map.
-
-We zijn dus geïnteresseerd in **edge cases**. Probeer alle mogelijkheden te controleren. Denk bij het testen aan de volgende zaken:
-
-- Hoe zit het met een industriële speculaas, zonder kruiden of boter?
-- Wat doet de funcite beoordeel als het argument `null` is?
-- Wat als een speculaas wordt meegegeven zonder ingrediënten?
-
-### Opgave 2
-
-Werk een volledige implementatie van `Periode.overlaptMet()` uit, zoals hierboven uitgelegd.
 
 ## Extra leermateriaal
 
