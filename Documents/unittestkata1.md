@@ -6,9 +6,9 @@
 
 - **Probeer niet vooruit te lezen**!
 - Voer **een enkele taak per keer** uit. De truuk is: leer incrementeel werken.
-- Test bij deze opdracht enkel of invoer correct is (het is voor deze oefening niet nodig ingeldige invoer te testen, met andere woorden)
+- Test bij deze opdracht enkel of invoer correct is (het is voor deze oefening niet nodig ongeldige invoer te testen, met andere woorden)
 
-## String Rekenaar
+## String Calculator
 
 1. Maak een klassenbibliotheek voor je domein-code (business code hoort in een aparte assembly) en gebruik het test framework van Visual Studio 2019 om een apart project met unit testen te genereren.
 
