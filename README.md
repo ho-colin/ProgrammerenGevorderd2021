@@ -41,9 +41,9 @@
 
 * [Interfaces](./Documents/Interfaces1.md)
 
-<!--
-
 ## 5. Unit testing (week 3: 23/2)
+
+Bekijk volgende video's (YouTube):
 
   1. [Business code en test assemblies](https://www.youtube.com/watch?v=ayJYhxs4e6I&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=6&t=151s)
   2. [Code quality](https://www.youtube.com/watch?v=WAVBJhTV4Ms&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=7)
@@ -51,18 +51,30 @@
   4. [Test logger](https://www.youtube.com/watch?v=mSJ3up_2Ecs&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=9)
   5. [Assembly dependencies](https://www.youtube.com/watch?v=pDinrXTXoI8&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=10)
   6. [Unit testing snippets](https://www.youtube.com/watch?v=3pyTcAzONMw&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=11&t=39s)
-2. [Inleiding](./UnitTestingIntro.pdf)
-3. [TDD](./UnitTestingTDD.pdf)
-4. [AAA](./UnitTestingAAA.pdf)
-5. [Test methods: beknopt overzicht](./UnitTestingTestMethods.pdf)
-6. [Bank account walkthrough: TDD](./UnitTestingWalkthrough.pdf)
+
+Lees volgende pagina's:
+
+  1. [Inleiding](./UnitTestingIntro.pdf)
+  2. [TDD](./UnitTestingTDD.pdf)
+  3. [AAA](./UnitTestingAAA.pdf)
+  4. [Test methods: beknopt overzicht](./UnitTestingTestMethods.pdf)
+
+Voer volgende walkthrough uit:
+
+  1. [Bank account walkthrough: TDD](./UnitTestingWalkthrough.pdf)
+
+Maak volgende oefening en dien deze in:
 
 ## 6. Git (week 3: 23/2)
+
+Bekijk volgende video's:
 
 1. [Git in VS2019](https://www.youtube.com/watch?v=wQdGC8HvKBE&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=1&t=2s)
 2. [Git Commit](https://www.youtube.com/watch?v=jYiIBGsu3SI&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=2&t=22s)
 3. [Git Push](https://www.youtube.com/watch?v=yxJDqfXhNAQ&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=3&t=1s)
 4. [Git Command Line](https://www.youtube.com/watch?v=npqBMnmahs4&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=4&t=7s)
+
+<!--
 
 ## Uitdieping
 
