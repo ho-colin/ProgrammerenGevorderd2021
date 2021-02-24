@@ -4,8 +4,8 @@
 
 * [YouTube Video](https://www.youtube.com/watch?v=tNBln0tv6oE&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=5&t=72s)
 * Samengevat:
-  1. **VS 2019 Enterprise** 16.7.4 en hoger
-  2. **.NET Core** 3.1 C#
+  1. **VS 2019 Enterprise** 16.8.0 en hoger
+  2. **.NET 5.0** C#
   3. Gebruik het **unit testing** framework en geen console app, tenzij anders gevraagd; een console app mag wel bijkomend
   4. Een **bestand per klasse**
   5. **Method volledig zichtbaar** op je VS scherm
@@ -16,16 +16,18 @@
 
 ## 1. Object oriented programming (week 1: 9/2 - 12/2)
 
-1. [OOP](./Documents/OOP.md) (Herhaling)
-2. [Object als argument en return value](./Documents/Objecten.md) (Herhaling)
-3. [Constructor, destructor](./Documents/Constructors.md) (Herhaling)
-4. [Static](./Documents/Static.md) (Herhaling)
-5. [Overerving](./Documents/Overerving.md)
-6. [Abstracte klassen](./Documents/AbstracteKlassen.md)
-7. [Polymorfisme](./Documents/Polymorfisme.md)
-8. [Null reference](./Documents/NullReference.md)
-9. [System.Object](./Documents/SystemObject.md)
-10. [Compositie](./Documents/Compositie.md)
+1. Herhaling
+   1. [OOP](./Documents/OOP.md)
+   2. [Object als argument en return value](./Documents/Objecten.md)
+   3. [Constructor, destructor](./Documents/Constructors.md)
+   4. [Static](./Documents/Static.md)
+   5. Switch en ?:
+2. [Overerving](./Documents/Overerving.md)
+3. [Abstracte klassen](./Documents/AbstracteKlassen.md)
+4. [Polymorfisme](./Documents/Polymorfisme.md)
+5. [Null reference](./Documents/NullReference.md)
+6. [System.Object](./Documents/SystemObject.md)
+7. [Compositie](./Documents/Compositie.md)
 
 ## 2. Herhalingsoefening (week 2: 16/2)
 
@@ -81,19 +83,12 @@ Bekijk volgende video's:
 1. [Geheugen management](./Documents/GeheugenManagement.md)
 2. [UML naar code](./Documents/UMLNaarCode.md)
 
-## 7. Delegates en events (week 4: 2/3)
+## 7. Lambda, delegate, event, extension method
 
-1. Video's: https://www.youtube.com/playlist?list=PLM3q9wWBZWb90CajLrVZcenmxIBCqyaFq
-2. Tekst:
-3. Klant, ober, kok voorbeeld: 
+1. Video's: https://www.youtube.com/playlist?list=PLM3q9wWBZWb90CajLrVZcenmxIBCqyaFq (de twee laatste video's leggen oefening Klant/Ober/Kok uit, zie tekst)
+2. [Tekst](./Documents/DelegatesEvents.pdf)
 
-
-
-## 8. Lambda (week 3: 26/2)
-
-## 9. Extension methods (week 3: 26/2)
-
-## 10. LINQ (week 4: 5/3 en week 5: 9/3)
+## 8. LINQ (week 4: 5/3 en week 5: 9/3)
 
 -->
 
@@ -103,9 +98,9 @@ Bekijk volgende video's:
 
 <!--
 
-## 11. File I/O (week 6)
+## 9. File I/O (week 6)
 
-## 12. ADO .NET (week 7)
+## 10. ADO .NET (week 7)
 
 -->
 
@@ -123,18 +118,18 @@ Week 8 (30/3 - 2/4): tussentijdse evaluatie (tweede kans mogelijk tot en met eer
 
 <!--
 
-## 13. WPF (week 9 - week 12)
+## 11. WPF (week 9 - week 12)
 
-## 14. SOLID
+## 12. SOLID
 
 * [Interfaces](./Documents/Interfaces1.md)
 * [5 principes](./Documents/SOLID.md)
 
-## 15. Nuttige extra's
+## 13. Nuttige extra's
 
 * [Overzicht boeken, tutorials, websites, ...](./Documents/NuttigeExtras.md)
 
-## 16. Uitdieping
+## 14. Uitdieping
 
 1. [Interfaces](./Documents/Interfaces1.md)
 
@@ -150,4 +145,11 @@ Week 8 (30/3 - 2/4): tussentijdse evaluatie (tweede kans mogelijk tot en met eer
 
 ## Oefeningen
 
-* [Opdrachten](./Documents/Opdrachten.md)
+* [Ondersteundende opdrachten](./Documents/Opdrachten.md)
+
+# .NET 5.0
+
+* Installeer Visual Studio 2019 versie 16.8.0 of hoger (vandaag is de hoogste versie: 16.9.0 Preview 5.0)
+* Opvolger .NET Core 3.1 en tegelijk het einde van de "Frameworks", .NET Core, Mono, enzovoort - voorbij met de hoofdpijn! Door COVID-19 zal pas .NET 6 in november 2021 de unificatiebeweging volledig afronden, inclusief .NET MAUI, de Universal UI, een evolutie van Xamarin.Forms, en ondersteuning voor Android en iOS.
+* https://dotnet.microsoft.com/download/dotnet/5.0
+
