@@ -83,10 +83,14 @@ Bekijk volgende video's:
 1. [Geheugen management](./Documents/GeheugenManagement.md)
 2. [UML naar code](./Documents/UMLNaarCode.md)
 
+-->
+
 ## 7. Lambda, delegate, event, extension method
 
 1. Video's: https://www.youtube.com/playlist?list=PLM3q9wWBZWb90CajLrVZcenmxIBCqyaFq (de twee laatste video's leggen oefening Klant/Ober/Kok uit, zie tekst)
 2. [Tekst](./Documents/DelegatesEvents.pdf)
+
+<!--
 
 ## 8. LINQ (week 4: 5/3 en week 5: 9/3)
 
