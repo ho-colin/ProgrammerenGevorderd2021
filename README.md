@@ -81,11 +81,17 @@ Bekijk volgende video's:
 1. [Geheugen management](./Documents/GeheugenManagement.md)
 2. [UML naar code](./Documents/UMLNaarCode.md)
 
-## 7. Lambda (week 3: 26/2)
+## 7. Delegates en events (week 4: 2/3)
 
-## 8. Extension methods (week 3: 26/2)
+1. Video's: https://www.youtube.com/playlist?list=PLM3q9wWBZWb90CajLrVZcenmxIBCqyaFq
+2. Tekst:
+3. Klant, ober, kok voorbeeld: 
 
-## 9. Delegates en events (week 4: 2/3)
+
+
+## 8. Lambda (week 3: 26/2)
+
+## 9. Extension methods (week 3: 26/2)
 
 ## 10. LINQ (week 4: 5/3 en week 5: 9/3)
 
