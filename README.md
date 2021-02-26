@@ -92,7 +92,16 @@ Bekijk volgende video's:
 
 <!--
 
-## 8. LINQ (week 4: 5/3 en week 5: 9/3)
+## 8. C# uitdieping
+
+1. in, out, ref parameters
+2. heap en stack
+3. condities: switch en ternary (?:)
+4. C# 9.0
+
+## 9. XUnit
+
+## 10. LINQ (week 4: 5/3 en week 5: 9/3)
 
 -->
 
@@ -102,9 +111,9 @@ Bekijk volgende video's:
 
 <!--
 
-## 9. File I/O (week 6)
+## 11. File I/O (week 6)
 
-## 10. ADO .NET (week 7)
+## 12. ADO .NET (week 7)
 
 -->
 
@@ -122,18 +131,18 @@ Week 8 (30/3 - 2/4): tussentijdse evaluatie (tweede kans mogelijk tot en met eer
 
 <!--
 
-## 11. WPF (week 9 - week 12)
+## 13. WPF (week 9 - week 12)
 
-## 12. SOLID
+## 14. SOLID
 
 * [Interfaces](./Documents/Interfaces1.md)
 * [5 principes](./Documents/SOLID.md)
 
-## 13. Nuttige extra's
+## 15. Nuttige extra's
 
 * [Overzicht boeken, tutorials, websites, ...](./Documents/NuttigeExtras.md)
 
-## 14. Uitdieping
+## 16. Uitdieping
 
 1. [Interfaces](./Documents/Interfaces1.md)
 
