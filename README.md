@@ -78,7 +78,7 @@ Bekijk volgende video's:
 
 5. [Werken met Git](./Documents/WerkenMetGit.md)
 
-   <!--
+<!--
 
 ## Uitdieping
 
