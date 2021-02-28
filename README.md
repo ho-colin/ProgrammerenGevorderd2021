@@ -76,16 +76,7 @@ Bekijk volgende video's:
 3. [Git Push (1:12)](https://www.youtube.com/watch?v=yxJDqfXhNAQ&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=3&t=1s)
 4. [Git Command Line (1:56)](https://www.youtube.com/watch?v=npqBMnmahs4&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=4&t=7s)
 
-5. [Werken met Git](./Documents/WerkenMetGit.md)
-
-<!--
-
-## Uitdieping
-
-1. [Geheugen management](./Documents/GeheugenManagement.md)
-2. [UML naar code](./Documents/UMLNaarCode.md)
-
--->
+Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 ## 7. Lambda, delegate, event, extension method
 
@@ -153,10 +144,8 @@ Week 8 (30/3 - 2/4): tussentijdse evaluatie (tweede kans mogelijk tot en met eer
 ## 16. Uitdieping
 
 1. [Interfaces](./Documents/Interfaces1.md)
-
 2. [Generics](./Documents/Generics.md)
-
-   -->
+3. [UML naar code](./Documents/UMLNaarCode.md)
 
 ```
 - Laatste week mei, eerste week juni: eindevaluatie - voorstelling eindopdracht (twee kansen)
