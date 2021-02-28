@@ -76,7 +76,9 @@ Bekijk volgende video's:
 3. [Git Push (1:12)](https://www.youtube.com/watch?v=yxJDqfXhNAQ&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=3&t=1s)
 4. [Git Command Line (1:56)](https://www.youtube.com/watch?v=npqBMnmahs4&list=PLM3q9wWBZWb-0G5rKQOVK-W0ihR5-561c&index=4&t=7s)
 
-<!--
+5. [Werken met Git](./Documents/WerkenMetGit.md)
+
+   <!--
 
 ## Uitdieping
 
@@ -90,18 +92,24 @@ Bekijk volgende video's:
 1. Video's: https://www.youtube.com/playlist?list=PLM3q9wWBZWb90CajLrVZcenmxIBCqyaFq (de twee laatste video's leggen oefening Klant/Ober/Kok uit, zie tekst)
 2. [Tekst](./Documents/DelegatesEvents.pdf)
 
-<!--
+3. Winkelmanagement
 
 ## 8. C# uitdieping
 
-1. in, out, ref parameters
-2. heap en stack
-3. condities: switch en ternary (?:)
-4. C# 9.0
+1. [in, out, ref parameters](https://youtu.be/BpBc-Nhmlzk)
+2. [Geheugen management](./Documents/GeheugenManagement.md)
+3. condities: [switch](./Documents/switch.md) en [ternary ?:](./Documents/WillemTellTernary.md)
+4. [C# 9.0](./Documents/cs9.md)
 
 ## 9. XUnit
 
 ## 10. LINQ (week 4: 5/3 en week 5: 9/3)
+
+<!--
+
+## 11. TCP communicatie
+
+[TCP, nuget](./Documents/SimpleTCP.md)
 
 -->
 
@@ -111,9 +119,9 @@ Bekijk volgende video's:
 
 <!--
 
-## 11. File I/O (week 6)
+## 12. File I/O (week 6)
 
-## 12. ADO .NET (week 7)
+## 13. ADO .NET (week 7)
 
 -->
 
