@@ -90,7 +90,7 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 1. [in, out, ref parameters](https://youtu.be/BpBc-Nhmlzk)
 2. [Geheugen management](./Documents/GeheugenManagement.md)
 3. condities: [switch](./Documents/switch.md) en [ternary ?:](./Documents/WillemTellTernary.md)
-4. [C# 9.0](./Documents/cs9.md)
+4. [C# 9.0](./Documents/Cs9.md)
 
 ## 9. XUnit
 
