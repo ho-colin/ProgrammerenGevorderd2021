@@ -85,6 +85,8 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 3. Winkelmanagement
 
+<!--
+
 ## 8. C# uitdieping
 
 1. [in, out, ref parameters](https://youtu.be/BpBc-Nhmlzk)
@@ -95,8 +97,6 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 ## 9. XUnit
 
 ## 10. LINQ (week 4: 5/3 en week 5: 9/3)
-
-<!--
 
 ## 11. TCP communicatie
 
