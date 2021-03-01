@@ -7,7 +7,7 @@ Je kan parameters op 2 manieren by reference doorgeven:
 
 Je geeft parameters by reference door door het keyword ref voor de parameter in kwestie te zetten, zowel in de methode-declaratie als in de aanroep van de methode zelf.
 
-**Opgelet**:Het dient opgemerkt te worden dat parameters by reference doorgeven vaak tot problemen kan leiden indien je niet goed oplet, daar je rechtstreeks werkt met geheugenlocaties. Als je bijvoorbeeld verkeerdelijk een referentie optelt bij een value dan krijg je een nieuwe referentie die echter naar, mogelijk, een onbestaand stuk geheugen wijst. De ontwikkelaars van Visual Studio raden het gebruik van ref en out dan ook af, zeker indien je een beginnende programmeur bent. .
+**Opgelet**: parameters by reference doorgeven kan vaak tot problemen leiden indien je niet goed oplet, daar je rechtstreeks werkt met geheugenlocaties. Als je bijvoorbeeld verkeerdelijk een referentie optelt bij een value dan krijg je een nieuwe referentie die echter naar, mogelijk, een onbestaand stuk geheugen wijst. De ontwikkelaars van Visual Studio raden het gebruik van ref en out dan ook af, zeker indien je een beginnende programmeur bent. .
 
 # Out en ref
 
@@ -34,7 +34,7 @@ static void Main(string[] args)
 
 Dan krijgen we volgende, terechte, foutmelding:
 
-![img](https://timdams.gitbooks.io/csharpfromantwerp/content/assets/4_methoden/outref1.png)
+![img](C:\Users\u2389\source\repos\ProgrammerenGevorderd2021\Documents\outref1.png)
 
 Door nu het out keyword te gebruiken geven we expliciet aan dat we beseffen dat de parameter in kwestie pas binnen de methode een waarde zal toegekend krijgen.
 
@@ -103,36 +103,3 @@ Tweede bedraagt na method:12
 Merk dus op dat enkel de variabele tweede aangepast wordt buiten de methode doordat we deze by reference doorgeven.
 
 
-
-## Jagged Arrays
-
-Jagged arrays (letterlijk *gekartelde arrays*) zijn arrays van arrays maar van verschillende lengte. In tegenstelling tot de eerdere meer-dimensionale arrays moeten de interne arrays steeds dezelfde lengte hebben, bijvoorbeld 3 bij 2 bij 4. Bij jagged arrays hoeft dat dus niet:
-
-![jagged array](https://timdams.gitbooks.io/csharpfromantwerp/content/assets/5_arrays/jagged.png)
-
-### Jagged arrays aanmaken
-
-Het grote verschil bij het aanmaken van bijvoorbeeld een 2D jagged arrays is het gebruik van de vierkante haken:
-
-```csharp
-double[][]tickets;
-```
-
-(en dus niet `tickets[,]`)
-
-Vanaf nu kan je dan individuele arrays toewijzen aan ieder element van ``tickets`:
-
-```csharp
-tickets={
-   new double[] {3.0, 40, 24},
-   new double[] {123 , 31.3 },
-   new double[] {2.1}
-
- };
-```
-
-Zoals je kan zien moeten de interne arrays dus niet de zelfde grootte hebben.
-
-### Indexering
-
-De indexering blijft dezelfde, uiteraard moet je er wel rekening mee houden dat niet eender welke index binnen een bepaalde sub-array zal werken. ![indexering bij jagged arrays](https://timdams.gitbooks.io/csharpfromantwerp/content/assets/5_arrays/jagged2.png)

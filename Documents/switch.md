@@ -1,10 +1,12 @@
 # Switch
 
-Een `switch` statement is een program-flow element om een veelvoorkomende constructie van `if`/`if else`...`else` elementen eenvoudiger te tonen. Vaak komt het voor dat we bijvoorbeeld aan de gebruiker vragen om een keuze te maken (bijvoorbeeld een getal van 1 tot 10, waarbij ieder getal een ander menu-item uitvoert van het programma), zoals:
+Een `switch` statement is een program-flow element om een veelvoorkomende constructie van if else ... else ... elementen eenvoudiger te tonen. Vaak komt het voor dat we bijvoorbeeld aan de gebruiker vragen om een keuze te maken, bijvoorbeeld kies een getal van 1 tot 10, waarbij ieder getal een ander menu-item uitvoert van het programma:
 
 ```csharp
 int option;
+
 Console.WriteLine("Kies 1 voor afbreken, 2 voor opslaan, 3 voor laden:");
+
 option = Convert.ToInt32(Console.ReadLine());
 
 if (option == 1)
@@ -17,7 +19,7 @@ else
     Console.WriteLine("Onbekende keuze");
 ```
 
-Met een `switch` kan dit eenvoudiger. De syntax van een `switch` is een beetje specialer dan de andere programma flow-elementen (`if`, `while`, etc.), namelijk als volgt:
+Met een `switch` kan dit eenvoudiger. De syntax van een `switch` is een beetje specialer dan de andere programma flow-elementen (`if`, `while`, enzovoort), namelijk als volgt:
 
 ```csharp
 switch (value)
@@ -36,9 +38,9 @@ switch (value)
 
 `value` is de waarde of variabele (beide mogen) die wordt gebruikt als test in de switch. Iedere case begint met het `case` keyword gevolgd door de waarde die value moet hebben om in deze case te *springen*. Na het dubbelpunt volgt vervolgens de code die moet uitgevoerd worden in deze `case`. De `case` zelf mag eender welke code bevatten (methoden, nieuwe program flow elementen, etc.), maar moet zeker afgesloten worden met het `break` keyword.
 
-Tijdens de uitvoer zal het programma `value` vergelijken met iedere case constant van boven naar onder. Wanneer een gelijkheid wordt gevonden dan wordt die case uitgevoerd. Indien geen case wordt gevonden die gelijk is aan value dan zal de code binnen de `default`-case uitgevoerd worden (de `else` achteraan indien alle vorige `if else`-tests negatief waren).
+Tijdens de uitvoer zal het programma `value` vergelijken met iedere case constant van boven naar onder. Wanneer een gelijkheid wordt gevonden dan wordt die case uitgevoerd. Indien geen case wordt gevonden die gelijk is aan value dan zal de code binnen de `default`-case uitgevoerd worden (de `else` achteraan indien alle vorige `if else` tests negatief waren).
 
-Het menu van zonet kunnen we nu herschrijven naar een `switch`:
+Het menu van zonet kunnen we herschrijven naar een `switch`:
 
 ```csharp
 int option;
@@ -63,11 +65,11 @@ switch (option)
 
 ## Opgelet:
 
-De case waarden moeten constanten zijn en mogen dus geen variabelen zijn. Constanten zijn de welgekende *literals* (`1`, `"1"`, `1.0`, `1.d`, `'1'`, etc.)
+De case waarden moeten constanten zijn en mogen dus geen variabelen zijn. Constanten zijn de welgekende *literals* (`1`, `"1"`, `1.0`, `1.d`, `'1'`, enzovoort)
 
-# Fallthrough
+# Fall through
 
-Soms wil je dat dezelfde code uitgevoerd wordt bij 2 of meer cases. Je kan ook zogenaamde fallthrough cases beschrijven wat er als volgt uit ziet:
+Soms wil je dat dezelfde code uitgevoerd wordt bij 2 of meer cases. Je kan ook zogenaamde fall through cases beschrijven:
 
 ```csharp
 switch (option)
@@ -87,9 +89,7 @@ switch (option)
 
 In dit geval zullen zowel de waarden `2` en `3` resulteren in de zin "Laden of opslaan gekozen" op het scherm.
 
-## Wat is de switch-instructie?
-
-`switch` is een selectie-instructie waarmee één switch-sectie wordt gekozen die moet worden uitgevoerd vanuit een lijst met kandidaten op basis van een patroon dat overeenkomt met de match-expressie. Een switch-instructie bevat een of meer switch-secties. Elke switch-sectie bevat een of meer case labels (een case- of standaardlabel), gevolgd door een of meer instructies. De switch-instructie kan maximaal één standaardlabel bevatten in een switch-sectie.
+`switch` is dus een selectie-instructie waarmee één switch-sectie wordt gekozen die moet worden uitgevoerd vanuit een lijst met kandidaten op basis van een patroon dat overeenkomt met de match-expressie. Een switch-instructie bevat een of meer switch-secties. Elke switch-sectie bevat een of meer case labels (een case- of standaardlabel), gevolgd door een of meer instructies. De switch-instructie kan maximaal één standaardlabel bevatten in een switch-sectie.
 
 De switch wordt het beste gebruikt wanneer:
 
@@ -130,7 +130,7 @@ switch (employeeLevel)
 Console.WriteLine($"{employeeName}, {title}");
 ```
 
-Voer de code nje uit. De volgende uitvoer wordt weergegeven.
+Voer de code uit. De volgende uitvoer wordt weergegeven:
 
 ```output
 John Smith, Senior Associate
@@ -168,7 +168,7 @@ Omdat de `employeeLevel` niet overeenkomt met eender welk label, wordt het `defa
 
 Ons bedrijf heeft besloten om alle werknemers op niveau 100 de functietitel Seniormedewerker te geven. Dit is dezelfde functietitel als werknemers van het niveau 200. Als ontwikkelaar besluit je dit te implementeren door de eerste switch-sectie te verwijderen die deel uitmaakt van het label `case 100:`, en in plaats daarvan de labels `case 100:` en `case 200:` op dezelfde switch-sectie te laten uitvoeren.
 
-Wijzig de code om de `employeeLevel` in te stellen op `100`.
+Wijzig de code om de `employeeLevel` in te stellen op `100`:
 
 ```csharp
 int employeeLevel = 100;
@@ -183,7 +183,7 @@ Bewerk vervolgens de code in
         break;
 ```
 
-Wanneer je klaar bent met het aanbrengen van wijzigingen, moeten uw wijzigingen overeenkomen met de volgende code.
+Wanneer je klaar bent met het aanbrengen van wijzigingen, moeten je wijzigingen overeenkomen met de volgende code:
 
 ```csharp
 int employeeLevel = 100;
@@ -211,7 +211,7 @@ switch (employeeLevel)
 Console.WriteLine($"{employeeName}, {title}");
 ```
 
-Voer de toepassing nu uit om het volgende resultaat te krijgen.
+Voer de toepassing nu uit om het volgende resultaat te krijgen:
 
 ```output
 John Smith, Senior Associate

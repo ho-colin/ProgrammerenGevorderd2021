@@ -21,7 +21,6 @@
    2. [Object als argument en return value](./Documents/Objecten.md)
    3. [Constructor, destructor](./Documents/Constructors.md)
    4. [Static](./Documents/Static.md)
-   5. Switch en ?:
 2. [Overerving](./Documents/Overerving.md)
 3. [Abstracte klassen](./Documents/AbstracteKlassen.md)
 4. [Polymorfisme](./Documents/Polymorfisme.md)
@@ -63,7 +62,7 @@ Oefen op volgende *walk through* en werk de oplossing zelfstandig uit met Visual
 
   1. [Bank account: TDD](./Documents/UnitTestingWalkthrough.pdf)
 
-Maak volgende oefening en dien deze in:
+**Maak volgende oefening en dien deze in:**
 
 * [Code kata unit testing: een korte oefening](./Documents/unittestkata1.md) <!-- https://osherove.com/tdd-kata-1/ -->
 
@@ -81,26 +80,40 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 ## 7. Lambda, delegate, event, extension method
 
 1. Video's: https://www.youtube.com/playlist?list=PLM3q9wWBZWb90CajLrVZcenmxIBCqyaFq (de twee laatste video's leggen oefening Klant/Ober/Kok uit, zie tekst)
-2. [Tekst](./Documents/DelegatesEvents.pdf)
+2. [Presentatie](./Documents/DelegatesEvents.pdf)
 
-3. Winkelmanagement
+**Maak volgende oefening en dien deze in:**
 
-<!--
+* [Winkelmanagement](./Documents/winkelmanagement.md)
 
 ## 8. C# uitdieping
 
-1. [in, out, ref parameters](https://youtu.be/BpBc-Nhmlzk)
-2. [Geheugen management](./Documents/GeheugenManagement.md)
-3. condities: [switch](./Documents/switch.md) en [ternary ?:](./Documents/WillemTellTernary.md)
-4. [C# 9.0](./Documents/Cs9.md)
+1. [Geheugen management](./Documents/GeheugenManagement.md)
+
+2. [Parameters doorgeven by reference](./Documents/OutEnRef.md)
+
+3. [In, out, ref parameters: video](https://youtu.be/BpBc-Nhmlzk)
+
+4. condities: [switch](./Documents/switch.md) en [ternary ?:](./Documents/WillemTellTernary.md)
+
+5. [Jagged arrays](./Documents/JaggedArrays.md)
+
+   
+
+   <!--
+
+   [C# 9.0](./Documents/Cs9.md)
 
 ## 9. XUnit
 
 ## 10. LINQ (week 4: 5/3 en week 5: 9/3)
 
-## 11. TCP communicatie
+1. [Presentatie](./Documents/Linq.pdf)
+2. [Oefening](./Documents/LinqOpgave.pdf): [gegevens](./Documents/LinqAdresInfo.txt)
 
-[TCP, nuget](./Documents/SimpleTCP.md)
+## 11. TCP communicatie (nuget)
+
+[SimpleTCP](./Documents/SimpleTCP.md)
 
 -->
 
@@ -112,7 +125,9 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 ## 12. File I/O (week 6)
 
-## 13. ADO .NET (week 7)
+## 13. Jason (nuget)
+
+## 14. ADO .NET (week 7)
 
 -->
 

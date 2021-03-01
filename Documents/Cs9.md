@@ -1,13 +1,13 @@
-**Wat is nieuw?**
+# C# 9.0: wat is nieuw?
 
-C# is aanbeland bij versie 9.0. Elke versie brengt nieuwe features en verbeteringen met zich mee. De 4 meest interessante veranderingen voor je op een rij.
+C# is aanbeland bij versie 9.0. Elke versie brengt nieuwe features en verbeteringen met zich mee. De 4 meest interessante veranderingen voor je op een rij:
 
 - Init only setters
 - Verbeteringen in verband met het new keyword
 - Top-level statements
 - Er zijn verder ook andere toffe verbeteringen, zoals records en verbeterde pattern matching. 
 
-**Init only setters**
+## Init only setters
 
 Init only setters maken het makkelijker om het instantiëren van een object wat "correcter" neer te zetten. Een goed voorbeeld is deze situatie.
 
@@ -15,23 +15,43 @@ In veel projecten maak je gebruik van DTO's. Dit zijn Data Transfer Objects, en 
 
 Stel we hebben de volgende DTO:
 
-![img](https://www.arcady.nl/media/1943/schermafbeelding-2020-12-02-om-103149.png?width=500&height=206.10446821900567)
+```csharp
+public class UserDto
+{
+	public int Id { get; set; }
+	public string Voornaam { get; set; }
+	public string Tussenvoegsel { get; set; }
+	public string Achternaam { get; set; }
+	// ...
+}
+```
 
-Er zijn wat nadelen met deze aanpak. Bijvoorbeeld dat je je properties hierna nog mag wijzigen door bijvoorbeeld **userDto.Voornaam = achternaam**; kan typen. Dit is niet gewenst; zo'n DTO maak je een keer aan en geef je door; je wilt properties niet meer wijzigen.
+Er zijn wat nadelen verbonden aan deze aanpak. Bijvoorbeeld dat je je properties hierna nog mag wijzigen door bijvoorbeeld **userDto.Voornaam = achternaam**; kan typen. Dit is niet gewenst; zo'n DTO maak je een keer aan en geef je door; je wilt properties niet meer wijzigen.
 
 **Init only setters** helpen je hierbij met de volgende syntax:
 
-![img](https://www.arcady.nl/media/1944/schermafbeelding-2020-12-02-om-103320.png?width=500&height=91.7981072555205)![img](https://www.arcady.nl/media/1944/schermafbeelding-2020-12-02-om-103320.png)
+```csharp
+public class UserDto
+{
+	public int Id { get; init; }
+	public string Voornaam { get; init; }
+	public string Tussenvoegsel { get; init; }
+	public string Achternaam { get; init; }
+	// ...
+}
+```
 
-Wanneer je nu een instantie hebt van het **UserDto** type en je probeert Voornaam te wijzigen
+Wanneer je nu een instantie hebt van het **UserDto** type en je probeert Voornaam te wijzigen:
 
-**userDto.Voornaam = achternaam;**
+```csharp
+userDto.Voornaam = achternaam;
+```
 
-Dan zal je een error krijgen van de compiler. Je mag de property namelijk slechts één keer setten en dat is tijdens het instantiëren van het object.
+dan zal je een error krijgen van de compiler. Je mag de property namelijk slechts één keer setten en dat is tijdens het instantiëren van het object.
 
 *Init only setters* bieden consistente syntax om leden van een onderwerp te initialiseren. *Property initializers* maken duidelijk welke waarde welke *property* plaatst. Het nadeel is dat die *properties* instelbaar moeten zijn. Door C# 9.0 te gebruiken kun je init *accessors* in plaats van set *accessors* voor *properties* en *indexers* maken. Developers kunnen de *property initializer syntax* gebruiken om waardes in *creation expressions* te zetten, maar die *properties* zijn *readonly* wanneer de bouw voltooid is. *Init only setters* bieden een venster om de staat te veranderen. Dat venster sluit wanneer de bouwfase eindigt. De bouwfase eindigt na alle initialisatie, hierbij horen ook *property initializers* en *with-expressions* die voltooid zijn.
 
-Je kunt init *only setters* in elke type die je schrijft vaststellen. Bijvoorbeeld de volgende *struct*, deze definieert een weer observatie structuur:
+Je kunt init *only setters* in elk type dat je schrijft, vaststellen. Bijvoorbeeld de volgende *struct*, deze definieert een structuur:
 
 ![img](https://www.partech.nl/publication-image/%7B4DE42283-D40F-4D13-9610-E58A5EB57C6A%7D)
 
@@ -45,7 +65,7 @@ Maar het veranderen van een observatie na het initialiseren geeft een error door
 
 *Init only setters* kunnen bruikbaar zijn om *base class properties* van afgeleide *classes* in te stellen. Ze kunnen ook afgeleide *properties* door helpers in een *base class* instellen. Positionele *records* stellen *properties* door het gebruik van *init only setters* vast. Die *setters* worden gebruikt in *with-expressions*. Je kunt *init only setters* vaststellen voor elke class of struct die je definieert.
 
-### RECORD TYPES
+## RECORD TYPES
 
 C# 9.0 introduceert *record* types, wat een referentie type is die zorgt voor gesynthetiseerde methodes om waarde *semantics* voor gelijkheid beschikbaar te maken. *Records* zijn standaard onveranderlijk.
 
@@ -121,7 +141,7 @@ Alle gesynthetiseerde leden behalve de *‘clone’* methode kan geschreven zijn
 
 
 
-**Verbeteringen voor het new keyword**
+## **Verbeteringen voor het new keyword**
 
 Tijdens de aankondiging van deze feature werden er redelijk wat negatieve reacties gegeven. Dit komt omdat er nu een 3de manier is om in je code de objecten aan te maken met het **new** keyword. De eerste manier is door het type expliciet te beschrijven:
 
@@ -153,7 +173,7 @@ Nu nogmaals met het gebruik van **new ( ):**
 
  
 
-**Top-level statements**
+## Top-level statements
 
 **Top-level statements** maken het een stuk makkelijker voor mensen om te beginnen met C#. Een bestand in je programma hoeft namelijk een stuk minder boilerplate te bevatten!
 
@@ -177,17 +197,17 @@ Voor beginners is dit niet heel vriendelijk.
 
 ![img](https://www.arcady.nl/media/1948/schermafbeelding-2020-12-02-om-104501.png?width=500&height=69.98738965952082)
 
-Dit is handig voor beginners! Zo kunnen ze beetje bij beetje meer leren over de onderwerpen die ik hierboven benoemde.
+Dit is handig voor beginners! Zo kunnen ze beetje bij beetje meer leren over de onderwerpen die we hierboven benoemden.
 
-Daarnet had ik het over restricties. Dit zijn er twee:
+Daarnet hadden we het over restricties. Dit zijn er twee:
 
-- Slechts één bestand in de applicatie mag gebruik maken van **top-level statements**
-- Je mag het niet combineren met **program entry methods** zoals **Main ( )**; die wordt namelijk onderwater voor je aangemaakt.
+- Slechts één bestand in de applicatie mag gebruik maken van **top-level statements**.
+- Je mag het niet combineren met **program entry methods** zoals **Main ( )**; die wordt namelijk "onder water" voor je aangemaakt.
 
-Oftewel, gebruik dit om C# te leren. Misschien zelfs om een paar kleine console projecten te maken of misschien in kleine Azure Functions. Maar ik zou niet de **Program.cs** van een bestaand project aanpassen om dit te gebruiken. Voor mensen die deze feature niet kennen, zal het verwarrend zijn. Je krijgt niet veel voordeel hiervan.
+Oftewel, gebruik dit om C# te leren. Misschien zelfs om een paar kleine console projecten te maken of misschien in kleine Azure Functions. Maar pas niet de **Program.cs** van een bestaand project aan. Voor mensen die deze feature niet kennen, zal het verwarrend zijn. Je krijgt niet veel voordeel hiervan.
 
-**Nog meer veranderingen**
+## Nog meer veranderingen...
 
  Wil je meer weten? Check dan dit [artikel.](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9)
 
-Zo wordt .NET 5 uitgebracht, een nieuw framework dat probeert om alle verschillende .NET omgevingen (.NET Core, .NET Framework, Mono) samen te brengen. Daarnaast wordt er hard gewerkt aan .NET MAUI, een nieuw UI Framework van Microsoft. Hiermee kan je straks moderne UI applicaties bouwen voor zowel desktop als voor telefoons. Een evolutie van Xamarin.
+.NET 5 is een nieuw framework dat probeert om alle verschillende .NET omgevingen (.NET Core, .NET Framework, Mono) samen te brengen. Daarnaast wordt er hard gewerkt aan .NET MAUI, een nieuw UI Framework van Microsoft. Hiermee kan je straks moderne UI applicaties bouwen voor zowel desktop als voor telefoons. Een evolutie van Xamarin.
