@@ -98,9 +98,9 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 5. [Jagged arrays](./Documents/JaggedArrays.md)
 
-   <!--
+<!--
 
-   [C# 9.0](./Documents/Cs9.md)
+[C# 9.0](./Documents/Cs9.md)
 
 ## 9. XUnit
 
@@ -110,6 +110,10 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 1. [Presentatie](./Documents/Linq.pdf)
 2. [Oefening](./Documents/LinqOpgave.pdf): [gegevens](./Documents/LinqAdresInfo.txt)
+
+**Maak volgende oefening en dien deze in:**
+
+* [SportsStore](./Documents/SportsStore.md)
 
 <!--
 
