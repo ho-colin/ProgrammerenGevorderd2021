@@ -31,8 +31,8 @@
 ## 2. Herhalingsoefening (week 2: 16/2)
 
 * [Begeleide oefening: een bierwinkel...](./Documents/PG_OObasics_oef1_opdracht.pdf)
-
-* [Scheepvaart](./Documents/OefeningCollectionsOvererving.pdf)
+* **Maak volgende oefening en dien deze in:**
+  * [Scheepvaart](./Documents/OefeningCollectionsOvererving.pdf)
 
 ## 3. Exceptions (week 2: 19/2)
 
@@ -98,18 +98,20 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 5. [Jagged arrays](./Documents/JaggedArrays.md)
 
-   
-
    <!--
 
    [C# 9.0](./Documents/Cs9.md)
 
 ## 9. XUnit
 
+-->
+
 ## 10. LINQ (week 4: 5/3 en week 5: 9/3)
 
 1. [Presentatie](./Documents/Linq.pdf)
 2. [Oefening](./Documents/LinqOpgave.pdf): [gegevens](./Documents/LinqAdresInfo.txt)
+
+<!--
 
 ## 11. TCP communicatie (nuget)
 
