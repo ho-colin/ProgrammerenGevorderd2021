@@ -86,7 +86,15 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 * [Winkelmanagement](./Documents/winkelmanagement.md)
 
-## 8. C# uitdieping
+## 8. IO
+
+1. [Presentatie](./Documents/FileIO.pdf)
+
+Maak volgende oefening en dien deze in:
+
+* [Adresinformatie](./Documents/OpgaveAdresinfo.md) met [invoergegevens](./Documents/adresInfo.zip)
+
+## 10. C# uitdieping
 
 1. [Geheugen management](./Documents/GeheugenManagement.md)
 
@@ -102,11 +110,11 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 [C# 9.0](./Documents/Cs9.md)
 
-## 9. XUnit
+## 11. XUnit
 
 -->
 
-## 10. LINQ (week 4: 5/3 en week 5: 9/3)
+## 12. LINQ (week 4: 5/3 en week 5: 9/3)
 
 1. [Presentatie](./Documents/Linq.pdf)
 2. [Oefening](./Documents/LinqOpgave.pdf): [gegevens](./Documents/LinqAdresInfo.txt)
@@ -129,11 +137,11 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 <!--
 
-## 12. File I/O (week 6)
+## 13. File I/O (week 6)
 
-## 13. Jason (nuget)
+## 14. Jason (nuget)
 
-## 14. ADO .NET (week 7)
+## 15. ADO .NET (week 7)
 
 -->
 
@@ -151,18 +159,18 @@ Week 8 (30/3 - 2/4): tussentijdse evaluatie (tweede kans mogelijk tot en met eer
 
 <!--
 
-## 13. WPF (week 9 - week 12)
+## 16. WPF (week 9 - week 12)
 
-## 14. SOLID
+## 17. SOLID
 
 * [Interfaces](./Documents/Interfaces1.md)
 * [5 principes](./Documents/SOLID.md)
 
-## 15. Nuttige extra's
+## 18. Nuttige extra's
 
 * [Overzicht boeken, tutorials, websites, ...](./Documents/NuttigeExtras.md)
 
-## 16. Uitdieping
+## 19. Uitdieping
 
 1. [Interfaces](./Documents/Interfaces1.md)
 2. [Generics](./Documents/Generics.md)
