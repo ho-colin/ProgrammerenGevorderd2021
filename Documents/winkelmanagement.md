@@ -6,7 +6,7 @@ Een klant vraagt je om een applicatie te bouwen waarbij de verkoop in een winkel
 
 ## Ontwerp: class diagram
 
-![class diagram](C:\Users\u2389\source\repos\ProgrammerenGevorderd2021\Documents\winkelmanagement2.png)
+![class diagram](./winkelmanagement2.png)
 
 ## Detailinformatie
 
@@ -45,7 +45,7 @@ Stockbeheer en Verkoopafdeling schrijven zich in op het event WinkelEventArgs; d
 
 Bij elke verkoop worden drie rapporten afgedrukt: dat van de verkoopafdeling, groothandelaar en stockbeheer. Na de laatste verkoop zien deze rapporten er als volgt uit:
 
-![uitvoer](C:\Users\u2389\source\repos\ProgrammerenGevorderd2021\Documents\winkelmanagement3.png)
+![uitvoer](./winkelmanagement3.png)
 
 
 
