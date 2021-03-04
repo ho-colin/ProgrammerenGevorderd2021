@@ -14,6 +14,12 @@
   8. Plaats je properties eerst
   9. Gebruik een _ voor private variabelen
 
+# .NET 5.0
+
+* Installeer Visual Studio 2019 versie 16.8.0 of hoger (vandaag is de hoogste versie: 16.9.0 Preview 5.0)
+* Opvolger .NET Core 3.1 en tegelijk het einde van de "Frameworks", .NET Core, Mono, enzovoort - voorbij met de hoofdpijn! Door COVID-19 zal pas .NET 6 in november 2021 de unificatiebeweging volledig afronden, inclusief .NET MAUI, de Universal UI, een evolutie van Xamarin.Forms, en ondersteuning voor Android en iOS.
+* https://dotnet.microsoft.com/download/dotnet/5.0
+
 ## 1. Object oriented programming (week 1: 9/2 - 12/2)
 
 1. Herhaling
@@ -79,8 +85,8 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 ## 7. Lambda, delegate, event, extension method
 
-1. Video's: https://www.youtube.com/playlist?list=PLM3q9wWBZWb90CajLrVZcenmxIBCqyaFq (de twee laatste video's leggen oefening Klant/Ober/Kok uit, zie tekst)
 2. [Presentatie](./Documents/DelegatesEvents.pdf)
+2. Video's: https://www.youtube.com/playlist?list=PLM3q9wWBZWb90CajLrVZcenmxIBCqyaFq (de twee laatste video's leggen oefening Klant/Ober/Kok uit, zie Presentatie)
 
 **Maak volgende oefening en dien deze in:**
 
@@ -88,44 +94,38 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 ## 8. IO
 
-1. [Presentatie](./Documents/FileIO.pdf)
+1. [Eerste stappen](./Documents/FileIO.md)
+2. [Presentatie](./Documents/FileIO.pdf)
 
-Maak volgende oefening en dien deze in:
+**Maak volgende oefening:**
 
 * [Adresinformatie](./Documents/OpgaveAdresinfo.md) met [invoergegevens](./Documents/adresInfo.zip)
 
-## 10. C# uitdieping
+## 10. LINQ
 
-1. [Geheugen management](./Documents/GeheugenManagement.md)
-
-2. [Parameters doorgeven by reference](./Documents/OutEnRef.md)
-
-3. [In, out, ref parameters: video](https://youtu.be/BpBc-Nhmlzk)
-
-4. condities: [switch](./Documents/switch.md) en [ternary ?:](./Documents/WillemTellTernary.md)
-
-5. [Jagged arrays](./Documents/JaggedArrays.md)
+1. [Stap voor stap](./Documents/Linq.md)
+2. [Oefening](./Documents/LinqOpgave.pdf): [gegevens](./Documents/LinqAdresInfo.txt)
 
 <!--
-
-[C# 9.0](./Documents/Cs9.md)
-
-## 11. XUnit
-
--->
-
-## 12. LINQ (week 4: 5/3 en week 5: 9/3)
-
-1. [Presentatie](./Documents/Linq.pdf)
-2. [Oefening](./Documents/LinqOpgave.pdf): [gegevens](./Documents/LinqAdresInfo.txt)
 
 **Maak volgende oefening en dien deze in:**
 
 * [SportsStore](./Documents/SportsStore.md)
 
-<!--
+## 11. C# uitdieping
 
-## 11. TCP communicatie (nuget)
+1. [Geheugen management](./Documents/GeheugenManagement.md)
+2. [Parameters doorgeven by reference](./Documents/OutEnRef.md)
+3. [In, out, ref parameters: video](https://youtu.be/BpBc-Nhmlzk)
+4. condities: [switch](./Documents/switch.md) en [ternary ?:](./Documents/WillemTellTernary.md)
+5. [Jagged arrays](./Documents/JaggedArrays.md)
+6. [C# 9.0](./Documents/Cs9.md)
+
+## 12. XUnit
+
+* Zie groep C.
+
+## 13. TCP communicatie (nuget)
 
 [SimpleTCP](./Documents/SimpleTCP.md)
 
@@ -136,8 +136,6 @@ Maak volgende oefening en dien deze in:
 ```
 
 <!--
-
-## 13. File I/O (week 6)
 
 ## 14. Jason (nuget)
 
@@ -185,10 +183,4 @@ Week 8 (30/3 - 2/4): tussentijdse evaluatie (tweede kans mogelijk tot en met eer
 ## Oefeningen
 
 * [Ondersteundende opdrachten](./Documents/Opdrachten.md)
-
-# .NET 5.0
-
-* Installeer Visual Studio 2019 versie 16.8.0 of hoger (vandaag is de hoogste versie: 16.9.0 Preview 5.0)
-* Opvolger .NET Core 3.1 en tegelijk het einde van de "Frameworks", .NET Core, Mono, enzovoort - voorbij met de hoofdpijn! Door COVID-19 zal pas .NET 6 in november 2021 de unificatiebeweging volledig afronden, inclusief .NET MAUI, de Universal UI, een evolutie van Xamarin.Forms, en ondersteuning voor Android en iOS.
-* https://dotnet.microsoft.com/download/dotnet/5.0
 
