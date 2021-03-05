@@ -38,7 +38,8 @@
 
 * [Begeleide oefening: een bierwinkel...](./Documents/PG_OObasics_oef1_opdracht.pdf)
 * **Maak volgende oefening en dien deze in:**
-  * [Scheepvaart](./Documents/OefeningCollectionsOvererving.pdf)
+  * [Opdracht](./Documents/OpgaveCollections.pdf)
+  * [Scheepvaart: analyse](./Documents/OefeningCollectionsOvererving.pdf)
 
 ## 3. Exceptions (week 2: 19/2)
 
@@ -114,12 +115,18 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 ## 11. C# uitdieping
 
-1. [Geheugen management](./Documents/GeheugenManagement.md)
-2. [Parameters doorgeven by reference](./Documents/OutEnRef.md)
-3. [In, out, ref parameters: video](https://youtu.be/BpBc-Nhmlzk)
-4. condities: [switch](./Documents/switch.md) en [ternary ?:](./Documents/WillemTellTernary.md)
-5. [Jagged arrays](./Documents/JaggedArrays.md)
-6. [C# 9.0](./Documents/Cs9.md)
+1. [Null coalescing](./Documents/NullCoalescing.md)
+2. [Null conditional operator](./Documents/NullConditionalOperator.md)
+3. [Culture](./Documents/Culture.md)
+4. [Reflection](./Documents/Reflection.md)
+5. [Reguliere expressies](./Documents/Regex.md)
+6. [Debugging](./Documents/Debugging.md)
+7. [Geheugen management](./Documents/GeheugenManagement.md)
+8. [Parameters doorgeven by reference](./Documents/OutEnRef.md)
+9. [In, out, ref parameters: video](https://youtu.be/BpBc-Nhmlzk)
+10. condities: [switch](./Documents/switch.md) en [ternary ?:](./Documents/WillemTellTernary.md)
+11. [Jagged arrays](./Documents/JaggedArrays.md)
+12. [C# 9.0](./Documents/Cs9.md)
 
 ## 12. XUnit
 

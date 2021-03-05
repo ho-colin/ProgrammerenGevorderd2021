@@ -333,7 +333,37 @@ public void UseMemoryStream()
 
 De MemoryStream klasse kan gebruikt worden als hulpbron voor data die je in het geheugen wilt houden. Dit levert een geweldige tijdelijke opslag voor data die vanuit een bestand komen of vanuit een netwerk bron, om blokkering te voorkomen terwijl je met de data aan het werk bent.
 
-## Binair of text
+## Bestandsformaten: tekst en binair
+
+De term bestandsformaat (ook wel bestandstype of bestandsindeling genoemd) duidt op de wijze waarop de informatie in een computerbestand gecodeerd is. Dit bepaalt in belangrijke mate wat je met een bestand kunt doen. Er zijn twee hoofdsoorten bestandsformaten: tekst en binair. Bestanden in tekstformaat bevatten uitsluitend leesbare tekens en kunnen door veel computerprogramma's worden gelezen. Kenmerkend is echter dat ze ook met een *text editor* als Kladblok (*Notepad*) of *NoteTab* kunnen worden gelezen en bewerkt, hetgeen niet het geval is met binaire bestanden. Een bestand in tekstformaat kan allerlei vormen van structurele of inhoudelijke annotatie bevatten, maar ook deze markeringen of codes bestaan dan uitsluitend uit letters, cijfers en leestekens.
+
+Binaire bestanden bevatten (eventueel naast leesbare tekens) computercode die alleen door specifieke programmatuur computerprogramma's geïnterpreteerd kan worden. Veel binaire bestandsformaten zijn zgn. 'gesloten' formaten (*proprietary formats*), die worden beschermd door middel van een patent of copyright. Het bedrijf dat ze heeft ontwikkeld houdt de specificaties van het formaat ook meestal geheim, zodat alleen de eigen software goed met dergelijke bestanden om kan gaan.
+
+De extensie van een bestand geeft meestal aan om welk bestandsformaat het gaat. Een bestandsextensie is een toevoeging aan het eind van een bestandsnaam, die bestaat uit één of meer letters (meestal drie) na de laatste punt in de naam. Er bestaan enorm veel bestandsformaten, en dus ook erg veel bestandsextensies, zie bijvoorbeeld het [overzicht in Wikipedia](http://nl.wikipedia.org/wiki/Lijst_van_bestandsextensies). Hieronder volgt een overzicht van de belangrijkste bestandsformaten waarin digitale tekstbestanden worden opgeslagen.
+N.B. Ook voor e-books worden veel verschillende opslagformaten gebruikt. Wikipedia geeft hiervan een [uitgebreid overzicht](http://en.wikipedia.org/wiki/Comparison_of_e-book_formats).
+
+### A. Tekstbestanden
+
+| Extensie   | Beschrijving                                                 |
+| ---------- | ------------------------------------------------------------ |
+| .txt       | Bestand dat uitsluitend letters, cijfers en leestekens bevat. Dergelijke bestanden bevatten geen enkele opmaak en kunnen door vrijwel alle programma's op alle computerplatforms gelezen en bewerkt worden. Programmatuur voor tekstanalyse kan hier goed mee overweg. |
+| .htm .html | Bestand dat is gecodeerd m.b.v. HTML (*hypertext markup language*). HTML wordt gebruikt voor de presentatie van webpagina's (in web browsers). HTML-bestanden kunnen (omdat het tekstbestanden zijn) worden geopend in programma's als WordSmith. Omdat dergelijke bestanden echter erg veel HTML-codes kunnen evatten wordt een goede analyse vaak belemmerd. Vaak is het daarom verstandig om dergelijke bestanden eerst van de HTML-codes te ontdoen. |
+| .xml       | Bestand dat is geannoteerd m.b.v. XML (*extensible markup language*). Eveneens een tekstbestand dat op een bepaalde manier is gecodeerd. XML heeft veel toepassingen; één daarvan is de annotatie van teksten ten behoeve van inhoudelijke ontsluiting ten behoeve van wetenschappelijke analyse. XML-annotatie kan heel complex zijn, waardoor soms speciale programmatuur nodig is om dergelijke bestanden goed te kunnen verwerken en/of analyseren. Zie ook de informatie over annotatie. |
+| .sgm .sgml | Bestand dat is geannoteerd m.b.v. SGML (*standard generalized markup language*). Voorloper van XML met dezelfde functie. Je komt dit formaat nog steeds tegen in tekstarchieven, omdat niet alle bestanden die ooit m.b.v. SGML zijn geannoteerd, worden omgezet naar XML. |
+
+### B. Binaire bestanden
+
+| Extensie                                 | Beschrijving                                                 |
+| ---------------------------------------- | ------------------------------------------------------------ |
+| .jpg / .jpeg .gif .tif / .tiff .png .bmp | Dit is een aantal veelvoorkomende bestandsformaten voor het opslaan van afbeeldingen in digitale vorm (er bestaan er meer). Afbeeldingen van teksten kunnen niet doorzocht worden op woordniveau. Afbeeldingen van recentere teksten kunnen wel met behulp van optical character recognition (OCR) met redelijk succes omgezet worden naar tekstbestanden, waarna ze wel inhoudelijk geanalyseerd kunnen worden. |
+| .doc .docx                               | Documentformaat van Microsoft Word. De meeste programmatuur voor tekstanalyse kan hier niet mee overweg; de betreffende documenten moeten eerst vanuit Word worden opgeslagen als tekstbestanden. Het bestandsformaat dat hoort bij de extensie .docx is geïntroduceerd met Word 2007. |
+| .rtf                                     | *Rich text format*. Documentformaat ontwikkeld door Microsoft in 1987 ten behoeve van de uitwisseling van documenten op verschillende computersystemen. De meeste tekstverwerkers kunnen RTF-documenten lezen. Programmatuur voor tekstanalyse kan hier echter meestal niet mee overweg; ook dergelijke documenten moeten eerst worden opgeslagen als tekstbestanden. |
+| .pdf                                     | *Portable document format*. Wijdverbreid bestandsformaat dat is ontwikkeld door de firma Adobe om bestanden met opmaak op alle computersystemen op dezelfde wijze te kunnen tonen en afdrukken. Het programma Acrobat Reader (of een kloon daarvan) is nodig om dergelijke bestanden te lezen, te doorzoeken en af te drukken. Tekstanalyseprogramma's kunnen niet overweg met pdf-bestanden. Of, en in welke mate, deze bestanden om te zetten zijn naar tekstbestanden hangt af van de wijze waarop ze zijn gecreëerd; het (dure) programma Acrobat Professional biedt hiervoor in ieder geval veel betere mogelijkheden dan de (gratis) Acrobat Reader. N.B. Het pdf-formaat wordt ook veel gebruikt voor *e-books*. |
+| .xps .oxps                               | *XML paper specification*. (Open) XPS is een afdruk- en documentformaat dat door Microsoft is ontwikkeld als alternatief voor (en concurrent van) pdf. |
+
+
+
+Een technisch aspect dat verband houdt met bestandsformaten is het gebruik van karaktersets. Het gaat daarbij om de wijze waarop karakters door de computer worden gecodeerd. Voor het coderen van het westerse alfabet wordt van oudsher de zgn. ASCII of ANSI karakterset gebruikt. Tegenwoordig wordt steeds vaker Unicode gebruikt, omdat daarmee alle schriften van de wereld kunnen worden gecodeerd. Een 'tussenvariant' is UTF-8. Je kunt hiermee te maken krijgen als je teksten waarin een bepaalde karakterset wordt gebruikt wilt bekijken met programmatuur die daarvoor niet is toegerust. De tekst lijkt dan allerlei 'rare tekens' te bevatten. Zie voor meer informatie de lemma's over [ASCII](http://nl.wikipedia.org/wiki/ASCII_(tekenset)) en [Unicode](http://nl.wikipedia.org/wiki/Unicode) in Wikipedia.
 
 ### De namespace System.IO en de abstracte klasse Stream
 
