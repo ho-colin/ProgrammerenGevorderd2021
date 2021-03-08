@@ -1213,4 +1213,4 @@ int sum = numbers.Aggregate( func: (result,item) => result+item );
 
 ![LINQPad](./linqpad1.png)
 
-Voor voorbeelden die uitvoerbaar zijn via LINQPad, zie gecomprimeerd bestand [LinqPadExamples.zip](./LINQPad.zip).
+Voor voorbeelden die uitvoerbaar zijn via LINQPad, zie gecomprimeerd bestand [LinqPadExamples.zip](./LinqPadExamples.zip).
