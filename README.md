@@ -120,7 +120,7 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 4. Condities: [switch statement](./Documents/switch.md)
 
-3. [Willem Tell]((./Documents/WillemTellTernary.md)): speciale inheritance keywords, speciale operatoren zoals ternary ?:
+3. [Willem Tell](./Documents/WillemTellTernary.md): speciale inheritance keywords, speciale operatoren zoals ternary ?:
 
 <!--
 
