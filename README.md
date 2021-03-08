@@ -118,9 +118,9 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 2. [Null conditional operator](./Documents/NullConditionalOperator.md)
 
-3. Willem Tell: speciale inheritance keywords, speciale operatoren [ternary ?:](./Documents/WillemTellTernary.md)
-
 4. Condities: [switch statement](./Documents/switch.md)
+
+3. [Willem Tell]((./Documents/WillemTellTernary.md)): speciale inheritance keywords, speciale operatoren zoals ternary ?:
 
 <!--
 
