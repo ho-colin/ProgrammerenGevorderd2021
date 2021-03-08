@@ -102,7 +102,7 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 * [Adresinformatie](./Documents/OpgaveAdresinfo.md) met [invoergegevens](./Documents/adresInfo.zip)
 
-## 10. LINQ
+## 9. LINQ
 
 1. [Stap voor stap](./Documents/Linq.md)
 2. LINQPad: voorbeelden
@@ -112,13 +112,15 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 * [Oefening](./Documents/LinqOpgave.pdf): [gegevens](./Documents/LinqAdresInfo.txt)
 
-## 11. C# uitdieping
+## 10. C# uitdieping
 
 1. [Null coalescing](./Documents/NullCoalescing.md)
 
 2. [Null conditional operator](./Documents/NullConditionalOperator.md)
 
-3. Condities: [switch](./Documents/switch.md) en [ternary ?:](./Documents/WillemTellTernary.md)
+3. Willem Tell: speciale inheritance keywords, speciale operatoren [ternary ?:](./Documents/WillemTellTernary.md)
+
+4. Condities: [switch statement](./Documents/switch.md)
 
 <!--
 
@@ -140,11 +142,11 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 12. [C# 9.0](./Documents/Cs9.md)
 
-## 12. XUnit
+## 11. XUnit
 
 * Zie groep C.
 
-## 13. TCP communicatie (nuget)
+## 12. TCP communicatie (nuget)
 
 [SimpleTCP](./Documents/SimpleTCP.md)
 
@@ -156,9 +158,9 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 <!--
 
-## 14. Jason (nuget)
+## 13. Jason (nuget)
 
-## 15. ADO .NET (week 7)
+## 14. ADO .NET (week 7)
 
 -->
 
