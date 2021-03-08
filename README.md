@@ -108,8 +108,6 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 2. LINQPad: voorbeelden
 3. [Oefening: SportsStore](./Documents/SportsStore.md)
 
-<!--
-
 **Maak volgende oefening en dien deze in:**
 
 * [Oefening](./Documents/LinqOpgave.pdf): [gegevens](./Documents/LinqAdresInfo.txt)
@@ -117,16 +115,29 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 ## 11. C# uitdieping
 
 1. [Null coalescing](./Documents/NullCoalescing.md)
+
 2. [Null conditional operator](./Documents/NullConditionalOperator.md)
-3. [Culture](./Documents/Culture.md)
-4. [Reflection](./Documents/Reflection.md)
-5. [Reguliere expressies](./Documents/Regex.md)
-6. [Debugging](./Documents/Debugging.md)
-7. [Geheugen management](./Documents/GeheugenManagement.md)
-8. [Parameters doorgeven by reference](./Documents/OutEnRef.md)
-9. [In, out, ref parameters: video](https://youtu.be/BpBc-Nhmlzk)
-10. condities: [switch](./Documents/switch.md) en [ternary ?:](./Documents/WillemTellTernary.md)
+
+3. Condities: [switch](./Documents/switch.md) en [ternary ?:](./Documents/WillemTellTernary.md)
+
+<!--
+
+4. [Culture](./Documents/Culture.md)
+
+5. [Reflection](./Documents/Reflection.md)
+
+6. [Reguliere expressies](./Documents/Regex.md)
+
+7. [Debugging](./Documents/Debugging.md)
+
+8. [Geheugen management](./Documents/GeheugenManagement.md)
+
+9. [Parameters doorgeven by reference](./Documents/OutEnRef.md)
+
+10. [In, out, ref parameters: video](https://youtu.be/BpBc-Nhmlzk)
+
 11. [Jagged arrays](./Documents/JaggedArrays.md)
+
 12. [C# 9.0](./Documents/Cs9.md)
 
 ## 12. XUnit
