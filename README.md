@@ -105,13 +105,14 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 ## 10. LINQ
 
 1. [Stap voor stap](./Documents/Linq.md)
-2. [Oefening](./Documents/LinqOpgave.pdf): [gegevens](./Documents/LinqAdresInfo.txt)
+2. LINQPad: voorbeelden
+3. [Oefening: SportsStore](./Documents/SportsStore.md)
 
 <!--
 
 **Maak volgende oefening en dien deze in:**
 
-* [SportsStore](./Documents/SportsStore.md)
+* [Oefening](./Documents/LinqOpgave.pdf): [gegevens](./Documents/LinqAdresInfo.txt)
 
 ## 11. C# uitdieping
 

@@ -23,7 +23,7 @@ var names = new List<string>()
 var shortNames = from name in names where name.Length <= 8 orderby name.Length select name;
 
 foreach (var name in shortNames)  
-    Console.WriteLine(name);
+    System.Diagnostics.Debug.WriteLine(name);
 ```
 
 In slechts één regel, dank zij de LINQ **query syntax**, kunnen we naar alle namen in de lijst vragen die 8 letters (of minder) lang zijn, en deze tevens laten sorteren op lengte! Met maar één regel code tonen we slechts een fractie van wat LINQ kan.
@@ -51,7 +51,7 @@ names.Add("Zoe Doe");
 // Iterate over it - the query has not actually been executed yet!
 // It will be as soon as we hit the foreach loop though!
 foreach (var name in shortNames)
-    Console.WriteLine(name);
+    System.Diagnostics.Debug.WriteLine(name);
 ```
 
 De commentaar is bewust toegevoegd om de code eenvoudiger begrijpbaar te maken. Na de query voegen we bewust een naam toe aan de oorspronkelijke lijst. Als nu de query al was uitgevoerd, dan zou dit natuurlijk niets uitmaken voor het resultaat, maar dat doet het wel, omdat het wordt toegevoegd na de query maar VOORDAT we de data echt gaan gebruiken, en dat gebeurt in de *foreach* loop.
@@ -116,7 +116,7 @@ List<int> numbers = new List<int>()
 };
 var smallNumbers = numbers.Where(n => n < 10);
 foreach (var n in smallNumbers)
-    Console.WriteLine(n);
+    System.Diagnostics.Debug.WriteLine(n);
 ```
 
 In bovenstaande wordt elk getal gecheckt tegen onze expressie, die true zal terugggeven als het getal kleiner is dan 10 en false als het 10 is of hoger. Als resultaat krijgen we een versie van de oorspronkelijke lijst, waar alleen getallen kleiner dan 10 staan, wat dan naar de console wordt gestuurd.
@@ -130,7 +130,7 @@ List<int> numbers = new List<int>()
 };
 var smallNumbers = numbers.Where(n => n > 1 && n != 4 &&  n < 10);
 foreach (var n in smallNumbers)
-    Console.WriteLine(n);
+    System.Diagnostics.Debug.WriteLine(n);
 ```
 
 We specificeren dat het getal groter moet zijn dan 1, maar dan niet het specifieke getal 4, en kleiner dan 10.
@@ -148,7 +148,7 @@ List<int> excludedNumbers = new List<int>()
 };
 var validNumbers = numbers.Where(n => !excludedNumbers.Contains(n));
 foreach (var n in validNumbers)
-    Console.WriteLine(n);
+    System.Diagnostics.Debug.WriteLine(n);
 ```
 
 In dit voorbeeld declareren we een tweede lijst met getallen, een soort zwarte lijst van getallen die we niet erbij willen hebben! In de Where() method gebruiken we de **Contains()** method bij de zwarte lijst om te bepalen of een getal in de eindlijst kan worden opgenomen of niet.
@@ -176,7 +176,7 @@ namespace LinqWhere2
 
         var filteredUsers = listOfUsers.Where(user => user.Name.StartsWith("J") && user.Age < 40);
         foreach (User user in filteredUsers)
-        Console.WriteLine(user.Name + ": " + user.Age);
+        System.Diagnostics.Debug.WriteLine(user.Name + ": " + user.Age);
     }
 
     class User
@@ -209,7 +209,7 @@ List<int> numbers = new List<int>()
 };
 var smallNumbers = numbers.Where(n => n > 1).Where(n => n != 4).Where(n => n < 10);
 foreach (var n in smallNumbers)
-    Console.WriteLine(n);
+    System.Diagnostics.Debug.WriteLine(n);
 ```
 
 Het resultaat is precies hetzelfde, en hoewel de eerste versie misschien niet complex genoeg was om de split te rechtvaardigen, kom je naar alle waarschijnlijkheid in situaties waar het verstandig is dat wel te doen. We willen benadrukken dat dit in termen van 'performance' niets extra kost, omdat de echte "where" operatie(s) pas worden uitgevoerd bij het onderdeel waar we een 'loop' uitvoeren bij het resultaat. Tegen die tijd hebben compiler en interpreter jouw query zo snel als mogelijk geoptimaliseerd, ongeacht hoe je die hebt geschreven.
@@ -227,7 +227,7 @@ List<int> numbers = new List<int>()
 };
 List<int> sortedNumbers = numbers.OrderBy(number => number).ToList();
 foreach (int number in sortedNumbers)
-    Console.WriteLine(number);
+    System.Diagnostics.Debug.WriteLine(number);
 ```
 
 Dat was gemakkelijk, nietwaar? Roep de **OrderBy()** method aan en doe er het te sorteren object of de member van het object bij, en je krijgt er een gesorteerde lijst van terug. En natuurlijk kun je dat net ze gemakkelijk doen met strings, zoals we zullen zien in het volgende voorbeeld. Maar laten we de items in aflopende (grootste naar kleinste/van Z naar A) volgorde zetten:
@@ -239,7 +239,7 @@ List<string> cityNames = new List<string>()
 };
 List<string> sortedCityNames = cityNames.OrderByDescending(city => city).ToList();
 foreach (string cityName in sortedCityNames)
-    Console.WriteLine(cityName);
+    System.Diagnostics.Debug.WriteLine(cityName);
 ```
 
 We doen hetzelfde als zojuist maar nu gebruiken we niet de OrderBy() method maar de **OrderByDescending()** method. En natuurlijk kan je je lijst van integers en strings gemakkelijk gesorteerd krijgen, dat stelt niks voor! Maar dankzij LINQ is het vrijwel net zo gemakkelijk om complexere objecten te sorteren. Hier is een voorbeeld:
@@ -272,7 +272,7 @@ namespace LinqOrder2
 
         List<User> usersByAge = listOfUsers.OrderBy(user => user.Age).ToList();
         foreach (User user in usersByAge)
-        Console.WriteLine(user.Name + ": " + user.Age + " years");
+        System.Diagnostics.Debug.WriteLine(user.Name + ": " + user.Age + " years");
     }
     }
 }
@@ -293,7 +293,7 @@ List<User> listOfUsers = new List<User>()
 
 List<User> sortedUsers = listOfUsers.OrderBy(user => user.Age).ThenBy(user => user.Name).ToList();
 foreach (User user in sortedUsers)
-    Console.WriteLine(user.Name + ": " + user.Age + " years");
+    System.Diagnostics.Debug.WriteLine(user.Name + ": " + user.Age + " years");
 ```
 
 Simpel maar heel effectief! Je kunt zelfs multipele ThenBy() method calls schakelen, voor het geval jouw data complexer zijn dan de data uit onze test case. En natuurlijk kun je de OrderBy(), OrderByDescending(), ThenBy() en ThenByDescending() methods mengen en vergelijken hoe je maar wilt:
@@ -301,7 +301,7 @@ Simpel maar heel effectief! Je kunt zelfs multipele ThenBy() method calls schake
 ```c#
 List<User> sortedUsers = listOfUsers.OrderBy(user => user.Age).ThenByDescending(user => user.Name).ToList();
 foreach (User user in sortedUsers)  
-    Console.WriteLine(user.Name + ": " + user.Age + " years");
+    System.Diagnostics.Debug.WriteLine(user.Name + ": " + user.Age + " years");
 ```
 
 We gebruiken meestal de methode-gebaseerde syntaxis van LINQ, maar zoals altijd, nemen we één van de voorbeelden in het artikel en laten je zien hoe het eruit zou zien met de query syntax. Hier is het laatste voorbeeld met de **LINQ query syntax** versie:
@@ -336,7 +336,7 @@ List<string> names = new List<string>()
 };
 var middleNames = names.Skip(1).Take(2).ToList();
 foreach (var name in middleNames)
-    Console.WriteLine(name);
+    System.Diagnostics.Debug.WriteLine(name);
 ```
 
 We creëren een eenvoudige lijst van namen en daarna, voor de output, slaan we de eerste naam (Skip(1)) over, en nemen vervolgens de volgende twee namen (Take(2)), waardoor we slechts de middelste twee namen uit de lijst overhouden.
@@ -373,14 +373,14 @@ namespace LinqTakeSkip1
         while(pageItems.Count() > 0)
         {
 	        foreach (var item in pageItems)
-    	        Console.WriteLine(item.Currency + ": " + item.Rate.ToString("N2", usCulture));
-        	Console.WriteLine("Press any key to get the next items...");
-	        Console.ReadKey();
+    	        System.Diagnostics.Debug.WriteLine(item.Currency + ": " + item.Rate.ToString("N2", usCulture));
+        	System.Diagnostics.Debug.WriteLine("Press any key to get the next items...");
+	        System.Diagnostics.Debug.ReadKey();
     	    pageCounter++;
         	// Here's where we use the Skip() and Take() methods!
 	        pageItems = currencyRateItems.Skip(pageSize * pageCounter).Take(pageSize);
         }
-        Console.WriteLine("Done!");        
+        System.Diagnostics.Debug.WriteLine("Done!");        
     }
     }
 }
@@ -424,7 +424,7 @@ namespace LinqSelect1
         List<string> names = listOfUsers.Select(user => user.Name).ToList();  
 
         foreach (string name in names)  
-        Console.WriteLine(name);  
+        System.Diagnostics.Debug.WriteLine(name);  
     }  
     }  
 }
@@ -446,7 +446,7 @@ List<string> names = listOfUsers.Select(user => user.Name).ToList();
 List<User> users = names.Select(name => new User { Name = name }).ToList();
 
 foreach (User user in users)
-    Console.WriteLine(user.Name);
+    System.Diagnostics.Debug.WriteLine(user.Name);
 ```
 
 Notice how I can create new objects with the Select() method - it's an extremely powerful feature, which allows you to do pretty much anything with your data, on the fly! A common usage for this functionality is to make less complex versions of an object, e.g. to return over a web service as JSON or XML. Imagine that you have a User class with a LOT of properties (Birthday, Gender, Mail, Address, Country etc.), but you only want to return a limited set of these properties - that might also make sense, security-wise, to make sure that you don't return common User properties like Username and Password. Here's a simplified example - just imagine a much more complex User class:
@@ -483,7 +483,7 @@ namespace LinqSelect2
 	        Age = user.Age
         });
         foreach (var user in simpleUsers)
-    	    Console.WriteLine(user.Name);
+    	    System.Diagnostics.Debug.WriteLine(user.Name);
     }
     }
 }
@@ -510,7 +510,7 @@ var simpleUsersQ = (from user in listOfUsers
 	    	        }).ToList();
 
 foreach (var user in simpleUsersQ)
-    Console.WriteLine(user.Name);
+    System.Diagnostics.Debug.WriteLine(user.Name);
 ```
 
 The Select() method allows you to transform and shape data from your data source into new variants, for instance by selecting only a single property or returning objects which only contains a subset of the properties found on the source object.
@@ -561,9 +561,9 @@ namespace LinqGroup
         var usersGroupedByCountry = users.GroupBy(user => user.HomeCountry);    
         foreach(var group in usersGroupedByCountry)    
         {    
-        Console.WriteLine("Users from " + group.Key + ":");    
+        System.Diagnostics.Debug.WriteLine("Users from " + group.Key + ":");    
         foreach(var user in group)    
-            Console.WriteLine("* " + user.Name);
+            System.Diagnostics.Debug.WriteLine("* " + user.Name);
         }    
     }       
     }    
@@ -619,9 +619,9 @@ namespace LinqGroup
         var usersGroupedByFirstLetters = users.GroupBy(user => user.Name.Substring(0, 2));
         foreach(var group in usersGroupedByFirstLetters)
         {
-        Console.WriteLine("Users starting with " + group.Key + ":");
+        System.Diagnostics.Debug.WriteLine("Users starting with " + group.Key + ":");
         foreach(var user in group)
-            Console.WriteLine("* " + user.Name);
+            System.Diagnostics.Debug.WriteLine("* " + user.Name);
         }
     }
     }
@@ -665,9 +665,9 @@ namespace LinqGroup
         var usersGroupedByAgeGroup = users.GroupBy(user => user.GetAgeGroup());
         foreach(var group in usersGroupedByAgeGroup)
         {
-	        Console.WriteLine(group.Key + ":");
+	        System.Diagnostics.Debug.WriteLine(group.Key + ":");
     	    foreach(var user in group)
-        	    Console.WriteLine("* " + user.Name + " [" + user.Age + " years]");
+        	    System.Diagnostics.Debug.WriteLine("* " + user.Name + " [" + user.Age + " years]");
         }
     }
 
@@ -743,9 +743,9 @@ namespace LinqGroup2
         var usersGroupedByCountryAndAge = users.GroupBy(user => new { user.HomeCountry, user.Age });
         foreach(var group in usersGroupedByCountryAndAge)
         {
-        	Console.WriteLine("Users from " + group.Key.HomeCountry + " at the age of " + group.Key.Age + ":");
+        	System.Diagnostics.Debug.WriteLine("Users from " + group.Key.HomeCountry + " at the age of " + group.Key.Age + ":");
 	        foreach (var user in group)
-    	        Console.WriteLine("* " + user.Name + " [" + user.Age + " years]");
+    	        System.Diagnostics.Debug.WriteLine("* " + user.Name + " [" + user.Age + " years]");
         }
     }
 
@@ -867,10 +867,10 @@ Personen[] personen =
 };
 IEnumerable<Personen> vijftigPlussers = personen.
     Where(x => x.Leeftijd >= 50);
-Console.WriteLine("Vijftigplussers:");
+System.Diagnostics.Debug.WriteLine("Vijftigplussers:");
 foreach (Personen persoon in vijftigPlussers)
 {
-    Console.WriteLine(persoon.Name);
+    System.Diagnostics.Debug.WriteLine(persoon.Name);
 }
 ```
 
@@ -897,10 +897,10 @@ Personen[] personen =
 IEnumerable<Personen> vijftigPlussers = 
     personen.Where((persoon, index) => 
     persoon.Name == "Jan" || index == 4);
-Console.WriteLine("Vijftigplussers:");
+System.Diagnostics.Debug.WriteLine("Vijftigplussers:");
 foreach (Personen persoon in vijftigPlussers)
 {
-    Console.WriteLine(persoon.Name);
+    System.Diagnostics.Debug.WriteLine(persoon.Name);
 }
 ```
 
@@ -924,10 +924,10 @@ Personen[] personen =
     new Personen { Name = "Judith", Leeftijd = 20 }
 };
 IEnumerable<string> persoonsNamen = personen.Select(x => x.Name);
-Console.WriteLine("Namen van de personen:");
+System.Diagnostics.Debug.WriteLine("Namen van de personen:");
 foreach (string name in persoonsNamen)
 {
-    Console.WriteLine(name);
+    System.Diagnostics.Debug.WriteLine(name);
 }
 ```
 
@@ -945,10 +945,10 @@ Personen[] personen =
 IEnumerable<string> persoonsNamen = personen.Select(
     x => String.Format("De lengte van de naam {0} is {1}.", 
         x.Name, x.Name.Length));
-Console.WriteLine("Namen van de personen:");
+System.Diagnostics.Debug.WriteLine("Namen van de personen:");
 foreach (string name in persoonsNamen)
 {
-    Console.WriteLine(name);
+    System.Diagnostics.Debug.WriteLine(name);
 }
 ```
 
@@ -970,10 +970,10 @@ Personen[] personen =
 string[] fruitSoorten = { "Appel", "Sinaasappel", "Druif" };
 var PersonenDieFruitEten = personen.SelectMany(persoon => 
     fruitSoorten, (p, f) => new { persoon = p, fruitSoorten = f });
-Console.WriteLine("Namen van de personen en het fruit dat ze kunnen eten:");
+System.Diagnostics.Debug.WriteLine("Namen van de personen en het fruit dat ze kunnen eten:");
 foreach (var persoonDieFruitEet in PersonenDieFruitEten)
 {
-    Console.WriteLine(String.Format("{0} eet {1}.",
+    System.Diagnostics.Debug.WriteLine(String.Format("{0} eet {1}.",
         persoonDieFruitEet.persoon.Name,
         persoonDieFruitEet.fruitSoorten));
 }
@@ -1003,10 +1003,10 @@ static void LinqTakeOperator()
         new Personen { Name = "Judith", Leeftijd = 20 }
     };
     IEnumerable<Personen> eersteDriePersonen = personen.Take(3);
-    Console.WriteLine("Namen van de eerste drie personen:");
+    System.Diagnostics.Debug.WriteLine("Namen van de eerste drie personen:");
     foreach (Personen persoon in eersteDriePersonen)
     {
-        Console.WriteLine(persoon.Name);
+        System.Diagnostics.Debug.WriteLine(persoon.Name);
     }
 }
 ```
@@ -1029,9 +1029,188 @@ Personen[] personen =
 };
 IEnumerable<Personen> personenZolangGeenElfJaar = 
     personen.TakeWhile(x => x.Leeftijd != 11);
-Console.WriteLine("Namen tot er een persoon van 11 jaar wordt tegengekomen:");
+System.Diagnostics.Debug.WriteLine("Namen tot er een persoon van 11 jaar wordt tegengekomen:");
 foreach (Personen persoon in personenZolangGeenElfJaar)
 {
-    Console.WriteLine(persoon.Name);
+    System.Diagnostics.Debug.WriteLine(persoon.Name);
 }
 ```
+
+# Aggregatie
+
+Following examples show how to use LINQ aggregation methods defined in **Enumerable** class.
+
+## Enumerable.Sum
+
+Returns **sum** of values in numeric collection.
+
+numbers: 8, 2, 6, 3
+
+
+```c#
+int result = numbers.Sum();
+```
+
+result: 19
+
+
+
+
+Returns **zero** for empty collection.
+
+numbers: (empty)
+
+```c#
+int result = numbers.Sum();
+```
+
+result: 0
+
+## Enumerable.Max
+
+Returns **maximal value** in numeric collection.
+
+numbers: 8, 2, 6, 3
+
+
+```c#
+int result = numbers.Max();
+```
+result: 8
+
+
+
+Throws **InvalidOperationException** for empty collection.
+
+numbers: (empty)
+
+
+```c#
+int result = numbers.Max();
+```
+
+
+## Enumerable.Min
+
+Returns **minimal value** in numeric collection.
+
+numbers: 8, 2, 6, 3
+
+```c#
+int result = numbers.Min();
+```
+
+result: 2
+
+
+
+Throws **InvalidOperationException** for empty collection.
+
+numbers: (empty)
+
+```c#
+int result = numbers.Min();
+```
+
+## Enumerable.Count
+
+Returns **number of items** in a collection.
+
+items: A, B, C, D
+
+```c#
+int result = items.Count();
+```
+
+result: 4
+
+
+
+Returns **zero** for empty collection.
+
+items: (empty)
+
+int result = items.Count();
+
+result: 0
+
+## Enumerable.LongCount
+
+Returns **number of items** in a collection. The result is of type **long** (Int64), so the number of items can be greater than Int32.MaxValue (2,147,483,647).
+
+items: A, B, C, D
+
+
+```c#
+long result = items.LongCount();
+```
+
+result: 4
+
+
+
+Returns **zero** for empty collection.
+
+items: (empty)
+
+long result = items.LongCount();
+
+result: 0
+
+
+## Enumerable.Average
+
+Returns **average value** of numeric collection.
+
+numbers: 8, 2, 6, 3
+
+```c#
+double result = numbers.Average();
+```
+
+
+result: 4.75
+
+
+
+Throws **InvalidOperationException** for empty collection.
+
+numbers: (empty)
+
+```c#
+double result = numbers.Average();
+```
+
+
+
+## Enumerable.Aggregate
+
+Aggregate method **applies a function to each item** of a collection. In this example the function to be applied is adding (operator +).
+
+numbers: 8, 2, 6, 3
+
+
+```c#
+int sum = numbers.Aggregate( func: (result,item) => result+item );
+```
+
+sum: 19
+
+
+
+Throws **InvalidOperationException** for empty collection.
+
+ numbers: (empty)
+
+```c#
+int sum = numbers.Aggregate( func: (result,item) => result+item );
+```
+
+
+
+
+# LINQPad
+
+![LINQPad](./linqpad1.png)
+
+Voor voorbeelden die uitvoerbaar zijn via LINQPad, zie gecomprimeerd bestand [LINQPad.zip](./LINQPad.zip).
