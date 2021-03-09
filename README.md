@@ -105,7 +105,6 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 ## 9. LINQ
 
 1. [Stap voor stap](./Documents/Linq.md)
-2. LINQPad: voorbeelden
 3. [Oefening: SportsStore](./Documents/SportsStore.md)
 
 **Maak volgende oefening en dien deze in:**
