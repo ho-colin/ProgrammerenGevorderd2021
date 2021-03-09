@@ -1,11 +1,13 @@
 # Null Coalescing
 
-Coalescing betekent samenvoegen. In het geval van Null Coalescing betekent dit dat, indien een null waarde wordt toegekend zou worden aan een variabele, dat we er een “fallback”-waarde aan toekennen. Beschouw het volgende voorbeeld: 
+Coalescing betekent samenvoegen. In het geval van Null Coalescing betekent dit dat, indien een null waarde toegekend zou worden aan een variabele, dat we er een “fallback”-waarde aan toekennen. 
+
+Voorbeeld: 
 
 ```c#
 string info = "Account Info: "; 
-string name = "Carlton Banks "; 
-string accountNumber = null; //has no account, so no number 
+string name = "Carlton Banks"; 
+string accountNumber = null; // has no account, so no number 
 info += name; 
 if (accountNumber == null) 
     info += ""; 
@@ -18,8 +20,8 @@ Indien accountNumber gelijk is aan null, dan moet de string "" worden afgebeeld.
 
 ```c#
 string info = "Account Info: "; 
-string name = "Carlton Banks "; 
-string accountNumber = null; //has no account, so no number 
+string name = "Carlton Banks"; 
+string accountNumber = null; // has no account, so no number 
 info += name; 
 info += accountNumber ?? ""; 
 Console.WriteLine(info); 
