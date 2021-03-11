@@ -114,14 +114,13 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 ## 10. C# uitdieping
 
 1. [Null coalescing](./Documents/NullCoalescing.md)
-
 2. [Null conditional operator](./Documents/NullConditionalOperator.md)
 
-4. Condities: [switch statement](./Documents/switch.md)
-
-3. [Willem Tell](./Documents/WillemTellTernary.md): speciale inheritance keywords, speciale operatoren zoals ternary ?:
-
 <!--
+
+1. Condities: [switch statement](./Documents/switch.md)
+
+1. [Willem Tell](./Documents/WillemTellTernary.md): speciale inheritance keywords, speciale operatoren zoals ternary ?:
 
 4. [Culture](./Documents/Culture.md)
 
@@ -159,9 +158,12 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 ## 13. Jason (nuget)
 
+-->
+
 ## 14. ADO .NET (week 7)
 
--->
+1. [Microsoft SQL Server](./Documents/InstallSqlExpress.md)
+2. [ADO .NET: eerste stappen](./Documents/adonet1.md)
 
 ```
 Week 8 (30/3 - 2/4): tussentijdse evaluatie (tweede kans mogelijk tot en met eerste kans eindevaluatie)
