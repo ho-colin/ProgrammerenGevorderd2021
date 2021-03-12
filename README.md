@@ -165,16 +165,17 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 1. [Microsoft SQL Server](./Documents/InstallSqlExpress.md)
 2. [ADO .NET: eerste stappen](./Documents/adonet1.md)
 
-```
-Week 8 (30/3 - 2/4): tussentijdse evaluatie (tweede kans mogelijk tot en met eerste kans eindevaluatie)
+```output
+Week 8 (30/3 - 2/4): groep A - tussentijdse evaluatie (tweede kans mogelijk tot en met eerste kans eindevaluatie)
+Week 11: groep C?
 ```
 
-```
+```output
 3/4/2021 - 18/4/2021: paasvakantie
 ```
 
-```
-2/4/2021: eindopdracht - deel 2: UI
+```output
+18/4/2021: eindopdracht - deel 2: UI
 ```
 
 <!--
