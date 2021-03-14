@@ -151,7 +151,7 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 -->
 
 ```
-16/3/2021: eindopdracht - deel 1: domeinmodel, inclusief unit testing
+16/3/2021: bekendmaking eindopdracht juni 2021 - deel 1: domeinmodel, inclusief unit testing
 ```
 
 <!--

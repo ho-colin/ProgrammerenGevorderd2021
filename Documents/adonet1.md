@@ -4,7 +4,7 @@
 
 ### System.Data of ADO.NET
 
-In dit hoofdstuk bespreken we het benaderen van datasources als databanken.
+In dit hoofdstuk bespreken we het benaderen van data sources als databanken.
 
 De **System.Data** namespace in de klassenbibliotheek van het .NET Framework biedt enkel mogelijkheden (datatypes met ingebouwde functionaliteiten) die ons dit toestaan.
 
@@ -22,7 +22,7 @@ Microsoft Docs: ADO.NET Overview (Development Guide, Data and Modeling): http://
 
 In volgende voorbeelden wordt gewerkt met een *MicroSoft SQL Server* database bestand (*.mdf*).
 
-Afhankelijk van de geïnstalleerde versie van *Visual Studio* of geïnstalleerde updates op jouw systeem zal ook een bepaalde versie van *SQL Server (Express (LocalDB))* geïnstalleerd zijn. Het is bovendien mogelijk om zelf een volledige instantie van SQL Server “Express” gratis te installeren.
+Afhankelijk van de geïnstalleerde versie van *Visual Studio* of geïnstalleerde updates op jouw systeem zal ook een bepaalde versie van *SQL Server (Express (LocalDB))* geïnstalleerd zijn. Het is bovendien mogelijk om zelf een volledige instantie van [SQL Server “Express”](./InstallSqlExpress.md) gratis te installeren.
 
 Om informatie uit een database te kunnen benaderen heb je nood aan een *verbinding* (*connectie*) met de database. Deze verbinding kan tot stand worden gebracht aan de hand van een *connection* *object*.
 
@@ -142,7 +142,12 @@ SqlConnection conn;
  conn.Dispose()
 ```
 
+## CRUD
 
+- (C)REATE: het insert statement in geval van SQL
+- (R)EAD: het select statement
+- (U)PDATE: het update statement
+- (D)ELETE: het delete statement
 
 ## Visual Studio Tooling
 
@@ -162,7 +167,7 @@ Indien niet zo, klik je op de *Change...* knop om deze instelling aan te passen.
 
 
 
-Dit venster biedt je eventueel ook de mogelijkheid de hiermee samengestelde *connectionstring* op te vragen, via de knop "Advanced...". Deze waarde zou je kunnen kopiëren en straks inzetten in onze broncode.
+Dit venster biedt je eventueel ook de mogelijkheid de hiermee samengestelde *connection string* op te vragen, via de knop "Advanced...". Deze waarde zou je kunnen kopiëren en straks inzetten in onze broncode.
 
 ![image-20210311152146076](./image-20210311152146076.png)
 
@@ -229,7 +234,7 @@ Indien je in de *Server Explorer* de *PersonenDb.dbo en *Tables* node uitvouwt v
 
 ### ADO .NET gebruiken
 
-Voor .NET Core, gebruik nuget: klik rechts op project, selecteer “Manage Nuget Packages…” en kies onder “Browse”:  “Microsoft.Data.SqlClient”. Bevestig de licentie en zie hoe de noodzakelijke packages onder “Dependencies” toegevoegd worden.
+Voor .NET 5.0, gebruik **nuget**: klik rechts op project, selecteer **“Manage Nuget Packages…”** en kies onder “Browse”:  “Microsoft.Data.SqlClient”. Bevestig de licentie en zie hoe de noodzakelijke packages onder “Dependencies” toegevoegd worden.
 
 Vergeet niet de connection string aan te passen naar deze welke je kan vinden onder: Server Explorer > Data Connections: rechterklik naar Properties en dan Connections > Connection string.
 
