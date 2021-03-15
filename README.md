@@ -37,7 +37,7 @@
 ## 2. Herhalingsoefening (week 2: 16/2)
 
 * [Begeleide oefening: een bierwinkel...](./Documents/PG_OObasics_oef1_opdracht.pdf)
-* **Maak volgende oefening en dien deze in:**
+* **Maak volgende oefening en dien deze in voor de tussentijdse evaluatie:**
   * [Opdracht](./Documents/OpgaveCollections.pdf)
   * [Scheepvaart: analyse](./Documents/OefeningCollectionsOvererving.pdf)
 
@@ -69,7 +69,7 @@ Oefen op volgende *walk through* en werk de oplossing zelfstandig uit met Visual
 
   1. [Bank account: TDD](./Documents/UnitTestingWalkthrough.pdf)
 
-**Maak volgende oefening en dien deze in:**
+**Maak volgende oefening en dien deze in voor de tussentijdse evaluatie:**
 
 * [Code kata unit testing: een korte oefening](./Documents/unittestkata1.md) <!-- https://osherove.com/tdd-kata-1/ -->
 
@@ -87,6 +87,7 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 ## 7. Lambda, delegate, event, extension method
 
 2. [Presentatie](./Documents/DelegatesEvents.pdf)
+2. Events: een eenvoudig voorbeeld en een vergelijking met werken via een interface
 2. Video's: https://www.youtube.com/playlist?list=PLM3q9wWBZWb90CajLrVZcenmxIBCqyaFq (de twee laatste video's leggen oefening Klant/Ober/Kok uit, zie Presentatie)
 
 **Maak volgende oefening en dien deze in:**
@@ -107,7 +108,7 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 1. [Stap voor stap](./Documents/Linq.md)
 3. [Oefening: SportsStore](./Documents/SportsStore.md)
 
-**Maak volgende oefening en dien deze in:**
+**Maak volgende oefening en dien deze in voor de tussentijdse evaluatie:**
 
 * [Oefening](./Documents/LinqOpgave.pdf): [gegevens](./Documents/LinqAdresInfo.txt)
 
@@ -148,14 +149,6 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 [SimpleTCP](./Documents/SimpleTCP.md)
 
--->
-
-```
-16/3/2021: bekendmaking eindopdracht juni 2021 - deel 1: domeinmodel, inclusief unit testing
-```
-
-<!--
-
 ## 13. Jason (nuget)
 
 -->
@@ -164,10 +157,12 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 1. [Microsoft SQL Server](./Documents/InstallSqlExpress.md)
 2. [ADO .NET: eerste stappen](./Documents/adonet1.md)
+3. [Bulk upload](./Documents/ADONETBulkUpload.md)
 
 ```output
-Week 8 (30/3 - 2/4): groep A - tussentijdse evaluatie (tweede kans mogelijk tot en met eerste kans eindevaluatie)
-Week 11: groep C?
+- Week 8 (30/3 - 2/4): groep A - tussentijdse evaluatie (tweede kans mogelijk tot en met eerste kans eindevaluatie)
+- Voor 3/4/2021: bekendmaking eindopdracht juni 2021 - deel 1: domeinmodel, inclusief unit testing
+- Week 11: groep C?
 ```
 
 ```output
