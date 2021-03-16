@@ -16,30 +16,30 @@ Opmerking: De ADO.NET DataTable is een centraal object dat onafhankelijk kan wor
 
 ### Constructoren:
 
-1. DataTable(): wordt gebruikt om een nieuwe instantie van de System.Data.DataTable klasse te initialiseren zonder argumenten.
-2. DataTable(string tableName): wordt gebruikt om een nieuwe instantie van de System.Data.DataTable klasse te initialiseren met de opgegeven tabelnaam. Hier is de Parameter tableName de naam die aan de tabel moet worden gegeven. Indien tableName null is of een lege string, wordt een standaardnaam gegeven bij toevoeging aan de System.Data.DataTableCollection.
-3. DataTable(SerializationInfo info, StreamingContext context): r wordt gebruikt om een nieuwe instantie van de klasse System.Data.DataTable te initialiseren met de System.Runtime.Serialization.SerializationInfo en de System.Runtime.Serialization.StreamingContext. Hier specificeert de parameter info de gegevens die nodig zijn om een object te serialiseren of deserialiseren en de parameter context specificeert de bron en bestemming van een gegeven geserialiseerde stroom.
-4. DataTable(string tableName, string tableNamespace): hiermee wordt een nieuwe instantie van de klasse System.Data.DataTable geïnitialiseerd met de opgegeven tabelnaam en namespace. Hier specificeert de parameter tableName de naam die aan de tabel moet worden gegeven. Indien tableName null is of een lege string, wordt een standaard naam gegeven bij toevoeging aan de System.Data.DataTableCollection. De tweede parameter, tableNamespace, specificeert de namespace voor de XML-weergave van de gegevens die in de DataTable zijn opgeslagen.
+1. **DataTable()**: wordt gebruikt om een nieuwe instantie van de System.Data.DataTable klasse te initialiseren zonder argumenten.
+2. **DataTable(string tableName)**: wordt gebruikt om een nieuwe instantie van de System.Data.DataTable klasse te initialiseren met de opgegeven tabelnaam. Hier is de Parameter tableName de naam die aan de tabel moet worden gegeven. Indien tableName null is of een lege string, wordt een standaardnaam gegeven bij toevoeging aan de System.Data.DataTableCollection.
+3. **DataTable(SerializationInfo info, StreamingContext context)**: r wordt gebruikt om een nieuwe instantie van de klasse System.Data.DataTable te initialiseren met de System.Runtime.Serialization.SerializationInfo en de System.Runtime.Serialization.StreamingContext. Hier specificeert de parameter info de gegevens die nodig zijn om een object te serialiseren of deserialiseren en de parameter context specificeert de bron en bestemming van een gegeven geserialiseerde stroom.
+4. **DataTable(string tableName, string tableNamespace)**: hiermee wordt een nieuwe instantie van de klasse System.Data.DataTable geïnitialiseerd met de opgegeven tabelnaam en namespace. Hier specificeert de parameter tableName de naam die aan de tabel moet worden gegeven. Indien tableName null is of een lege string, wordt een standaard naam gegeven bij toevoeging aan de System.Data.DataTableCollection. De tweede parameter, tableNamespace, specificeert de namespace voor de XML-weergave van de gegevens die in de DataTable zijn opgeslagen.
 
 ### Eigenschappen van ADO.NET DataTable:
 
-1. Kolommen: Deze wordt gebruikt om de verzameling kolommen op te halen die bij deze tabel horen.
+1. **Colums**: Deze wordt gebruikt om de verzameling kolommen op te halen die bij deze tabel horen.
 
-2. Constraints: t wordt gebruikt om de verzameling van constraints te krijgen die door deze tabel worden onderhouden.
+2. **Constraints**: t wordt gebruikt om de verzameling van constraints te krijgen die door deze tabel worden onderhouden.
 
-3. DataSet: Wordt gebruikt om de DataSet op te halen waartoe deze tabel behoort.
+3. **DataSet**: Wordt gebruikt om de DataSet op te halen waartoe deze tabel behoort.
 
-4. DefaultView (Standaardweergave): Wordt gebruikt om een aangepaste weergave van de tabel op te halen die een gefilterde weergave kan bevatten.
+4. **DefaultView** (Standaardweergave): Wordt gebruikt om een aangepaste weergave van de tabel op te halen die een gefilterde weergave kan bevatten.
 
-5. HasErrors (Heeft fouten): Wordt gebruikt om een waarde op te halen die aangeeft of er fouten zijn in een van de rijen in de tabel van de DataSet.
+5. **HasErrors** (Heeft fouten): Wordt gebruikt om een waarde op te halen die aangeeft of er fouten zijn in een van de rijen in de tabel van de DataSet.
 
-6. MinimumCapacity: Wordt gebruikt om de initiële startgrootte voor deze tabel te krijgen of in te stellen.
+6. **MinimumCapacity**: Wordt gebruikt om de initiële startgrootte voor deze tabel te krijgen of in te stellen.
 
-7. PrimaryKey: Wordt gebruikt om een array van kolommen op te halen of in te stellen die fungeren als primaire sleutels voor de gegevenstabel.
+7. **PrimaryKey**: Wordt gebruikt om een array van kolommen op te halen of in te stellen die fungeren als primaire sleutels voor de gegevenstabel.
 
-8. Rijen: Wordt gebruikt om de verzameling rijen op te halen die bij deze tabel horen.
+8. **Rows**: Wordt gebruikt om de verzameling rijen op te halen die bij deze tabel horen.
 
-9. TableName (Tabelnaam): Wordt gebruikt om de naam van de DataTable te krijgen of in te stellen.
+9. **TableName (Tabelnaam)**: Wordt gebruikt om de naam van de DataTable te krijgen of in te stellen.
 
    
 
@@ -55,7 +55,7 @@ Opmerking: De ADO.NET DataTable is een centraal object dat onafhankelijk kan wor
 8. GetSchema(): wordt gebruikt om het schema van de tabel op te halen.
 9. ImportRow(DataRow): wordt gebruikt om een DataRow naar een DataTable te kopiëren.
 10. Load(IDataReader): wordt gebruikt om een DataTable te vullen met waarden uit een gegevensbron met behulp van de meegeleverde IDataReader.
-11. Samenvoegen(DataTable, Booleaans): wordt gebruikt om de opgegeven DataTable samen te voegen met de huidige DataTable.
+11. Join(DataTable, Booleaans): wordt gebruikt om de opgegeven DataTable samen te voegen met de huidige DataTable.
 12. NewRow(): wordt gebruikt om een nieuwe DataRow aan te maken met hetzelfde schema als de tabel.
 13. Select(): wordt gebruikt om een array van alle DataRow objecten op te halen.
 14. WriteXml(String): wordt gebruikt om de huidige inhoud van de DataTable als XML te schrijven met behulp van het opgegeven bestand.
@@ -143,7 +143,7 @@ In het bovenstaande voorbeeld hebben we enkele van de eigenschappen van DataColu
 
 8. Max. lengte: Deze eigenschap wordt gebruikt om de maximale lengte van een tekstkolom te krijgen of in te stellen.
 
-9. Uniek: Deze eigenschap wordt gebruikt om een waarde te krijgen of in te stellen die aangeeft of de waarden in elke rij van de kolom uniek moeten zijn.
+9. Unique: Deze eigenschap wordt gebruikt om een waarde te krijgen of in te stellen die aangeeft of de waarden in elke rij van de kolom uniek moeten zijn.
 
    
 
@@ -500,7 +500,7 @@ namespace AdoNetConsoleApplication
         {
             try
             {
-                // Craeting Customer table
+                // Creating Customer table
                 DataTable Customer = new DataTable("Customer");
                 //Creating column and schema
                 DataColumn CustomerId = new DataColumn("ID", typeof(Int32));
