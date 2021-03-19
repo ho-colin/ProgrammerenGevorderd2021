@@ -6,7 +6,7 @@
 
 In dit hoofdstuk bespreken we het benaderen van data sources als databanken.
 
-De **System.Data** namespace in de klassenbibliotheek van het .NET Framework biedt enkel mogelijkheden (datatypes met ingebouwde functionaliteiten) die ons dit toestaan.
+De **System.Data** namespace in de klassenbibliotheek van het .NET Framework biedt enkele mogelijkheden (datatypes met ingebouwde functionaliteiten) die ons dit toestaan.
 
 Men verwijst ook wel met de term *ADO.NET* naar deze datatypes en bijhorende functionaliteiten. ADO.NET is de opvolger van *ADO* uit het pre .NET tijdperk. ADO stond voor *ActiveX Data Objects*, de huidige voorzieningen hebben echter nog weinig te maken met de verouderde *ActiveX* technologie.
 
@@ -33,7 +33,7 @@ Afhankelijk van het type database management server (*Microsoft SQL Server*, *Or
 - MySql.Data.MySqlClient.MySqlConnection voor *MySQL* databases.
 - System.Data.Odbc.OdbcConnection of System.Data.OleDb.OleDbConnection voor *Microsoft Access* databases.
 
-Zoals je ziet zijn vele van deze types vervat in de System.Data namespace van de klassenbibliotheek van het .NET FrameWork.
+Zoals je ziet zijn vele van deze types vervat in de System.Data namespace van de klassenbibliotheek van het .NET Framework.
 
 ```c#
 using System.Data.SqlClient;
@@ -144,10 +144,19 @@ SqlConnection conn;
 
 ### CRUD
 
+Zie **[wikipedia](https://nl.wikipedia.org/wiki/CRUD)**.
+
 - (C)REATE: het insert statement in geval van SQL
+
 - (R)EAD: het select statement
+
 - (U)PDATE: het update statement
+
 - (D)ELETE: het delete statement
+
+  
+
+  ![What is CRUD? - PUT vs PATCH - D-BLOG](./crud.jpg)
 
 ### Visual Studio Tooling
 
@@ -161,7 +170,7 @@ Verifiëer of het *Data source* veld staat ingesteld op *Microsoft SQL Server (S
 
 ![image-20210311151928738](./image-20210311151928738.png)
 
-Indien niet zo, klik je op de *Change...* knop om deze instelling aan te passen.
+Indien dit niet zo is, klik je op de *Change...* knop om deze instelling aan te passen.
 
  ![image-20210311145459814](./image-20210311145459814.png)
 
@@ -194,6 +203,8 @@ Om vlot de nodige databank tabel te creëren maken we gebruik van *SQL creationa
 Neem volgende *SQL* over en kies in de *SQL* menu van *Visual Studio* voor *Execute* (in het venster bovenaan links de groene pijl):
 
 ![image-20210311160245496](./image-20210311160245496.png)
+
+Copieer de queries hier:
 
 ```sql
 CREATE TABLE [dbo].[Personen] (
@@ -236,15 +247,33 @@ Indien je in de *Server Explorer* de *PersonenDb.dbo en *Tables* node uitvouwt v
 
 Voor .NET 5.0, gebruik **nuget**: klik rechts op project, selecteer **“Manage Nuget Packages…”** en kies onder “Browse”:  “Microsoft.Data.SqlClient”. Bevestig de licentie en zie hoe de noodzakelijke packages onder “Dependencies” toegevoegd worden.
 
-Vergeet niet de connection string aan te passen naar deze welke je kan vinden onder: Server Explorer > Data Connections: rechterklik naar Properties en dan Connections > Connection string.
+Vergeet niet de connection string aan te passen naar deze welke je kan vinden onder: **Server Explorer > Data Connections: rechterklik naar Properties en dan Connections > Connection string**.
 
 ![image-20210311153420273](./image-20210311153420273.png)
+
+
+
+.Net Core-platform, in schril contrast met zijn voorganger .Net Framework, wordt geleverd als een set NuGet-pakketten. Zo draagt .Net Core in wezen bij aan het toch al bloeiende ecosysteem van NuGet-pakketten. Merk op dat .Net Core niet als een enkel NuGet-pakket wordt geleverd. In plaats daarvan is het verwerkt, gemoduleerd en verzonden als verschillende NuGet-pakketten.
+
+Bovendien elimineerde Microsoft de verwarring rond de nomenclatuur van NuGet-pakketten en de relevante assemblages. In .Net Core hebben de NuGet-pakketten dezelfde naam als de assembly. Onveranderlijke collecties worden nu bijvoorbeeld verzonden onder de naam System.Collections.Immutable in plaats van Microsoft.BCL.Immutable. Dit heeft het probleem van het bepalen welk NuGet-pakket welke assemblage bevat aanzienlijk vereenvoudigd. Hé, ze heten nu hetzelfde.
+
+Dus waarom besloot Microsoft .Net Core te verzenden als een set NuGet-pakketten?
+
+- Dit heeft de afhankelijkheden in uw toepassingen gegeneraliseerd. Nu zijn er geen montagereferenties, bibliotheken en NuGet-referenties van derden. Ze zijn nu allemaal NuGet. Dus als een NuGet-pakket van derden een hogere versie van de System.Collections-bibliotheek vereist, wordt u gevraagd het bijbehorende systeem te upgraden. NuGet-collectiespakket en je bent klaar. Het wordt echt heel eenvoudig.
+- De modulaire aanpak van .Net Core zorgt ervoor dat elke applicatie alleen de pakketten gebruikt die ze nodig hebben. Geen extra bagage.
 
 ### ExecuteScalar en parameters
 
 Om één gegeven in de databank onder te brengen, wordt de methode **ExecuteScalar** gebruikt. Deze methode geeft de eerste kolom van de eerste rij van de resultaat-set van het SELECT SQL-statement. Omdat het resultaat van het gegevenstype Object is, moet er meestal een conversie van het type plaats vinden. Voordeel: minder code dan met ExecuteReader.
 
-Interessant om een identity waarde terug te krijgen na een insert.
+Interessant om een identity waarde terug te krijgen bij een insert query of delete query of update query. Voor een insert query kan dat op een paar manieren:
+
+* voeg bij je insert statement een tweede query "**SELECT CAST(scope_identity() AS int)**": werkt alleen in geval van een identity key
+* voeg **output inserted.<kolomnaam identity kolom>** toe: dit werkt ook voor een primary key kolom die geen identity kolom is en is met andere woorden een betere en algemenere aanpak.
+
+Je kan de waarde van eender welke kolom teruggeven via **output inserted.<kolomnaam>**.
+
+Bij een delete query kan je output deleted.<kolomnaam> teruggeven.
 
 In een SQL-statement kunnen ook **parameters** gebruikt worden. Via code wordt een waarde toegekend aan deze parameters. In SQL Server worden parameters aangeduid met een @.
 
@@ -397,574 +426,6 @@ Verwijderen persoon met id?: *3*
 1 | Jan | jan @hotmail.com | 27/01/2001
 2 | James | pol @gmail.com | 28/02/2002
 4 | John | john @mail.be | 31/10/1979
-```
-
-**Microsoft SQL Server Manager Studio**
-
-1. Installeren en opstarten
-2. Databank aanmaken
-3. Tabel aanmaken
-4. Query uitvoeren (F5 en commentaar)
-5. SQL exporteren en bewaren
-
-### Transactions
-
-Het belangrijkste in de wereld van vandaag is data en de meest uitdagende taak is om deze data consistent te houden. De database systemen slaan de gegevens op en ADO.NET is een van de gegevenstoegangstechnologieën om toegang te krijgen tot de gegevens die in de database zijn opgeslagen.
-
-Laten we eerst begrijpen wat bedoeld wordt met consistentie van gegevens en dan zullen we begrijpen waarom we transacties nodig hebben. Kijk hiervoor eens naar het volgende diagram. Hier kunt u zien dat we een Rekeningen Tabel hebben met twee Rekeningnummers.
-
-Waarom hebben we transacties nodig?
-
-![Why we need Transactions?](./word-image-84.png)
-
-Nu, de bedrijfsvereiste is om 500 over te maken van Account1 naar Account2. Hiervoor moeten we twee update statements schrijven zoals hieronder getoond. Het eerste update statement trekt 500 af van Account1 en het tweede update statement voegt 500 toe aan Account2.
-
-```sql
-UPDATE Accounts SET Saldo = Saldo - 500 WHERE AccountNumber = 'Account1';
-UPDATE Accounts SET Saldo = Saldo + 500 WHERE AccountNumber = 'Account2';
-```
-
-Onze bedoeling is dat de gegevens consistent zijn. Zodra de update statements zijn uitgevoerd, moeten de gegevens in een consistente staat zijn. Laten we nu de volgende gevallen begrijpen.
-
-**Geval 1:**
-Het eerste update statement is succesvol uitgevoerd, maar het tweede update statement is mislukt. In dat geval is er 500 afgetrokken van Account1, maar dat bedrag is niet toegevoegd aan Account2, wat resulteert in inconsistentie van de gegevens.
-
-**Geval 2:**
-Het eerste update statement is mislukt maar het tweede update statement is met succes uitgevoerd. In dat geval wordt 500 niet afgetrokken van Account1, maar wordt 500 toegevoegd aan Account2, waardoor er inconsistentie in de gegevens ontstaat.
-
-**Geval 3:**
-Wanneer beide update statements Failed zijn, dan zijn de gegevens in een consistente staat.
-
-**Geval4:**
-Wanneer beide update statements Successful zijn, dan zijn de gegevens ook in een consistente staat. Dat wil zeggen 500 wordt afgetrokken van Account1 en 500 wordt toegevoegd aan Account2.
-
-Van de vier hierboven besproken gevallen, hebben we geen problemen in geval 3 en 4. Tegelijkertijd kunnen we ook niet de garantie geven dat elke keer beide update statements mislukken en slagen. Dat betekent dat we iets speciaals moeten doen om geval 1 en 2 af te handelen, zodat de gegevens in een consistente toestand blijven en daarvoor moeten we transacties gebruiken.
-
-#### Wat is een transactie?
-
-Een transactie is een reeks operaties (meerdere DML operaties) die ervoor zorgen dat alle databasebewerkingen slagen of dat ze allemaal mislukken om de consistentie van de gegevens te waarborgen. Dit betekent dat het werk nooit half gedaan is, of alles is gedaan of er is niets gedaan.
-ADO.NET ondersteunt zowel enkelvoudige databasetransacties als gedistribueerde transacties. De enkele databasetransactie wordt geïmplementeerd met behulp van de .NET beheerde providers voor Transactie- en Verbindingsklassen, die tot de System.Data-naamruimte behoren.
-
-
-Er zijn veel verschillende manieren die we kunnen gebruiken om Transactie te implementeren met behulp van ADO.NET en C#. 
-
-Deze zijn als volgt:
-
-1. Enkele Database Transactie met behulp van *BeginTransaction*
-2. Gedistribueerde transactie met behulp van TransactionScope, die behoort tot System.Transactions namespace
-3. Gedistribueerde transactie met behulp van *ServicedComponent*
-
-#### Enkele databasetransactie met behulp van BeginTransactie
-
-Laten we eens kijken hoe we een enkele databasetransactie kunnen implementeren met behulp van BeginTransaction. We gaan hetzelfde voorbeeld van een geldoverdracht implementeren. Hier voeren we twee update-statements uit met behulp van ADO.NET Transaction. Hiervoor gaan we in deze demo de volgende Accounts tabel gebruiken.
-
-![Single Database Transaction using BeginTransaction](./word-image-85.png)
-
-Maak de tabel Accounts aan, bijvoorbeeld in dezelfde database StudentDB:
-
-```c#
-CREATE TABLE Accounts
-(
-     AccountNumber VARCHAR(60) PRIMARY KEY,
-     CustomerName VARCHAR(60),
-     Balance int
-);
-GO
-INSERT INTO Accounts VALUES('Account1', 'James', 1000);
-INSERT INTO Accounts VALUES('Account2', 'Smith', 1000);
-GO
-```
-
-**Stap 1:** 
-
-Eerst moet je het verbindingsobject maken en openen. 
-
-```c#
-SqlConnection connection = new SqlConnection(ConnectionString)
-connection.Open();
-```
-
-**Stap 2:** 
-
-Dan moet je het SqlTransaction object creëren en om dit te doen, moet je de BeginTransaction methode op het connection object aanroepen. .
-
-```c#
-SqlTransaction transaction = connection.BeginTransaction();
-```
-
-**Stap 3:** 
-
-Als alles goed gaat dan commit je de transactie. Roep daartoe de Commit methode op het transactie object aan zoals hieronder getoond.
-
-```c#
-transaction.Commit();
-```
-
-**Step 4:** 
-
-Als er iets fout gaat, voer je een rollback uit van de transactie.
-
-```c#
-transaction.Rollback();
-```
-
-Volledig voorbeeld:
-
-```c#
-using System;
-using Microsoft.Data.SqlClient;
-
-namespace ADOTransactionsDemo
-{
-    class Program
-    {
-        public static string ConnectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=StudentDB;Integrated Security=True;Pooling=False";
-        static void Main(string[] args)
-        {
-            try
-            {
-                Console.WriteLine("Before Transaction");
-                GetAccountsData();
-                MoneyTransfer();
-                Console.WriteLine("After Transaction");
-                GetAccountsData();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("OOPs, something went wrong" + e.Message);
-            }
-            Console.ReadKey();
-        }
-        private static void MoneyTransfer()
-        {
-            using (SqlConnection connection = new(ConnectionString))
-            {
-                // The connection needs to be open before we begin a transaction
-                connection.Open();
-                // Create the transaction object by calling the BeginTransaction method on connection object
-                SqlTransaction transaction = connection.BeginTransaction();
-                try
-                {
-                    // Associate the first update command with the transaction
-                    SqlCommand cmd = new SqlCommand("UPDATE Accounts SET Balance = Balance - 500 WHERE AccountNumber = 'Account1'", connection, transaction);
-                    cmd.ExecuteNonQuery();
-                    // Associate the second update command with the transaction
-                    cmd = new SqlCommand("UPDATE Accounts SET Balance = Balance + 500 WHERE AccountNumber = 'Account2'", connection, transaction);
-                    cmd.ExecuteNonQuery();
-                    // If everythinhg goes well then commit the transaction
-                    transaction.Commit();
-                    Console.WriteLine("Transaction Committed");
-                }
-                catch
-                {
-                    // If anything goes wrong, rollback the transaction
-                    transaction.Rollback();
-                    Console.WriteLine("Transaction Rollback");
-                }
-            }
-        }
-        private static void GetAccountsData()
-        {
-            using (SqlConnection connection = new SqlConnection(ConnectionString))
-            {
-                connection.Open();
-                SqlCommand cmd = new("Select * from Accounts", connection);
-                SqlDataReader sdr = cmd.ExecuteReader();
-                while (sdr.Read())
-                {
-                    Console.WriteLine(sdr["AccountNumber"] + ",  " + sdr["CustomerName"] + ",  " + sdr["Balance"]);
-                }
-            }
-        }
-    }
-}
-```
-
-Uitvoer:
-
-![Transactions in ADO.NET with Examples](./word-image-87.png)
-
-#### Verifieer de consistentie
-
-Laten we het programma wijzigen zoals hieronder getoond. In de volgende code introduceren we opzettelijk een wijziging die de applicatie zou laten crashen tijdens runtime na het uitvoeren van het eerste update statement. 
-
-```c#
-using System;
-using Microsoft.Data.SqlClient;
-
-namespace ADOTransactionsDemo
-{
-    class Program
-    {
-        public static string ConnectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=StudentDB;Integrated Security=True;Pooling=False";
-        
-        static void Main(string[] args)
-        {
-            try
-            {
-                Console.WriteLine("Before Transaction");
-                GetAccountsData();
-                MoneyTransfer();
-                Console.WriteLine("After Transaction");
-                GetAccountsData();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("OOPs, something went wrong" + e.Message);
-            }
-            Console.ReadKey();
-        }
-        private static void MoneyTransfer()
-        {
-            using (SqlConnection connection = new(ConnectionString))
-            {
-                // The connection needs to be open before we begin a transaction
-                connection.Open();
-                // Create the transaction object by calling the BeginTransaction method on connection object
-                SqlTransaction transaction = connection.BeginTransaction();
-                try
-                {
-                    // Associate the first update command with the transaction
-                    SqlCommand cmd = new("UPDATE Accounts SET Balance = Balance - 500 WHERE AccountNumber = 'Account1'",
-                        connection, transaction);
-                    cmd.ExecuteNonQuery();
-                    // Associate the second update command with the transaction
-                    cmd = new("UPDATE MyAccounts SET Balance = Balance + 500 WHERE AccountNumber = 'Account2'", 
-                        connection, transaction);
-                    cmd.ExecuteNonQuery();
-                    // If everythinhg goes well then commit the transaction
-                    transaction.Commit();
-                    Console.WriteLine("Transaction Committed");
-                }
-                catch
-                {
-                    // If anything goes wrong, rollback the transaction
-                    transaction.Rollback();
-                    Console.WriteLine("Transaction Rollback");
-                }
-            }
-        }
-        private static void GetAccountsData()
-        {
-            using (SqlConnection connection = new(ConnectionString))
-            {
-                connection.Open();
-                SqlCommand cmd = new SqlCommand("Select * from Accounts", connection);
-                SqlDataReader sdr = cmd.ExecuteReader();
-                while (sdr.Read())
-                {
-                    Console.WriteLine(sdr["AccountNumber"] + ",  " + sdr["CustomerName"] + ",  " + sdr["Balance"]);
-                }
-            }
-        }
-    }
-}
-```
-
-Je ziet dat een rollback wordt uitgevoerd van de transactie:
-
-![Setting Isolation Level in ADO.NET Transaction](./word-image-88.png)
-
-### Stored procedures
-
-Naast SQL-statements kunnen ook **stored procedures** gebruikt worden om gegevens uit een database te halen. 
-
-Een procedure is in het algemeen een **reeks instructies** die na elkaar moeten worden uitgevoerd. Stored procedures zijn - zoals de naam het zegt - in de database opgeslagen procedures. Deze procedures bestaan uit SQL statements. Bijvoorbeeld een taak waarin wordt geselecteerd uit een tabel met orders die verwerkt moeten worden tot een tabel met verzendingen.
-
-Een voordeel van stored procedures is de **snelle verwerking** van de data doordat het programma in de database zelf draait en daarmee bovenop de data zit. De verwerking gaat, vooral door het ontbreken van netwerk overhead, sneller dan verwerking door een programma dat op een andere machine draait.
-
-Een tweede voordeel bestaat erin dat je SQL statements kan **schrijven en testen** in een aparte omgeving. Pas als de stored procedures getest zijn en goed bevonden ga ze aanroepen of gebruiken in .NET, Java, PHP of een andere programmeertaal. 
-
-**Nadeel: distributie van coding.**
-
-Voor het definiëren en testen van stored procedures kan je gebruik maken van SQL Server Management Studio.
-
-Voor meer compleet overzicht van stored procedures, te gebruiken op de NorthWind Microsoft database, zie: https://www.w3schools.com/sql/sql_stored_procedures.asp.
-
-We bekijken hier heel bondig de ondersteuning voor stored procedures in Visual Studio.
-
-Met de property CommandType wordt bepaalt hoe de property CommandText geïnterpreteerd moet worden. De mogelijkheden zijn:
-
-- Text: SQL-statement
-- StoredProcedure: naam van een stored procedure in een SQL database
-- TableDirect: alle gegevens van de tabel worden opgehaald.
-
- ![image-20210311145834633](./image-20210311145834633.png)
-
-Open de ServerExplorer en klik rechts op Stored Procedures om via *Add New Stored Procedure* een nieuwe stored procedure toe te voegen.
-
-Geef de procedure de naam **Teenager** en voeg de onderstaande SQL-instructies toe.
-
-```sql
-CREATE PROCEDURE dbo.Teenager
-as select Naam, Email, geboortedatum from Personen where geboortedatum > DATEADD(year,-18,GETDATE());
-```
-
-Als bij CommandType de optie Stored Procedure geselecteerd wordt, dan kan gekozen worden tussen de opgeslagen Stored Procedures.
-
-De Stored procedure kan  getest worden door in het snelmenu van de Stored Procedure te kiezen voor Execute.
-
-Wanneer je de stored procedure wenst te gebruiken vanuit C# code, dan doe je dat als volgt:
-
-```c#
-			    // set stored procedure name
-                string spName = @"dbo.[Teenager]";
-
-                // define the SqlCommand object
-                SqlCommand cmd = new(spName, conn);
-
-                /*
-                //Set SqlParameter - the id parameter value will be set from the command line
-                SqlParameter param1 = new();
-                param1.ParameterName = "@ID";
-                param1.SqlDbType = SqlDbType.Int;
-                param1.Value = int.Parse(args[0].ToString());
-
-                //add the parameter to the SqlCommand object
-                cmd.Parameters.Add(param1);
-                */
-
-                //set the SqlCommand type to stored procedure and execute
-                cmd.CommandType = CommandType.StoredProcedure;
-                SqlDataReader dr = cmd.ExecuteReader();
-
-                Console.WriteLine(Environment.NewLine + "Retrieving stored procedure data from database..." + Environment.NewLine);
-
-                //check if there are records
-                if (dr.HasRows)
-                {
-                    while (dr.Read())
-                    {
-                        var naam = (string)dr["Naam"];
-                        var email = (string)dr["Email"];
-                        var geboortedatum = (DateTime)dr["Geboortedatum"];
-                        Console.WriteLine($"{naam} | {email} | {geboortedatum.ToShortDateString()}");
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("No stored procedure data found.");
-                }
-```
-
-We geven nog een voorbeeld.
-
-#### Maak databank StudentDB aan 
-
-![image-20210315160806302](./image-20210315160806302.png)
-
-... met volgende DDL:
-
-```sql
-USE StudentDB;
-GO
-CREATE TABLE Student(
- [Id] [int] IDENTITY(100,1) PRIMARY KEY,
- [Name] [nvarchar](100) NULL,
- [Email] [nvarchar](50) NULL,
- [Mobile] [nvarchar](50) NULL,
-)
-GO
-INSERT INTO Student VALUES ('Anurag','Anurag@hogent.net','1234567890')
-INSERT INTO Student VALUES ('Priyanka','Priyanka@hogent.net','2233445566')
-INSERT INTO Student VALUES ('Preety','Preety@hogent.net','6655443322')
-INSERT INTO Student VALUES ('Sambit','Sambit@hogent.net','9876543210')
-```
-
-#### Stored procedure zonder parameter
-
-```sql
-CREATE PROCEDURE spGetStudents
-AS
-BEGIN
-     SELECT Id, Name, Email, Mobile
-  FROM Student
-END
-```
-
-```c#
-using System;
-using System.Data;
-using Microsoft.Data.SqlClient;
-
-namespace ADOUsingStoredProcedure
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            try
-            {
-                string ConnectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=StudentDB;Integrated Security=True;Pooling=False";
-                using (SqlConnection connection = new(ConnectionString))
-                {
-                    SqlCommand cmd = new("spGetStudents", connection)
-                    {
-                        CommandType = CommandType.StoredProcedure
-                    };
-                    connection.Open();
-                    SqlDataReader sdr = cmd.ExecuteReader();
-                    while (sdr.Read())
-                    {
-                        Console.WriteLine(sdr["Id"] + ",  "+sdr["Name"] + ",  " + sdr["Email"] + ",  " + sdr["Mobile"]);
-                    }
-                }             
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("OOPs, something went wrong.\n" + e.Message);
-            }
-            Console.ReadKey();
-        }
-    }
-}
-```
-
-#### Stored procedure met input parameter
-
-```sql
-CREATE PROCEDURE spGetStudentById
-(
-   @Id INT
-)
-AS
-BEGIN
-     SELECT Id, Name, Email, Mobile
-  FROM Student
-  WHERE Id = @Id
-END
-```
-
-```c#
-using System;
-using System.Data;
-using Microsoft.Data.SqlClient;
-
-namespace ADOUsingStoredProcedure
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            try
-            {
-                string ConnectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=StudentDB;Integrated Security=True;Pooling=False";
-                using (SqlConnection connection = new SqlConnection(ConnectionString))
-                {
-                  
-                    //Create the command object
-                    SqlCommand cmd = new()
-                    {
-                        CommandText = "spGetStudentById",
-                        Connection = connection,
-                        CommandType = CommandType.StoredProcedure
-                    };
-                    //Set SqlParameter
-                    SqlParameter param1 = new()
-                    {
-                        ParameterName = "@Id", //Parameter name defined in stored procedure
-                        SqlDbType = SqlDbType.Int, //Data Type of Parameter
-                        Value = 101, //Value passes to the paramtere
-                        Direction = ParameterDirection.Input //Specify the parameter as input
-                    };
-                    //add the parameter to the SqlCommand object
-                    cmd.Parameters.Add(param1);
-                    connection.Open();
-                    SqlDataReader sdr = cmd.ExecuteReader();
-                    while (sdr.Read())
-                    {
-                        Console.WriteLine(sdr["Id"] + ",  "+sdr["Name"] + ",  " + sdr["Email"] + ",  " + sdr["Mobile"]);
-                    }
-                }             
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("OOPs, something went wrong.\n" + e.Message);
-            }
-            Console.ReadKey();
-        }
-    }
-}
-```
-
-#### Stored procedure met input en output parameter
-
-```sql
-CREATE PROCEDURE spCreateStudent
-(
- @Name VARCHAR(100),
- @Email VARCHAR(50),
- @Mobile VARCHAR(50),
- @Id int Out  
-)
-AS
-BEGIN
-     INSERT INTO Student VALUES (@Name,@Email,@Mobile)
-  SELECT @Id = SCOPE_IDENTITY()  
-END
-```
-
-```c#
-using System;
-using System.Data;
-using Microsoft.Data.SqlClient;
-
-namespace ADOUsingStoredProcedure
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            try
-            {
-                string ConnectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=StudentDB;Integrated Security=True;Pooling=False";
-                using (SqlConnection connection = new(ConnectionString))
-                {
-                    //Create the command object
-                    SqlCommand cmd = new SqlCommand()
-                    {
-                        CommandText = "spCreateStudent",
-                        Connection = connection,
-                        CommandType = CommandType.StoredProcedure
-                    };
-                    //Set SqlParameter
-                    SqlParameter param1 = new()
-                    {
-                        ParameterName = "@Name", //Parameter name defined in stored procedure
-                        SqlDbType = SqlDbType.NVarChar, //Data Type of Parameter
-                        Value = "Test",
-                        Direction = ParameterDirection.Input //Specify the parameter as input
-                    };
-                    //add the parameter to the SqlCommand object
-                    cmd.Parameters.Add(param1);
-                    //Another approach to add input parameter
-                    cmd.Parameters.AddWithValue("@Email", "Test@dotnettutorial.net");
-                    cmd.Parameters.AddWithValue("@Mobile", "1234567890");
-                    
-                    //Set SqlParameter
-                    SqlParameter outParameter = new()
-                    {
-                        ParameterName = "@Id", //Parameter name defined in stored procedure
-                        SqlDbType = SqlDbType.Int, //Data Type of Parameter
-                        Direction = ParameterDirection.Output //Specify the parameter as ouput
-                    };
-                    //add the parameter to the SqlCommand object
-                    cmd.Parameters.Add(outParameter);
-                    
-                    connection.Open();
-                    cmd.ExecuteNonQuery();
-                    
-                    Console.WriteLine("Newely Generated Student ID : " + outParameter.Value.ToString());
-                }             
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("OOPs, something went wrong.\n" + e.Message);
-            }
-            Console.ReadKey();
-        }
-    }
-}
 ```
 
 ### 
