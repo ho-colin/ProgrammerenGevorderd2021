@@ -117,29 +117,20 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 1. [Null coalescing](./Documents/NullCoalescing.md)
 2. [Null conditional operator](./Documents/NullConditionalOperator.md)
 
+1. Condities: [switch statement](./Documents/switch.md)
+2. [Willem Tell](./Documents/WillemTellTernary.md): speciale inheritance keywords, speciale operatoren zoals ternary ?:
+3. [Culture](./Documents/Culture.md)
+4. [Reflection](./Documents/Reflection.md)
+
 <!--
 
-1. Condities: [switch statement](./Documents/switch.md)
-
-1. [Willem Tell](./Documents/WillemTellTernary.md): speciale inheritance keywords, speciale operatoren zoals ternary ?:
-
-4. [Culture](./Documents/Culture.md)
-
-5. [Reflection](./Documents/Reflection.md)
-
-6. [Reguliere expressies](./Documents/Regex.md)
-
-7. [Debugging](./Documents/Debugging.md)
-
-8. [Geheugen management](./Documents/GeheugenManagement.md)
-
-9. [Parameters doorgeven by reference](./Documents/OutEnRef.md)
-
-10. [In, out, ref parameters: video](https://youtu.be/BpBc-Nhmlzk)
-
-11. [Jagged arrays](./Documents/JaggedArrays.md)
-
-12. [C# 9.0](./Documents/Cs9.md)
+1. [Reguliere expressies](./Documents/Regex.md)
+2. [Debugging](./Documents/Debugging.md)
+3. [Geheugen management](./Documents/GeheugenManagement.md)
+4. [Parameters doorgeven by reference](./Documents/OutEnRef.md)
+5. [In, out, ref parameters: video](https://youtu.be/BpBc-Nhmlzk)
+6. [Jagged arrays](./Documents/JaggedArrays.md)
+7. [C# 9.0](./Documents/Cs9.md)
 
 ## 11. XUnit
 
