@@ -157,9 +157,10 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 1. [Microsoft SQL Server](./Documents/InstallSqlExpress.md)
 2. [ADO .NET: eerste stappen](./Documents/adonet1.md)
-3. [DataSet, DataTable: disconnected](./Documents/adonet3.md)
-4. [3-Tier model](./Documents/adonet2.md)
-5. [Bulk upload](./Documents/ADONETBulkUpload.md)
+3. [ADO .NET: transacties](./Documents/adoNetTransactions.md)
+4. [DataSet, DataTable: disconnected](./Documents/adonet3.md)
+5. [3-Tier model](./Documents/adonet2.md)
+6. [Bulk upload](./Documents/ADONETBulkUpload.md)
 
 ```output
 - Week 8 (30/3 - 2/4): groep A - tussentijdse evaluatie (tweede kans mogelijk tot en met eerste kans eindevaluatie)
