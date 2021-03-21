@@ -138,8 +138,9 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 * [Automated tests](./Documents/AutomatedTests.pdf)
 * [Test first](./Documents/TestFirst.pdf)
-* [xUnit](./Documents/xUnitPart1.pdf)
 * [xUnit en Visual Studio 2019: test frameworks en generatoren](./Documents/xUnit1.md)
+* [xUnit Cheat Sheet](./Documents/xUnit2.md)
+* [xUnit](./Documents/xUnitPart1.pdf)
 
 <!--
 
