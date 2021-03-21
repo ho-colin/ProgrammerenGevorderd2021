@@ -20,7 +20,7 @@
 * Opvolger .NET Core 3.1 en tegelijk het einde van de "Frameworks", .NET Core, Mono, enzovoort - voorbij met de hoofdpijn! Door COVID-19 zal pas .NET 6 in november 2021 de unificatiebeweging volledig afronden, inclusief .NET MAUI, de Universal UI, een evolutie van Xamarin.Forms, en ondersteuning voor Android en iOS.
 * https://dotnet.microsoft.com/download/dotnet/5.0
 
-## 1. Object oriented programming (week 1: 9/2 - 12/2)
+## 1. Object oriented programming
 
 1. Herhaling
    1. [OOP](./Documents/OOP.md)
@@ -34,14 +34,14 @@
 6. [System.Object](./Documents/SystemObject.md)
 7. [Compositie](./Documents/Compositie.md)
 
-## 2. Herhalingsoefening (week 2: 16/2)
+## 2. Herhalingsoefening
 
 * [Begeleide oefening: een bierwinkel...](./Documents/PG_OObasics_oef1_opdracht.pdf)
 * **Maak volgende oefening en dien deze in voor de tussentijdse evaluatie:**
   * [Opdracht](./Documents/OpgaveCollections.pdf)
   * [Scheepvaart: analyse](./Documents/OefeningCollectionsOvererving.pdf)
 
-## 3. Exceptions (week 2: 19/2)
+## 3. Exceptions
 
 - [Exception handling](./Documents/ExceptionHandling.md)
 
@@ -49,7 +49,7 @@
 
 * [Interfaces](./Documents/Interfaces1.md)
 
-## 5. Unit testing (week 3: 23/2)
+## 5. Unit testing
 
 Bekijk volgende video's (YouTube):
 
@@ -73,7 +73,7 @@ Oefen op volgende *walk through* en werk de oplossing zelfstandig uit met Visual
 
 * [Code kata unit testing: een korte oefening](./Documents/unittestkata1.md) <!-- https://osherove.com/tdd-kata-1/ -->
 
-## 6. Git (week 3: 23/2)
+## 6. Git
 
 Bekijk volgende video's:
 
@@ -132,9 +132,16 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 6. [Jagged arrays](./Documents/JaggedArrays.md)
 7. [C# 9.0](./Documents/Cs9.md)
 
+-->
+
 ## 11. XUnit
 
-* Zie groep C.
+* [Automated tests](./Documents/AutomatedTests.pdf)
+* [Test first](./Documents/TestFirst.pdf)
+* [xUnit](./Documents/xUnitPart1.pdf)
+* [xUnit en Visual Studio 2019: test frameworks en generatoren](./Documents/xUnit1.md)
+
+<!--
 
 ## 12. TCP communicatie (nuget)
 
@@ -144,7 +151,7 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 -->
 
-## 14. ADO .NET (week 7)
+## 14. ADO .NET
 
 1. [Microsoft SQL Server](./Documents/InstallSqlExpress.md)
 2. [ADO .NET: eerste stappen](./Documents/adonet1.md)
@@ -169,7 +176,7 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 <!--
 
-## 16. WPF (week 9 - week 12)
+## 16. WPF
 
 ## 17. SOLID
 

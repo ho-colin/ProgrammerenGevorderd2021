@@ -466,7 +466,7 @@ namespace AdoNetConsoleApplication
 
 ![image-20210318124110780](./image-20210318124110780.png)
 
-## Dataset
+## DataSet
 
 Een dataset bevat één of meer tabellen en een tabel wordt vertegenwoordigd door DataTable. Een DataTable vertegenwoordigt een gegevensbron die gegevens in rij- en kolomopmaak opslaat.
 
@@ -653,27 +653,34 @@ Uitvoer:
 
     #### Methoden van de ADO.NET DataSet Class
 
-1. **BeginInit()**: Begint de initialisatie van een System.Data.DataSet die op een formulier wordt gebruikt of door een ander component wordt gebruikt. De initialisatie vindt plaats tijdens runtime.
-2. **Clear()**: Hiermee wordt de System.Data.DataSet van alle gegevens ontdaan door alle rijen in alle tabellen te verwijderen.
-3. **Clone()**: Deze kopieert de structuur van de System.Data.DataSet, inclusief alle System.Data.DataTable schema's, relaties en constraints. Kopieert geen gegevens.
-4. Copy(): Kopieert zowel de structuur als de gegevens voor deze System.Data.DataSet.
-5. **CreateDataReader()**: Geeft een System.Data.DataTableReader terug met één resultatenset per System.Data.DataTable, in dezelfde volgorde als de tabellen voorkomen in de System.Data.DataSet.Tables collectie.
-6. **CreateDataReader(params DataTable[] dataTables)**: Geeft een System.Data.DataTableReader terug met één resultatenset per System.Data.DataTable. Hier specificeert de parameter dataTables een array van DataTables die de volgorde aangeeft van de resultaatreeksen die in de System.Data.DataTableReader moeten worden geretourneerd
-7. **EndInit()**: Hiermee wordt de initialisatie van een System.Data.DataSet beëindigd die op een formulier wordt gebruikt of door een ander component wordt gebruikt. De initialisatie vindt plaats tijdens runtime.
+17. **BeginInit()**: Begint de initialisatie van een System.Data.DataSet die op een formulier wordt gebruikt of door een ander component wordt gebruikt. De initialisatie vindt plaats tijdens runtime.
+
+18. **Clear()**: Hiermee wordt de System.Data.DataSet van alle gegevens ontdaan door alle rijen in alle tabellen te verwijderen.
+
+19. **Clone()**: Deze kopieert de structuur van de System.Data.DataSet, inclusief alle System.Data.DataTable schema's, relaties en constraints. Kopieert geen gegevens.
+
+20. **Copy()**: Kopieert zowel de structuur als de gegevens voor deze System.Data.DataSet.
+
+21. **CreateDataReader()**: Geeft een System.Data.DataTableReader terug met één resultatenset per System.Data.DataTable, in dezelfde volgorde als de tabellen voorkomen in de System.Data.DataSet.Tables collectie.
+
+22. **CreateDataReader(params DataTable[] dataTables)**: Geeft een System.Data.DataTableReader terug met één resultatenset per System.Data.DataTable. Hier specificeert de parameter dataTables een array van DataTables die de volgorde aangeeft van de resultaatreeksen die in de System.Data.DataTableReader moeten worden geretourneerd
+
+23. **EndInit()**: Hiermee wordt de initialisatie van een System.Data.DataSet beëindigd die op een formulier wordt gebruikt of door een ander component wordt gebruikt. De initialisatie vindt plaats tijdens runtime.
+
 8. **GetXml()**: Geeft de XML-weergave terug van de gegevens die in de System.Data.DataSet zijn opgeslagen.
-   GetXmlSchema(): Geeft als resultaat het XML-schema voor de XML-weergave van de gegevens die in de System.Data.DataSet zijn opgeslagen.
+   
+25. **GetXmlSchema()**: Geeft als resultaat het XML-schema voor de XML-weergave van de gegevens die in de System.Data.DataSet zijn opgeslagen.
 
 #### Welke moet ik gebruiken: DataReader of DataSet?
 
 DataSet:
 
-- Wanneer je de data lokaal wil cachen in je applicatie zodat je de data kan manipuleren.
-- Wanneer je dynamisch met de data wilt werken, d.w.z. de data binden aan windows form control.
-- Wanneer je wil werken met losgekoppelde architectuur.
+- wanneer je de data lokaal wil cachen in je applicatie zodat je de data makkelijk kan manipuleren en uiteindelijk in een enkele beweging terug schrijven naar de database.
+- wanneer je dynamisch met de data wilt werken, d.w.z. de data binden aan een Windows Form control; dit is echter enkel aan te raden voor kleine applicaties of "quick and dirty" applicaties - niet voor grote applicaties die makkelijk onderhoudbaar moeten zijn over vele jaren heen.
 
 DataReader:
 
-Wanneer je een aantal andere functionaliteiten nodig hebt die hierboven zijn genoemd, dan dien je DataReader te gebruiken die de performance van je applicatie zal verbeteren. DataReader werkt op een connected-oriented architectuur, d.w.z. het vereist een open verbinding met de database.
+* wanneer je een betere performantie wenst. DataReader werkt op een connected-oriented architectuur, d.w.z. het vereist een open verbinding met de database.
 
 ## DataSet  en SQLServer
 
@@ -951,7 +958,7 @@ Relaties maken navigatie van de ene tabel naar de andere in een DataSet mogelijk
 
 ### XML
 
-U kunt een DataSet vullen vanuit een XML-stream of -document. U kunt de XML-stream of het XML-document gebruiken om gegevens, schema-informatie of beide aan de DataSet te leveren. De informatie uit de XML-stream of het XML-document kan worden gecombineerd met bestaande gegevens of schema-informatie die al in de DataSet aanwezig is.
+Je kan een DataSet vullen vanuit een XML-stream of -document. U kunt de XML-stream of het XML-document gebruiken om gegevens, schema-informatie of beide aan de DataSet te leveren. De informatie uit de XML-stream of het XML-document kan worden gecombineerd met bestaande gegevens of schema-informatie die al in de DataSet aanwezig is.
 
 ```c#
 dataSet.WriteXml("ShoppingCartDb.xml");
