@@ -144,15 +144,15 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 <!--
 
-## 12. TCP communicatie (nuget)
+## --. TCP communicatie (nuget)
 
 [SimpleTCP](./Documents/SimpleTCP.md)
 
-## 13. Jason (nuget)
+## --. Jason (nuget)
 
 -->
 
-## 14. ADO .NET
+## 12. ADO .NET
 
 1. [Microsoft SQL Server](./Documents/InstallSqlExpress.md)
 2. [ADO .NET: eerste stappen](./Documents/adonet1.md)
@@ -177,18 +177,18 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 <!--
 
-## 16. WPF
+## --. WPF
 
-## 17. SOLID
+## --. SOLID
 
 * [Interfaces](./Documents/Interfaces1.md)
 * [5 principes](./Documents/SOLID.md)
 
-## 18. Nuttige extra's
+## --. Nuttige extra's
 
 * [Overzicht boeken, tutorials, websites, ...](./Documents/NuttigeExtras.md)
 
-## 19. Uitdieping
+## --. Uitdieping
 
 1. [Interfaces](./Documents/Interfaces1.md)
 2. [Generics](./Documents/Generics.md)
@@ -203,4 +203,5 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 ## Oefeningen
 
 * [Ondersteundende opdrachten](./Documents/Opdrachten.md)
+-->
 

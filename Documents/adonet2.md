@@ -46,10 +46,10 @@ Software ontwikkelen is een complexe inspanning die vaak leidt tot onbegrip. Dit
 
 Het “Swingtree project” is een metafoor die regelmatig wordt getoond om aan te geven dat er wezenlijke verschillen bestaan in begrip:
 
-- - Wat de gebruiker / klant heeft gedeeld over de wens
-  - Wat de gebruiker / klant werkelijk nodig heeft
-  - Hoe de architect de wens heeft vertaald naar het ontwerp
-  - Hoe de ontwikkelaar het ontwerp heeft geïmplementeerd
+1. Wat de gebruiker / klant heeft gedeeld over de wens
+2. Wat de gebruiker / klant werkelijk nodig heeft
+3. Hoe de architect de wens heeft vertaald naar het ontwerp
+4. Hoe de ontwikkelaar het ontwerp heeft geïmplementeerd
 
 Uiteindelijk blijft het ontwikkelen van software mensenwerk. Mensenwerk vereist veel investeren in communicatie en afstemming. Vooral in de fase van een project waar nog geen regel code is geschreven moet er veel worden gecommuniceerd en gedocumenteerd om zoveel mogelijk te voorkomen dat uiteindelijk een product wordt opgeleverd wat lijkt op de schommel. De methodiek Domain Driven Design is zeer bruikbaar zowel in de verkennende fase van een project, als in de realisatie.
 
