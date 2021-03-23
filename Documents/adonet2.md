@@ -17,7 +17,7 @@ De voordelen van het lagenmodel zijn dan ook:
 
 Het 3-tier model is een veelgebruikt model om de code gestructureerd en overzichtelijk te organiseren met een duidelijke aanpak. Bij het hanteren van het 3-tier model wordt de applicatie onderverdeeld in 3 aparte lagen, namelijk de presentatielaag, de business-laag (of ook: het domeinmodel) en de data-laag.
 
-[![Database: Het 3-Tier model](C:\Users\u2389\source\repos\ProgrammerenGevorderd2021\Documents\3TierModel.jpg)](http
+[![Database: Het 3-Tier model](./3TierModel.jpg)
 
 
 
