@@ -10,7 +10,7 @@ Deze drie lagen zijn de volgende:
 - **Business** laag: je "business" logica, wat je met je objecten doet; in essentie alles wat niet op de andere twee lagen zit.
 - **Data** laag: per business class een tegenhanger die een object van de class wegschrijft naar of opleest van de database of aanpast in de database, verwijdert uit de database of kijkt of het object reeds in de database zit.
 
-De *data laag* wordt ook wel eens afgekort DAL genoemd. De *business laag* wordt ook wel eens afgekort tot *BLL* of *BAL*.
+De *data laag* wordt ook wel eens afgekort DAL genoemd. De *business laag* wordt ook wel eens afgekort tot *BLL* of *BAL* of wordt "Domain" genoemd.
 
 Deze manier van omgaan met de database **(DAL) is interessant en leuk vanuit applicatiestandpunt**:
 
@@ -40,7 +40,7 @@ Een dergelijke *SqlBulkCopy* moet gebeuren in twee fasen:
 - haal de brongegevens in het geheugen in een objectstructuur. Dit kan een **collection** zijn van instanties van eigen classes of je kan gebruiken maken van class **DataTable** of **DataReader**. 
 - schrijf de objecten in het geheugen weg naar de database.
 
-Het in bulk opladen van gegevens naar de database gaat heel snel bij SqlServer met SqlBulkCopy: we zullen zien dat dit op het eerste zicht nog veel sneller lijkt te gebeuren dan bij MySql (ongeveer twee keer zo snel). Alleszins verloopt dit veel sneller dan bij het een voor een opladen van de rijen, wat veel tijd en performantie kost. Het bulk mechanisme verwerkt alle gegevens in een enkele keer.
+Het in bulk opladen van gegevens naar de database gaat heel snel bij SqlServer met *SqlBulkCopy*: we zullen zien dat dit op het eerste zicht nog veel sneller lijkt te gebeuren dan bij MySql (ongeveer twee keer zo snel). Alleszins verloopt dit veel sneller dan bij het een voor een opladen van de rijen, wat veel tijd en performantie kost. Het bulk mechanisme verwerkt alle gegevens in een enkele keer.
 
 We geven een voorbeeld.
 
@@ -65,29 +65,29 @@ CREATE TABLE [dbo].[gemeente](
 GO
 ````
 
-waarbij *_gemeentes* een *Dictionary<int, Gemeente>* is, dan kunnen we slechts eenmaal een connectie openen naar SqlServer, een instantie aanmaken van class **SqlBulkCopy**, vervolgens een geschikte instantie aanmaken van class **DataTable** met de juiste kolommen (gebruik voor het gemak dezelfde namen als de kolomnamen van de tabel in de database), vervolgens je instanties van class gemeente overbrengen naar de instantie van class DataTable, je instantie van class SqlBulkCopy vertellen met welke kolommen in de database tabel de kolommen van de instantie van class DataTable overeenkomen en tot slot de eigenlijke transfer uitvoeren met method **WriteToServer** van class SqlBulkCopy:
+waarbij *_gemeentes* een *Dictionary<int, Gemeente>* is, dan kunnen we slechts eenmaal een connectie openen naar SqlServer, een instantie aanmaken van class **SqlBulkCopy**, vervolgens een geschikte instantie aanmaken van class **DataTable** met de juiste kolommen (gebruik voor het gemak dezelfde namen als de kolomnamen van de tabel in de database), vervolgens je instanties van class gemeente overbrengen naar de instantie van class *DataTable*, je instantie van class *SqlBulkCopy* vertellen met welke kolommen in de database tabel de kolommen van de instantie van class *DataTable* overeenkomen en tot slot de eigenlijke transfer uitvoeren met method **WriteToServer** van class *SqlBulkCopy*:
 
 ````Csharp
 using (SqlConnection connection = new SqlConnection(ConnStr))
 {
-                                connection.Open();
-                                // Transaction not allowed!
-                                using (SqlBulkCopy bulkCopy = new SqlBulkCopy(connection))
-                                {
-                                    DataTable table = new DataTable();
-                                    table.Columns.Add("Id", typeof(int));
-                                    table.Columns.Add("gemeentenaam", typeof(string));
-                                    foreach (var gemeente in _gemeentes.Values)
-                                    {
-                                        table.Rows.Add(gemeente.NIScode, gemeente.GemeenteNaam);
-                                    }
-                                    bulkCopy.DestinationTableName = "gemeente";
-                                    bulkCopy.ColumnMappings.Add("Id", "Id");
-                                    bulkCopy.ColumnMappings.Add("gemeentenaam", "gemeentenaam");
-                                    bulkCopy.WriteToServer(table);
-                                }
+  connection.Open();
+  // Transaction not allowed!
+  using (SqlBulkCopy bulkCopy = new SqlBulkCopy(connection))
+  {
+    DataTable table = new DataTable();
+    table.Columns.Add("Id", typeof(int));
+    table.Columns.Add("gemeentenaam", typeof(string));
+    foreach (var gemeente in _gemeentes.Values)
+    {
+      table.Rows.Add(gemeente.NIScode, gemeente.GemeenteNaam);
+    }
+    bulkCopy.DestinationTableName = "gemeente";
+    bulkCopy.ColumnMappings.Add("Id", "Id");
+    bulkCopy.ColumnMappings.Add("gemeentenaam", "gemeentenaam");
+    bulkCopy.WriteToServer(table);
+  }
 }
 ````
 
-Dit is eigenlijk een heel eenvoudig stuk code dat relatief supersnel uitvoert (van een uur naar een dikke minuut vergeleken met het individueel opladen van rijen). Een nadeel is wel dat je alle gegevens uit tekstbestanden in het geheugen hebt, maar dat objectmodel kan gebruikt worden om meteen vragen te beantwoorden en wanneer we tabel per tabel de gegevens nog eens in een DataTable steken, kost dit even extra geheugen, maar zo vlug deze gegevens opgeladen zijn, wordt dit terug vrijgegeven. Alleszins zal de oplossing zich stabieler gedragen dan bij het individueel opladen van rijen.
+Dit is eigenlijk een **heel eenvoudig stuk code dat relatief supersnel uitvoert** (van een uur naar een dikke minuut vergeleken met het individueel opladen van rijen). Een nadeel is wel dat je **alle gegevens uit tekstbestanden in het geheugen** hebt, maar dat objectmodel kan gebruikt worden om meteen vragen te beantwoorden en wanneer we tabel per tabel de gegevens nog eens in een DataTable steken, kost dit even extra geheugen, maar zo vlug deze gegevens opgeladen zijn, wordt dit geheugen terug vrijgegeven. Alleszins zal de oplossing zich stabieler gedragen dan bij het individueel opladen van rijen!
 

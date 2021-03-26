@@ -163,17 +163,28 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 ```output
 - Week 8 (30/3 - 2/4): groep A - tussentijdse evaluatie (tweede kans mogelijk tot en met eerste kans eindevaluatie)
-- Voor 3/4/2021: bekendmaking eindopdracht juni 2021 - deel 1: domeinmodel, inclusief unit testing
-- Week 11: groep C?
 ```
 
 ```output
 3/4/2021 - 18/4/2021: paasvakantie
+- Week 12 (26/4 - 2/5): groep C - tussentijdse evaluatie (tweede kans mogelijk tot en met eerste kans eindevaluatie)
 ```
 
-```output
-18/4/2021: eindopdracht - deel 2: UI
-```
+## 13. Eindopdracht
+
+1. [Beschrijving](./Documents/PG_Eval2_OpgaveAdresbeheer_001.pdf): zie ook Chamilo onder opdrachten
+2. Tips
+   1. Gebruik de "bulk upload" techniek beschreven in hoofdstuk ADO .NET
+   2. Meerlagig (meer dan 3):
+      1. console app voor het opladen van de gegevens
+      2. domeinlaag voor de business logica
+      3. unit test suite
+      4. WPF
+   3. XML bestand uitlezen
+      1. Zelf lijn per lijn uit elkaar puzzelen
+      2. XML parser gebruiken: bekijk bijvoorbeeld in hoofdstuk LINQ de paragraaf die "Paginatie" behandelt
+   4. WPF: vrij, maar implementeer wat in de opdracht staat
+      1. MaterialDesign wordt geapprecieerd, maar is niet verplicht
 
 <!--
 
