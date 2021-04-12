@@ -1,4 +1,3 @@
-# Inhoudsopgave {#inhoudsopgave .TOC-Heading}
 
 **Inleidend**
 
@@ -17,12 +16,11 @@ Bij het creëren van een nieuwe project in *Visual Studio* kunnen we in het *
 
 Het is mogelijk te opteren voor WPF App (.Net Framework) of WPF App (.Net 6) vanuit Visual Studio 2019. De code van onderstaande voorbeelden blijft gelijk.
 
-![](.WPFIntro/media/image1.png)
+![](./WPFIntro/media/image1.png)
 
 Kiezen we voor *OK* dan krijgen we in de *form designer* een leeg *window* te zien.  Zo meteen gaan we dat aanvullen.
 
-![](WPFIntro\media\image2.png){width="5.947916666666667in"
-height="4.93638779527559in"}
+![](./WPFIntro/media/image2.png)
 
 In de bijhorende *XAML* (*eXtensible Application Markup Language*) valt meteen het \<Window\> element op. XAML is formele *user interface markup* die aangeeft uit welke onderdelen ons venster, en onderliggende besturingselementen, zijn opgebouwd.
 
@@ -240,8 +238,7 @@ BoodschapLabel.Content = "Hallo " + NaamTextBox.Text;
 
 Voeren we het programma uit, dan zien we hoe het vooropgestelde hebbenbereikt.
 
-![](WPFIntro\media\image7.png){width="6.268055555555556in"
-height="1.7631944444444445in"}
+![](./WPFIntro/media/image7.png)
 
 Hier hebben we de event handler laten genereren door in de XAML een Click attribuut toe te voegen. Zo meteen bespreken we nog een andere techniek om in *Visual Studio* event handlers te bekomen.
 
@@ -404,8 +401,7 @@ Kies bij SelectionMode voor *MultipleRange*.  Dit zal ervoor zorgen dat de 
 
 Klik daarna op de knop met het bliksem symbool rechtbovenaan het *Properties* toolvensters.
 
-![](WPFIntro\media\image27.png){width="6.268055555555556in"
-height="2.2430555555555554in"}
+![](./WPFIntro/media/image27.png)
 
 We krijgen hiermee een overzicht te zien van alle *events* van dit besturingselement, en alle bijhorende koppelingen aan *event handlers*. Aan de hand van de moersleutel knop zou je terug overschakelen naar de eigenschappen.
 Scroll naar onder en dubbelklik op het leg vak naast de gebeurtenis SelectedDatesChanged.
