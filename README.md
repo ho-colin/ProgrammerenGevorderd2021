@@ -178,8 +178,9 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
    2. Meerlagig (meer dan 3):
       1. console app voor het opladen van de gegevens
       2. domeinlaag voor de business logica
-      3. unit test suite
-      4. WPF
+      3. ADO .NET repository
+      4. unit test suite
+      5. WPF
    3. XML bestand uitlezen
       1. Zelf lijn per lijn uit elkaar puzzelen
       2. XML parser gebruiken: bekijk bijvoorbeeld in hoofdstuk LINQ de paragraaf die "Paginatie" behandelt

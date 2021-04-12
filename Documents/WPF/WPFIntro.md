@@ -1,13 +1,5 @@
 # Inhoudsopgave {#inhoudsopgave .TOC-Heading}
 
-[**In Visual Studio een WPF programma opzetten**](#_Toc36549146)
-
-[**Hallo wereld**](#_Toc36549147)
-
-[**Een tweede programma**](#_Toc36549148)
-
-[**Een derde programma**](#_Toc36549149)
-
 **Inleidend**
 
 Tot nu toe hebben we onze applicaties gecreëerd aan de hand van **Console** interactie. Dit schept slechts zeer beperkte mogelijkheden: je kan niet veel meer doen dan wat tekst op het scherm afdrukken of wat tekst inlezen.
@@ -19,7 +11,7 @@ De meeste applicaties waarmee we als eindgebruiker in aanraking komen, hebben ee
 In dit hoofdstuk bekijken we het *Windows Presentation Foundation* (*WPF*) framework.   Hiermee kunnen we, op eenvoudige wijze,
 grafische applicaties opstellen.
 
-[]{#_Toc36549146 .anchor}**In Visual Studio een WPF programma opzetten**
+**In Visual Studio een WPF programma opzetten**
 
 Bij het creëren van een nieuwe project in *Visual Studio* kunnen we in het *New Project* venster de *WPF Application* template gebruiken. Ik kies hier voor de naam *HalloWereldWpfApp*.
 
@@ -99,7 +91,7 @@ Het programma beschikt alvast over:
 
 Deze voorzieningen hebben we niet zelf moeten coderen.  We krijgen van de *WPF Application* template alvast dit *basisvenster* dat reeds over die typische voorzieningen beschikt.
 
-[]{#_Toc36549147 .anchor}**1.1.2. Hallo wereld**
+**Hallo wereld**
 
 Momenteel is in de titel van het venster nog de tekst *MainWindow* te zien; laten we deze aanpassen tot *Hallo wereld*.
 
@@ -110,7 +102,7 @@ height="4.78125in"}
 
 Bemerk dat in de *designer* de weergave van het venster meteen ook naargelang wordt aangepast. Deze designer is een soort *WYSIWYG* weergave, *What You See Is What You Get*.  We krijgen hiermee meteen een beeld hoe het venster er zal uitzien tijdens uitvoer.
 
-**1.1.2.1. Label,** **TextBox en Button controls**
+**Label,** **TextBox en Button controls**
 
 We gaan het venster uitbreiden met enkele extra besturingselementen, ook wel eens *controls* genoemd.
 Om die controls terug te vinden, maken we in *Visual Studio* gebruik van de *Toolbox*.  Doorgaans is die terug te vinden ergens aan de linkerkant.
@@ -158,7 +150,7 @@ mogelijke *panelen* die je in WPF kan gebruiken -- eigenlijk de meest flexibel
 Omdat een Window beperkt is tot één *child control*, zal dit doorgaans een panel control, bijvoorbeeld een Grid, zijn.
 Verderop bestuderen we de verschillende soorten panels (StackPanel, DockPanel, Canvas, Grid, \...).
 
-**1.1.2.2. Eigenschappen wijzigen**
+**Eigenschappen wijzigen**
 
 Eigenschappen als Height, Width, Margin, \..., van ons venster en besturingselementen kunnen we aanpassen aan de hand van de *designer*.
 De controls hebben echter nog vele andere eigenschappen.  Eigenschappen die we niet via de *designer* kunnen instellen. XAML biedt uitweg, daar is het wel mogelijk deze configuraties aan te brengen. Vaak is het ook zo dat sleutelen aan de layout via de designer nodeloos veel tags introduceert in XAML, tags die de leesbaarheid en onderhoudbaarheid van de XAML code verslechteren. Eenmaal je goed vertrouwd bent met WPF en XAML, zal je constateren dat je steeds vaker met XAML werkt en minder met de designer.
@@ -193,7 +185,7 @@ wereld" HorizontalAlignment="Left" Margin="215,7,0,0"
 
 
 
-**1.1.2.3. Event handlers**
+**Event handlers**
 
 Het verloop bij programma's met grafische besturingselementen wordt, in tegenstelling tot de hiervoor gebruikte console applicaties, anders uitgeschreven.
 In console applicaties gaan we op een eerder lineaire wijze coderen hoe het programma de ene na de andere operatie gaat uitvoeren.
@@ -264,7 +256,7 @@ Hier hebben we de eventhandler laten genereren door in de XAML een Click attri
 
 Event handlers beschikken doorgaans over parameters.  Straks gaan we die inzetten om informatie met betrekking tot die gebeurtenissen op te vragen.
 
-**1.1.2.4. XAML en code behind**
+**XAML en code behind**
 
 Een *WPF* venster is een combinatie van een *XAML* (.xaml) bestand, met een \<Window\> rootelement, en een *codebehind* (.cs) bestand. De XAML bestaat uit *markup* die bepaalt welke resources en controls gebruikt worden voor ons venster.  Daarnaast wordt bijgehouden hoe de relaties zijn tussen deze resources en besturingselementen, en hoe hun eigenschappen worden ingesteld.
 Het x:class attribuut van het \<Window\> rootelement geeft aan welke klasse, hier HalloWereldWpfApp.MainWindow, verder definieert hoe met deze resources en besturingselementen wordt omgegaan.  Hoe we bijvoorbeeld gebeurtenissen die optreden bij onze controls gaan afhandelen. Dit laatste gebeurt in de codebehind omdat je geen
@@ -280,7 +272,7 @@ De informatie in beide documenten worden gecombineerd om at runtime te komen tot
 de InitializeComponent method, die automatisch voor ons wordt gegenereerd, die de XAML markup gaat ontleden.
 Op basis hiervan gaat deze method de nodig objecten (een Window, een Button, een TextBox, \...) creëren, die in samenwerking met de toegevoegde codebehind logica het volledig functionele venster gaan opleveren.
 
-**1.1.2.5. RadioButton en CheckBox controls**
+**RadioButton en CheckBox controls**
 
 We laten ons programma ook gebruik maken van RadioButton en CheckBox controls. Deze besturingselementen worden
 ingezet wanneer je de gebruiker een keuze wil laten maken. Bij CheckBox controls gaat het om een individuele *aan/uit* keuze.  De
@@ -328,7 +320,7 @@ height="1.7631944444444445in"}
 
 Het ware niet eenvoudig geweest een vergelijkbare, even gebruiksvriendelijke en visueel aantrekkelijk programma te creëren aan de hand van een console applicatie. Eindgebruikers zijn vertrouwd met deze besturingselementen.  Als ze een TextBox control zien, weten ze dat ze daar iets in kunnen invoeren. Bied je hen RadioButton of CheckBox besturingselementen, dan zijn ze gewend dat deze toelaten bepaalde *instellingen* te activeren. Ze weten bijvoorbeeld ook dat bij het klikken op een Button een bepaalde operatie wordt uitgevoerd.
 
-[]{#_Toc36549148 .anchor}**1.1.3. Een tweede programma**
+**Een tweede programma**
 
 De naam van een gegenereerde event handler is by default NaamVanDeControl_NaamVanDeEvent, bijvoorbeeld *GroetButton_Click*. Je kan die naam aanpassen, maar let erop dat je dan zowel in de XAML als code behind die wijziging aanbrengt. Het is altijd een goed idee met de *Rename feature* te werken in *Visual Studio* als je een identifier wil veranderen.  *Visual Studio* zal in dat geval elke vermelding van die naam opsporen en aanpassen.
 Laten we dit toepassen op de naam van ons eerste Window.  Rechterklik in de codebehind op *MainWindow* en kies voor *Rename*\...
@@ -352,7 +344,7 @@ Maak hiervan *HalloWereldWindow.xaml* en *HalloWereldWindow.xaml.cs*.  Als 
 ![](WPFIntro\media\image17.png){width="4.041666666666667in"
 height="2.8854166666666665in"}
 
-**1.1.3.1. Window toevoegen**
+**Window toevoegen**
 
 Laten we een tweede venster toevoegen aan ons project.  Kies in de *Project* menu voor *Add Window\...*.
 
@@ -369,7 +361,7 @@ Je kan in de *Solution Explorer* zien hoe ons project is uitgebreid met een XA
 ![](WPFIntro\media\image20.png){width="3.9583333333333335in"
 height="3.125in"}
 
-**1.1.3.2. Opstartvenster instellen**
+**Opstartvenster instellen**
 
 Momenteel gaat onze applicatie er nog altijd vanuit dat gestart wordt met *MainWindow.xaml*. Een Window met deze naam bestaat in ons project niet meer, en we willen graag het tweede Window instellen als opstartvenster.
 
@@ -383,7 +375,7 @@ En wijzig de StartupUri waarde in *TweedeVoorbeeldWindow.xaml*.
 ![](WPFIntro\media\image22.png){width="6.268055555555556in"
 height="2.0180555555555557in"}
 
-**1.1.3.3. ListBox en Calendar controls**
+**ListBox en Calendar controls**
 
 Plaats op onze TweedeVoorbeeldWindow een ListBox en Calendar control.  Je kan hiervoor de *Toolbox* en designer gebruiken, maar je kan ook rechtstreeks in de XAML de nodige wijzigingen aanbrengen.
 
@@ -507,7 +499,7 @@ Voeren we het programma uit, dan zal elke datum in het bereik van waarden die je
 ![](WPFIntro\media\image29.png){width="4.395833333333333in"
 height="2.7291666666666665in"}
 
-[]{#_Toc36549149 .anchor}**1.1.4. Een derde programma**
+**Een derde programma**
 
 Sommige *eventarg* parameters staan toe het verdere verloop van de gebeurtenis te sturen.  Dit is wat ons derde, en voorlopig laatste WPF voorbeeld illustreert.
 Bij het afsluiten van een venster, of met andere woorden bij het optreden van een FormClosing event van een Window, kan je het afsluiten annuleren.
@@ -600,7 +592,7 @@ Deze keer handelen we niet alleen events van controls af, maar ook een gebeurten
 </Window>
 ```
 
-**1.1.4.1. DockPanel, Menu en MenuItem controls**
+**DockPanel, Menu en MenuItem controls**
 
 Het venster beschikt over een menu.  Een *Bestand* menu met daaronder menu-opties als *Opslaan* en *Afsluiten*.
 
@@ -609,7 +601,7 @@ height="1.875in"}
 
 Menus staan meestal niet zomaar op eender welke plaats op het formulier, ze worden doorgaans tegen de bovenkant van het venster *gedockt*. Dit is eenvoudig te verwezelijken met een DockPanel, deze staat zijn child controls toe aan een kant (bv *Top*) *aan te meren*. Verderop bestuderen we de verschillende soorten panels (StackPanel, DockPanel, Canvas, Grid, \...).
 
-**1.1.4.2. MessageBox**
+**MessageBox**
 
 Bij het *opslaan* van wijzigingen, bijvoorbeeld bij het klikken op de *Opslaan* menu-optie, wordt met een MessageBox gewerkt.
 
@@ -677,7 +669,7 @@ Is deze bool vlag actief bij het afsluiten van het formulier, dan wordt een *
 
 De bool variabele werd hier op klasseniveau gedeclareerd, dit zorgt ervoor dat de waarde onthouden blijft.  Bij een argument of lokale variabele bijvoorbeeld blijft de waarde slechts in het geheugen zolang de method, waarin deze is gedeclareerd, in uitvoering is. Zie verderop voor meer uitleg over klassevariabelen, of *velden* zoals deze ook wel worden genoemd.
 
-**1.1.4.3. Peek definition**
+**Peek definition**
 
 Bemerk dat in de XAML editior, bij het rechtsklikken op een eventhandler, wordt aangeboden om te *gluren* naar de method definitie.
 
