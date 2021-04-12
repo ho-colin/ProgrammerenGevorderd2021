@@ -17,8 +17,7 @@ Bij het creëren van een nieuwe project in *Visual Studio* kunnen we in het *
 
 Het is mogelijk te opteren voor WPF App (.Net Framework) of WPF App (.Net 6) vanuit Visual Studio 2019. De code van onderstaande voorbeelden blijft gelijk.
 
-![](WPFIntro\media\image1.png){width="6.268055555555556in"
-height="4.180555555555555in"}
+![](.WPFIntro/media/image1.png)
 
 Kiezen we voor *OK* dan krijgen we in de *form designer* een leeg *window* te zien.  Zo meteen gaan we dat aanvullen.
 
@@ -59,8 +58,7 @@ Er worden daar bijvoorbeeld elementen gebruikt als \<h1\> (*header 1*), \<hr\
 
 In een browser zou voorgaande html een presentatie als de volgende kunnen opleveren:
 
-![](WPFIntro\media\image3.png){width="5.104166666666667in"
-height="2.09375in"}
+![](./WPFIntro/media/image3.png)
 
 We gaan het echter niet hebben over HTML, of zelfs XML, maar wel over XAML.
 
@@ -74,8 +72,7 @@ Bemerk in onze XAML enkele interessante attributen die aan het \<Window\> elem
 
 We kunnen deze applicatie meteen opstarten.  Net als bij het uitvoeren van console applicaties kiezen we in de *Debug* menu voor *Start Debugging*\...
 
-![](WPFIntro\media\image4.png){width="6.268055555555556in"
-height="1.7756944444444445in"}
+![](./WPFIntro/media/image4.png)
 
 Het programma beschikt alvast over:
 
@@ -97,8 +94,7 @@ Momenteel is in de titel van het venster nog de tekst *MainWindow* te zien; la
 
 In de *XAML* wijzigen we daarvoor de waarde van het *Title* attribuut\...
 
-![](WPFIntro\media\image5.png){width="6.268055555555556in"
-height="4.78125in"}
+![](./WPFIntro/media/image5.png)
 
 Bemerk dat in de *designer* de weergave van het venster meteen ook naargelang wordt aangepast. Deze designer is een soort *WYSIWYG* weergave, *What You See Is What You Get*.  We krijgen hiermee meteen een beeld hoe het venster er zal uitzien tijdens uitvoer.
 
@@ -108,13 +104,11 @@ We gaan het venster uitbreiden met enkele extra besturingselementen, ook wel een
 Om die controls terug te vinden, maken we in *Visual Studio* gebruik van de *Toolbox*.  Doorgaans is die terug te vinden ergens aan de linkerkant.
 Zie je dit toolvenster niet staan kies dan in de *View* menu voor *Toolbox*.
 
-![](WPFIntro\media\image6.png){width="5.104166666666667in"
-height="4.5625in"}
+![](./WPFIntro/media/image6.png)
 
 We zouden graag een programma implementeren dat er als volgt uitziet\...
 
-![](WPFIntro\media\image7.png){width="6.268055555555556in"
-height="1.7631944444444445in"}
+![](./WPFIntro/media/image7.png)
 
 De gebruiker kan in het tekstvak een naam invoeren en op de *Groet* knop klikken, waarna het programma rechts van de knop de ingevoerde tekst zal weergeven na het woord *Hallo*.
 
@@ -122,8 +116,7 @@ Het tekstvak kunnen we toevoegen via een TextBox control; voor de knop gebruik
 
 Versleep een TextBox, Button en Label control van de *ToolBox* naar de designer.
 
-![](WPFIntro\media\image8.png){width="6.268055555555556in"
-height="2.3979166666666667in"}
+![](./WPFIntro/media/image8.png)
 
 Bemerk dat we via *guiding lines* deze besturingselementen op een bepaalde positie kunnen plaatsen. Ook de knoppen op de *Layout* werkbalk helpen ons met het uitlijnen van deze controls.
 
@@ -202,8 +195,7 @@ BoodschapLabel.Content = "Hallo " + NaamTextBox.Text;
 
 Voeg hiervoor in de markup een Click attribuut toe, of met andere woorden een attribuut dat dezelfde naam draagt als de event. Wanneer je in de *XAML* editor de tekst *Click=* invoert, krijgen je van de IDE het voorstel een *eventhandler* te genereren voor deze gebeurtenis:
 
-![](WPFIntro\media\image9.png){width="6.268055555555556in"
-height="1.0694444444444444in"}
+![](./WPFIntro/media/image9.png)
 
 Drukken we op de *Tab* toets dan wordt de *XAML* aangevuld\...
 
@@ -214,8 +206,7 @@ Drukken we op de *Tab* toets dan wordt de *XAML* aangevuld\...
 
 Gaan we, net als wat werd voorgesteld, rechterklikken op de naam van onze eventhandler, namelijk GroetButton_Click, en kiezen we voor *Go To Definition* dan zal *Visual Studio* de definitie naar voor brengen.
 
-![](WPFIntro\media\image10.png){width="6.268055555555556in"
-height="2.0069444444444446in"}
+![](./WPFIntro/media/image10.png)
 
 Event handlers zijn void methods en deze worden uitgeschreven in het *codebehind* (.cs) document.
 
@@ -238,7 +229,7 @@ namespace HalloWereldWpfApp
 }
 ```
 
-De eventhandler gaan we aanvullen met de hiervoor besproken implementatie die de Content eigenschap van onze Label control aanpast\...
+De event handler gaan we aanvullen met de hiervoor besproken implementatie die de Content eigenschap van onze Label control aanpast\...
 
 ```c#
 private void GroetButton_Click(object sender, RoutedEventArgs e)
@@ -252,7 +243,7 @@ Voeren we het programma uit, dan zien we hoe het vooropgestelde hebbenbereikt.
 ![](WPFIntro\media\image7.png){width="6.268055555555556in"
 height="1.7631944444444445in"}
 
-Hier hebben we de eventhandler laten genereren door in de XAML een Click attribuut toe te voegen. Zo meteen bespreken we nog een andere techniek om in *Visual Studio* event handlers te bekomen.
+Hier hebben we de event handler laten genereren door in de XAML een Click attribuut toe te voegen. Zo meteen bespreken we nog een andere techniek om in *Visual Studio* event handlers te bekomen.
 
 Event handlers beschikken doorgaans over parameters.  Straks gaan we die inzetten om informatie met betrekking tot die gebeurtenissen op te vragen.
 
@@ -265,8 +256,7 @@ implementatielogica kan verweven in de XAML.
 In de *Solution Explorer* van *Visual Studio* zal je de code behind *MainWindow.xaml.cs* terugvinden als child node van het XAML
 document *MainWindow.xaml*.
 
-![](WPFIntro\media\image11.png){width="3.9895833333333335in"
-height="3.4479166666666665in"}
+![](./WPFIntro/media/image11.png)
 
 De informatie in beide documenten worden gecombineerd om at runtime te komen tot het volledig werkzame venster. Het is
 de InitializeComponent method, die automatisch voor ons wordt gegenereerd, die de XAML markup gaat ontleden.
@@ -281,8 +271,7 @@ Verschillende RadioButton controls daarentegen zijn aan elkaar gekoppeld.  A
 
 Versleep twee RadioButton controls en één CheckBox control van de *Toolbox* naar de designer.
 
-![](WPFIntro\media\image12.png){width="6.268055555555556in"
-height="4.139583333333333in"}
+![](./WPFIntro/media/image12.png)
 
 Neem volgende XAML markup over, of stel zelf manueel één voor één volgende eigenschappen in:
 
@@ -315,8 +304,7 @@ boodschap.ToUpper();
 
 Op basis van de ingevoerde waarde, maar ook de aangevinkte of geselecteerde Radio- of CheckBox controls, zal het programma zijn boodschap samenstellen\...
 
-![](WPFIntro\media\image13.png){width="6.268055555555556in"
-height="1.7631944444444445in"}
+![](./WPFIntro/media/image13.png)
 
 Het ware niet eenvoudig geweest een vergelijkbare, even gebruiksvriendelijke en visueel aantrekkelijk programma te creëren aan de hand van een console applicatie. Eindgebruikers zijn vertrouwd met deze besturingselementen.  Als ze een TextBox control zien, weten ze dat ze daar iets in kunnen invoeren. Bied je hen RadioButton of CheckBox besturingselementen, dan zijn ze gewend dat deze toelaten bepaalde *instellingen* te activeren. Ze weten bijvoorbeeld ook dat bij het klikken op een Button een bepaalde operatie wordt uitgevoerd.
 
@@ -325,41 +313,34 @@ Het ware niet eenvoudig geweest een vergelijkbare, even gebruiksvriendelijke en 
 De naam van een gegenereerde event handler is by default NaamVanDeControl_NaamVanDeEvent, bijvoorbeeld *GroetButton_Click*. Je kan die naam aanpassen, maar let erop dat je dan zowel in de XAML als code behind die wijziging aanbrengt. Het is altijd een goed idee met de *Rename feature* te werken in *Visual Studio* als je een identifier wil veranderen.  *Visual Studio* zal in dat geval elke vermelding van die naam opsporen en aanpassen.
 Laten we dit toepassen op de naam van ons eerste Window.  Rechterklik in de codebehind op *MainWindow* en kies voor *Rename*\...
 
-![](WPFIntro\media\image14.png){width="6.268055555555556in"
-height="2.7993055555555557in"}
+![](./WPFIntro/media/image14.png)
 
 Elk voorkomen van deze naam wordt in een kleur gemarkeerd.  Wijzig de naam in *HalloWereldWindow* en druk op *enter* of klik op de *Apply* knop\...
 
-![](WPFIntro\media\image15.png){width="6.090972222222222in"
-height="1.84294728783902in"}
+![](./WPFIntro/media/image15.png)
 
 In de *Solution Explorer* zie je hoe de namen van onze broncode documenten, *MainWindow.xaml* en *MainWindow.xaml.cs*, ongewijzigd zijn.
 Ook deze gaan we hernoemen.  Rechterklik op de betreffende lijn en kies voor *Rename*.
 
-![](WPFIntro\media\image16.png){width="3.313118985126859in"
-height="5.5624671916010495in"}
+![](./WPFIntro/media/image16.png)
 
 Maak hiervan *HalloWereldWindow.xaml* en *HalloWereldWindow.xaml.cs*.  Als je van één document de naam wijzigt, zal de andere automatisch mee veranderen.
 
-![](WPFIntro\media\image17.png){width="4.041666666666667in"
-height="2.8854166666666665in"}
+![](./WPFIntro/media/image17.png)
 
 **Window toevoegen**
 
 Laten we een tweede venster toevoegen aan ons project.  Kies in de *Project* menu voor *Add Window\...*.
 
-![](WPFIntro\media\image18.png){width="6.21875in"
-height="1.5520833333333333in"}
+![](./WPFIntro/media/image18.png)
 
 Geef een willekeurige naam op, bijvoorbeeld *TweedeVoorbeeldWindow.xaml* en klik op de *Add* knop.
 
-![](WPFIntro\media\image19.png){width="6.268055555555556in"
-height="3.5395833333333333in"}
+![](./WPFIntro/media/image19.png)
 
 Je kan in de *Solution Explorer* zien hoe ons project is uitgebreid met een XAML en codebehind document voor het tweede venster.
 
-![](WPFIntro\media\image20.png){width="3.9583333333333335in"
-height="3.125in"}
+![](./WPFIntro/media/image20.png)
 
 **Opstartvenster instellen**
 
@@ -367,13 +348,11 @@ Momenteel gaat onze applicatie er nog altijd vanuit dat gestart wordt met *Main
 
 Open het *App.xaml* document door in de *Solution Explorer* te dubbelklikken op deze entry\...
 
-![](WPFIntro\media\image21.png){width="4.041666666666667in"
-height="3.0104166666666665in"}
+![](./WPFIntro/media/image21.png)
 
 En wijzig de StartupUri waarde in *TweedeVoorbeeldWindow.xaml*.
 
-![](WPFIntro\media\image22.png){width="6.268055555555556in"
-height="2.0180555555555557in"}
+![](./WPFIntro/media/image22.png)
 
 **ListBox en Calendar controls**
 
@@ -402,8 +381,7 @@ Als je met de *Toolbox* werkt, merk dan op dan de Calendar control in de rub
 
 We bekomen een Window dat er als volgt uit ziet.
 
-![](WPFIntro\media\image23.png){width="4.78125in"
-height="3.0520833333333335in"}
+![](./WPFIntro/media/image23.png)
 
 De weergegeven maand en gemarkeerde datum is afhankelijk van de systeemtijd.
 Deze keer is het de bedoeling een applicatie te creëren waarin elke datum van een periode wordt toegevoegd aan de ListBox. De periodes zijn door de gebruiker in de Calendar geselecteerd.
@@ -413,19 +391,16 @@ Haal het *Properties* toolvenster naar voor en selecteer in de designer of XAM
 
 Aan de ListBox geven we de naam *GeselecteerdeDataListBox* door de *Name* eigenschap in te vullen.
 
-![](WPFIntro\media\image24.png){width="6.268055555555556in"
-height="4.451388888888889in"}
+![](./WPFIntro/media/image24.png)
 
 Als je het *Properties* toolvenster niet terugvindt, dan kies je onder de *View* menu voor *View Properties*.
 
-![](WPFIntro\media\image25.png){width="6.15625in"
-height="6.041666666666667in"}
+![](./WPFIntro/media/image25.png)
 
 Selecteer in de designer of XAML editor de Calendar en pas de *Name* eigenschap aan tot *Calendar1*. We willen de gebruiker de mogelijkheid bieden meerdere periodes te selecteren, hiervoor gaan we de SelectionMode eigenschap aanpassen.  Je kan die eigenschap zelf gaan lokaliseren op het *Properties* toolvenster of je kan ook meteen in het zoekveld de naam van die eigenschap beginnen invoeren. Zou je alvast de tekst *select* intikken, dan wordt je *property overzicht* beperkt tot eigenschappen met die tekst in hun naam.
 Kies bij SelectionMode voor *MultipleRange*.  Dit zal ervoor zorgen dat de gebruiker meerdere periodes kan selecteren.
 
-![](WPFIntro\media\image26.png){width="6.268055555555556in"
-height="2.672222222222222in"}
+![](./WPFIntro/media/image26.png)
 
 Klik daarna op de knop met het bliksem symbool rechtbovenaan het *Properties* toolvensters.
 
@@ -435,8 +410,7 @@ height="2.2430555555555554in"}
 We krijgen hiermee een overzicht te zien van alle *events* van dit besturingselement, en alle bijhorende koppelingen aan *event handlers*. Aan de hand van de moersleutel knop zou je terug overschakelen naar de eigenschappen.
 Scroll naar onder en dubbelklik op het leg vak naast de gebeurtenis SelectedDatesChanged.
 
-![](WPFIntro\media\image28.png){width="5.104166666666667in"
-height="2.8020833333333335in"}
+![](./WPFIntro/media/image28.png)
 
 Een eventhandler met de naam *Calendar1_SelectedDatesChanged* werd automatisch gegenereerd. *Visual Studio* opent voor ons de codebehind om ons toe te staan een afhandeling voor deze gebeurtenis uit te schrijven.
 De SelectedDatesChanged event treedt op telkens nadat de gebruiker andere data of bijkomende data in de Calendar heeft geselecteerd. Hierop kunnen we inhaken en onze logica voorzien\...
@@ -496,8 +470,7 @@ Dergelijke SelectionChangedEventArgs beschikt over een AddedItems eigenschap
 Het is deze lijst die we uitlezen, en waarvan we elke waarde aande ListBox toevoegen.
 Voeren we het programma uit, dan zal elke datum in het bereik van waarden die je selecteert effectief aan de ListBox worden toegevoegd.
 
-![](WPFIntro\media\image29.png){width="4.395833333333333in"
-height="2.7291666666666665in"}
+![](./WPFIntro/media/image29.png)
 
 **Een derde programma**
 
@@ -596,8 +569,7 @@ Deze keer handelen we niet alleen events van controls af, maar ook een gebeurten
 
 Het venster beschikt over een menu.  Een *Bestand* menu met daaronder menu-opties als *Opslaan* en *Afsluiten*.
 
-![](WPFIntro\media\image30.png){width="4.395833333333333in"
-height="1.875in"}
+![](./WPFIntro/media/image30.png)
 
 Menus staan meestal niet zomaar op eender welke plaats op het formulier, ze worden doorgaans tegen de bovenkant van het venster *gedockt*. Dit is eenvoudig te verwezelijken met een DockPanel, deze staat zijn child controls toe aan een kant (bv *Top*) *aan te meren*. Verderop bestuderen we de verschillende soorten panels (StackPanel, DockPanel, Canvas, Grid, \...).
 
@@ -620,8 +592,7 @@ Bij het *opslaan* van wijzigingen, bijvoorbeeld bij het klikken op de *Opslaa
 
 Het is onze *hulp routine* Opslaan die de MessageBox naar voor brengt, door de Show method aan te roepen.
 
-![](WPFIntro\media\image31.png){width="4.75in"
-height="2.7395833333333335in"}
+![[]](./WPFIntro/media/image31.png)
 
 Een MessageBox is een eenvoudig venster, die by default een label en een knop heeft.  Bij het aanroepen van de MessageBox.Show method geef je op zijn minst mee welke tekst in het venster komt.  Bijkomende mag je via een tweede argumentwaarde ook bepalen welke tekst op de titelbar komt, hier dezelfde tekst als de Title van ons Window. Een derde argumentwaarde kan bepalen welke knoppen worden gebruikt, bijvoorbeeld MessageBoxButton.OK als je enkel een *OK* knop wenst. MessageBopxButton.YesNoCancel zou dan zowel *Yes*, *No* als *Cancel* knoppen toevoegen. Met een MessageBoxImage waarde kan je eventueel nog een afbeelding toevoegen.  In ons voorbeeld het typische Question of Information symbool.
 Het opslaan zelf, is in dit voorbeeld niet geïmplementeerd. Je kan opvangen welke knop gebruikt werd op een MessageBox om dat venster af te handelen.  De Show() method call levert op zich een MessageBoxResult op.
@@ -673,14 +644,12 @@ De bool variabele werd hier op klasseniveau gedeclareerd, dit zorgt ervoor dat
 
 Bemerk dat in de XAML editior, bij het rechtsklikken op een eventhandler, wordt aangeboden om te *gluren* naar de method definitie.
 
-![](WPFIntro\media\image32.png){width="6.268055555555556in"
-height="2.272222222222222in"}
+![](./WPFIntro/media/image32.png)
 
 
 
 Kies je effectief voor *Peek Definition* dan zal in deze XAML view ook de codebehind worden weergeven.  Zonder dat hierbij het codebehind bestand wordt geopend.
 
-![](WPFIntro\media\image33.png){width="6.268055555555556in"
-height="1.9701388888888889in"}
+![](./WPFIntro/media/image33.png)
 
 Je kan niet enkel de code behind logica bekijken, je kan ook de logica aanvullen of aanpassen.
