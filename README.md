@@ -186,9 +186,48 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
    4. WPF: vrij, maar implementeer wat in de opdracht staat
       1. MaterialDesign wordt geapprecieerd, maar is niet verplicht
 
+## 14. WPF
+
+### Eerste stappen (di 20/4)
+
+* [Walkthrough](./Documents/WPF/WPFIntro.md)
+* [Platform Uno of MAUI](./Documents/WPF/UnoOrMaui.md)
+
+### Klantenbeheer (vr 23/4)
+
+* [In depth](./Documents/WPF/WPF_2.md)
+* Opzet voorbeeldapplicatie
+  * SQLServer
+  * ADO .NET
+  * Domeinlaag
+  * XUnit testen
+  * WPF main
+
+### Klantenbeheer (di 27/4)
+
+* Voorbeeldapplicatie: product gui
+* Evaluatie Team C
+
 <!--
 
-## --. WPF
+### Evaluatie Team C (vr 30/04)
+
+- [WPF en MaterialDesign (14:02)](https://www.youtube.com/watch?v=F0V01mYER5E&list=PLM3q9wWBZWb-_ZzoI8AFDxJRLYWTXDyYE&index=1)
+- [WPF Debugging (8:59)](https://www.youtube.com/watch?v=CHhgN5DoOMM&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=1)
+- [WPF Debugging Binding Problems (8:21)](https://www.youtube.com/watch?v=gr4Ye8EvvU0&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=2)
+- [WPF Debugging Binding Problems Revisited (3:37)](https://www.youtube.com/watch?v=TMpHLmDDwQo&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=3)
+- [WPF Styles (4:54)](https://www.youtube.com/watch?v=kC9-Xow-aEg&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=4)
+- [In, out, ref parameters, heap en stack geheugen (20:09)](https://www.youtube.com/watch?v=BpBc-Nhmlzk&list=PLM3q9wWBZWb_KX2UcyyFCXg1boSRP0N7N&index=1&t=338s)
+
+### (di 4/5)
+
+### (vr 7/5)
+
+### (di 11/5)
+
+### (di 18/5)
+
+### (vr 21/5)
 
 ## --. SOLID
 

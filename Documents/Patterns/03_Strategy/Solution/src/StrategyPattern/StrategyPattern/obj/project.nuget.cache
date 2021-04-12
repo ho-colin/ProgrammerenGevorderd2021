@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Q9FNMdQ4jfuTRYYGZhx+7V2aNqQL5JJnipRXGf8Y5pTg07D9jOLkLSgoPFJCxf+wV8Zs+42Nx0vK5vLWOANmoQ==",
+  "success": true,
+  "projectFilePath": "c:\\projects\\unittests\\03_Strategy\\Solution\\src\\StrategyPattern\\StrategyPattern\\StrategyPattern.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\u2389\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

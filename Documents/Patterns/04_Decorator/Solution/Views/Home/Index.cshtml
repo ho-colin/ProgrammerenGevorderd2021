@@ -1,0 +1,29 @@
+@model  Decorator.Models.HomeViewModels.IndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h3>@ViewData["Message"]</h3>
+
+
+<form asp-controller="Home" asp-action="Index" method="post" class="form-horizontal" role="form">
+    <div class="form-group">
+        <h3><label asp-for="Options"></label></h3>    
+        <ul>
+            @foreach (var option in Model.Options)
+            {
+                <li><input type="checkbox" name="SelectedOptions" value="@option.OptionName">@option.OptionName</li>
+            }
+        </ul>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Drive!" class="btn btn-default" />
+    </div>
+</form>
+<div>
+    <h3><label asp-for="Selected"></label></h3>    
+    
+    <p><b>Description:</b>    @Model.Selected.GetDescription()</p>
+    <p><b>Total Price:</b>    @Model.Selected.Price()</p>
+
+</div>
