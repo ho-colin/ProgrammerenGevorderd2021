@@ -189,46 +189,74 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 ## 14. WPF
 
-### Eerste stappen (di 20/4)
+### 14.1. Eerste stappen (di 20/4)
 
 * [Walkthrough](./Documents/WPF/WPFIntro.md)
 * [Platform Uno of MAUI](./Documents/WPF/UnoOrMaui.md)
 
-### Klantenbeheer (vr 23/4)
+### 14.2. Klantenbeheer: lagenmodel (vr 23/4)
 
-* [In depth](./Documents/WPF/WPF_2.md)
+- [In Depth: inleiding](./Documents/WPF/WPF_1_XAML.md)
+- [In Depth: Events](./Documents/WPF/WPF_2_Events.md)              
+- [In Depth: Application](./Documents/WPF/WPF_3_AppCommandLine.md)
+- [In Depth: Resources](./Documents/WPF/WPF_4_Resources.md)           
+- [In Depth: Exceptions](./Documents/WPF/WPF_5_Exceptions.md)
+
 * Opzet voorbeeldapplicatie
-  * SQLServer
-  * ADO .NET
+  * SQLServer databank
+  * Repository: ADO .NET
   * Domeinlaag
   * XUnit testen
   * WPF main
+  * Optioneel: console app voor testdoeleinden
 
-### Klantenbeheer (di 27/4)
+### 14.3. (di 27/4)
 
-* Voorbeeldapplicatie: product gui
+* Eerste XAML en basic controls
 * Evaluatie Team C
 
 <!--
 
-### Evaluatie Team C (vr 30/04)
+### 14.4. (vr 30/04)
 
-- [WPF en MaterialDesign (14:02)](https://www.youtube.com/watch?v=F0V01mYER5E&list=PLM3q9wWBZWb-_ZzoI8AFDxJRLYWTXDyYE&index=1)
-- [WPF Debugging (8:59)](https://www.youtube.com/watch?v=CHhgN5DoOMM&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=1)
-- [WPF Debugging Binding Problems (8:21)](https://www.youtube.com/watch?v=gr4Ye8EvvU0&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=2)
-- [WPF Debugging Binding Problems Revisited (3:37)](https://www.youtube.com/watch?v=TMpHLmDDwQo&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=3)
-- [WPF Styles (4:54)](https://www.youtube.com/watch?v=kC9-Xow-aEg&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=4)
-- [In, out, ref parameters, heap en stack geheugen (20:09)](https://www.youtube.com/watch?v=BpBc-Nhmlzk&list=PLM3q9wWBZWb_KX2UcyyFCXg1boSRP0N7N&index=1&t=338s)
+- Evaluatie Team C
+- WPF
+  - [MaterialDesign (14:02)](https://www.youtube.com/watch?v=F0V01mYER5E&list=PLM3q9wWBZWb-_ZzoI8AFDxJRLYWTXDyYE&index=1)
+  - [Debugging (8:59)](https://www.youtube.com/watch?v=CHhgN5DoOMM&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=1)
+  - [Debugging Binding Problems (8:21)](https://www.youtube.com/watch?v=gr4Ye8EvvU0&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=2)
+  - [Debugging Binding Problems Revisited (3:37)](https://www.youtube.com/watch?v=TMpHLmDDwQo&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=3)
+  - [Styles (4:54)](https://www.youtube.com/watch?v=kC9-Xow-aEg&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=4)
+- Uitdieping C#
+  - [In, out, ref parameters, heap en stack geheugen (20:09)](https://www.youtube.com/watch?v=BpBc-Nhmlzk&list=PLM3q9wWBZWb_KX2UcyyFCXg1boSRP0N7N&index=1&t=338s)
+- Optioneel: Sciensano
+  - [Deel 1](https://www.youtube.com/watch?v=RcGVsTkHRpY&list=PLM3q9wWBZWb-gcO0tYtviQsohiNkQZzqd&index=1&t=3s)
+  - [Deel 2](https://www.youtube.com/watch?v=LPqaEm9ZWfE&list=PLM3q9wWBZWb-gcO0tYtviQsohiNkQZzqd&index=2)
+  - [Deel 3](https://www.youtube.com/watch?v=p0DVhGSPne0&list=PLM3q9wWBZWb-gcO0tYtviQsohiNkQZzqd&index=3)
+  - [WPF Covid Charts](https://www.youtube.com/watch?v=CzUEeWvsK18&list=PLM3q9wWBZWb_KX2UcyyFCXg1boSRP0N7N&index=2)
+
+### 14.5. Basic controls, layout management, data binding 
 
 ### (di 4/5)
 
-### (vr 7/5)
+- [In Depth: Basic Controls](./Documents/WPF/WPF_6_ControlsBasic.md) 
+- [In Depth: Layout Management](./Documents/WPF/WPF_7_LayoutManagement.md)
+- [In Depth: Data Binding](./Documents/WPF/WPF_8_DataBinding.md)         
 
-### (di 11/5)
+### 14.6. List controls (vr 7/5)
 
-### (di 18/5)
+- [In Depth: ValueConverter](./Documents/WPF/WPF_9_ValueConverter.md)
+- [In Depth: Advanced Controls](./Documents/WPF/WPF_10_ControlsAdvanced.md)   
+- [In Depth: List Controls](./Documents/WPF/WPF_11_ControlsList.md)
 
-### (vr 21/5)
+### 14.7. Stijlen, menu- en statusbar, Timers (di 11/5)
+
+- [In Depth: Styles](./Documents/WPF/WPF_12_Styles.md)            
+- [In Depth: Menu and Status Bar](./Documents/WPF/WPF_13_MenuStatusBar.md)
+- [In Depth: Timer](./Documents/WPF/WPF_14_Timer.md)
+
+### Inhaalweek (di 18/5)
+
+### Inhaalweek (vr 21/5)
 
 ## --. SOLID
 
