@@ -31,7 +31,7 @@ door een schuine streep. Informatie kan tussen de openings- en sluitingstag word
 bijvoorbeeld:
 
 ```xml
-<elementX attribuutY="info1" attribuutZ="info2">info3\</elementX>
+<elementX attribuutY="info1" attribuutZ="info2">info3</elementX>
 ```
 
 XAML valt deels te vergelijken met *HTML*, wat vaak gebruikt wordt voor het presenteren van informatie in een webbrowser. Ook in HTML worden de user interface elementen en hun onderlinge relaties in dergelijke markup gedefinieerd.
@@ -40,14 +40,14 @@ Er worden daar bijvoorbeeld elementen gebruikt als \<h1\> (*header 1*), \<hr\
 ```xml
 <html>
    <body>
-      <h1>Mijn website\</h1>
+      <h1>Mijn website</h1>
       <hr/>
       <p>Dit is mijn persoonlijke website.  Hier een lijst van mijn hobbies:</p>
       <p>
           <ol>
-              <li>Programmeren\</li>
+              <li>Programmeren</li>
               <li>Lezen</li>
-              <li>Fietsen\</li>
+              <li>Fietsen</li>
           </ol>
       </p>
    </body>
@@ -140,6 +140,11 @@ Voor de Button, TextBox en Label controls zijn in de XAML onder het \<Grid
 mogelijke *panelen* die je in WPF kan gebruiken -- eigenlijk de meest flexibele.  Een paneel staat je toe meerdere controls te groeperen.
 Omdat een Window beperkt is tot één *child control*, zal dit doorgaans een panel control, bijvoorbeeld een Grid, zijn.
 Verderop bestuderen we de verschillende soorten panels (StackPanel, DockPanel, Canvas, Grid, \...).
+
+**Opmerkingen**
+
+* x:Name mag ook vervangen worden door Name. x: wijst op de bovenaan gedeclareerde "namespace" die verwijst naar mogelijke attributen voor WPF xaml tags. Name is echter tegenwoordig ook standaard een geldig attribuut.
+* Name moet uniek zijn: bovenstaand voorbeeld werkt met andere woorden niet zonder een unieke naam op te geven.
 
 **Eigenschappen wijzigen**
 
@@ -282,7 +287,7 @@ ingesteld\...
 <RadioButton x:Name="EngelsRadioButton" Content="Engels" HorizontalAlignment="Left"
              Margin="10,56,0,0" VerticalAlignment="Top"/>
 <CheckBox x:Name="HoofdlettersCheckBox" Content="Hoofdletters" HorizontalAlignment="Left"
-          Margin="10,76,0,0" VerticalAlignment=\"Top\"/>
+          Margin="10,76,0,0" VerticalAlignment="Top"/>
 ```
 
 Schakel opnieuw over naar de *codebehind*.  Waarschijnlijk heb je nog een *MainWindow.xaml.cs* tabblad open staan. Wijzig de event handler logica naar het volgende\...
@@ -307,7 +312,7 @@ Het ware niet eenvoudig geweest een vergelijkbare, even gebruiksvriendelijke en 
 
 **Een tweede programma**
 
-De naam van een gegenereerde event handler is by default NaamVanDeControl_NaamVanDeEvent, bijvoorbeeld *GroetButton_Click*. Je kan die naam aanpassen, maar let erop dat je dan zowel in de XAML als code behind die wijziging aanbrengt. Het is altijd een goed idee met de *Rename feature* te werken in *Visual Studio* als je een identifier wil veranderen.  *Visual Studio* zal in dat geval elke vermelding van die naam opsporen en aanpassen.
+De naam van een gegenereerde event handler is by default *NaamVanDeControl_NaamVanDeEvent*, bijvoorbeeld *GroetButton_Click*. Je kan die naam aanpassen, maar let erop dat je dan zowel in de XAML als code behind die wijziging aanbrengt. Het is altijd een goed idee met de *Rename feature* te werken in *Visual Studio* als je een identifier wil veranderen.  *Visual Studio* zal in dat geval elke vermelding van die naam opsporen en aanpassen.
 Laten we dit toepassen op de naam van ons eerste Window.  Rechterklik in de codebehind op *MainWindow* en kies voor *Rename*\...
 
 ![](./WPFIntro/media/image14.png)
