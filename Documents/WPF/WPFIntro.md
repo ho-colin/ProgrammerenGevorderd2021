@@ -545,7 +545,7 @@ MessageBoxButton.OK, MessageBoxImage.Information);
 Deze keer handelen we niet alleen events van controls af, maar ook een gebeurtenis van het venster zelf (*Window_Closing*). Neem volgende XAML over als je zelf het voorbeeld wil uittesten.
 
 ```xml
-<Window
+<Window x:Class="HalloWereldWpfApp.DerdeVoorbeeldWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
