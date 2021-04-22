@@ -193,17 +193,25 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 * [Walkthrough](./Documents/WPF/WPFIntro.md)
 * [Platform Uno of MAUI](./Documents/WPF/UnoOrMaui.md)
+* [Inleiding](./Documents/WPF/WPF_1_XAML.md)
+* Opzet voorbeeldapplicatie
+  * SQLServer databank
+  * Repository: ADO .NET
+  * Domeinlaag
 
 ### 14.2. Klantenbeheer: lagenmodel (vr 23/4)
 
-- [In Depth: inleiding](./Documents/WPF/WPF_1_XAML.md)
-- [In Depth: Events](./Documents/WPF/WPF_2_Events.md)              
-- [In Depth: Application](./Documents/WPF/WPF_3_AppCommandLine.md)
-- [In Depth: Resources](./Documents/WPF/WPF_4_Resources.md)           
-- [In Depth: Exceptions](./Documents/WPF/WPF_5_Exceptions.md)
+- WPF in depth
+  - [Events](./Documents/WPF/WPF_2_Events.md)              
+  - [Application](./Documents/WPF/WPF_3_AppCommandLine.md)
+  - [Resources](./Documents/WPF/WPF_4_Resources.md)           
+  - [Exceptions](./Documents/WPF/WPF_5_Exceptions.md)
+  - [Basic Controls](./Documents/WPF/WPF_6_ControlsBasic.md): Button, TextBlock, TextBox
+  - [Layout Management](./Documents/WPF/WPF_7_LayoutManagement.md): Grid "basics"
+  - [Advanced Controls](./Documents/WPF/WPF_10_ControlsAdvanced.md): DataGrid "basics"
+  - IOC: "basics" (optioneel: )
 
-* Opzet voorbeeldapplicatie
-  * SQLServer databank
+* Voorbeeldapplicatie: "Customer"
   * Repository: ADO .NET
   * Domeinlaag
   * XUnit testen
@@ -212,7 +220,8 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 ### 14.3. (di 27/4)
 
-* Eerste XAML en basic controls
+* WPF
+  * [Basic Controls](./Documents/WPF/WPF_6_ControlsBasic.md)
 * Evaluatie Team C
 
 <!--
@@ -238,21 +247,24 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 ### (di 4/5)
 
-- [In Depth: Basic Controls](./Documents/WPF/WPF_6_ControlsBasic.md) 
-- [In Depth: Layout Management](./Documents/WPF/WPF_7_LayoutManagement.md)
-- [In Depth: Data Binding](./Documents/WPF/WPF_8_DataBinding.md)         
+- WPF
+  - [Basic Controls](./Documents/WPF/WPF_6_ControlsBasic.md) 
+  - [Layout Management](./Documents/WPF/WPF_7_LayoutManagement.md)
+  - [Data Binding](./Documents/WPF/WPF_8_DataBinding.md)         
 
 ### 14.6. List controls (vr 7/5)
 
-- [In Depth: ValueConverter](./Documents/WPF/WPF_9_ValueConverter.md)
-- [In Depth: Advanced Controls](./Documents/WPF/WPF_10_ControlsAdvanced.md)   
-- [In Depth: List Controls](./Documents/WPF/WPF_11_ControlsList.md)
+- WPF
+  - [ValueConverter](./Documents/WPF/WPF_9_ValueConverter.md)
+  - [Advanced Controls](./Documents/WPF/WPF_10_ControlsAdvanced.md)   
+  - [List Controls](./Documents/WPF/WPF_11_ControlsList.md)
 
 ### 14.7. Stijlen, menu- en statusbar, Timers (di 11/5)
 
-- [In Depth: Styles](./Documents/WPF/WPF_12_Styles.md)            
-- [In Depth: Menu and Status Bar](./Documents/WPF/WPF_13_MenuStatusBar.md)
-- [In Depth: Timer](./Documents/WPF/WPF_14_Timer.md)
+- WPF
+  - [Styles](./Documents/WPF/WPF_12_Styles.md)            
+  - [Menu and Status Bar](./Documents/WPF/WPF_13_MenuStatusBar.md)
+  - [Timer](./Documents/WPF/WPF_14_Timer.md)
 
 ### Inhaalweek (di 18/5)
 

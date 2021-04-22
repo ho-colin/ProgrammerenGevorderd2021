@@ -8,11 +8,11 @@ De centrale rol en grote kracht van het begrip *interface* wordt in dit kader me
 
 Een IOC-raamwerk neemt de verantwoordelijkheid voor het aanmaken van objecten en het managen van de lifecycle van deze objecten over van de applicatie. Stel bijvoorbeeld dat je een proces voor het inlezen, verwerken en versturen van tekstbestanden wilt automatiseren. Dan zou je onderstaande code mogelijk terugzien in de software:
 
-![ioc 1](media/vs-2019/inversion2.png)
+![ioc 1](../inversion2.png)
 
 De instantiering van de importer, de processor en de writer staan hier hard in de code. Zou je dit vervangen door een IOC-framework dan zal er waarschijnlijk iets staan als:
 
-![ioc 2](media/vs-2019/inversion3.png)
+![ioc 2](../inversion3.png)
 
 Op het oog misschien niet zo’n spectaculaire verbetering, maar toch zijn er zeer grote voordelen behaald:
 
@@ -21,7 +21,7 @@ Op het oog misschien niet zo’n spectaculaire verbetering, maar toch zijn er ze
 
 Dat laatste punt wordt zichtbaar doordat een hoop IOC-raamwerken de mogelijkheid hebben om hun gedrag via configuratie in te stellen. We geven een voorbeeld op basis van Microsoft Unity, een raamwerk waarmee we verderop kennis zullen maken:
 
-![ioc 3](media/vs-2019/inversion4.png)
+![ioc 3](../inversion4.png)
 
 Met andere woorden: inversion of control is een absolute aanrader om in je gereedschapskist als ontwikkelaar te hebben.
 
@@ -31,11 +31,11 @@ Dit is ook het geval met **Inversion of Control** (IOC) en **Dependency Injectio
 
 De termen Inversion of Control (IoC), Dependency Inversion Principle (DIP), Dependency Injection (DI) en IoC-containers zijn je misschien wel bekend, maar weet je wat elke term precies betekent?
 
-![ioc 4](media/vs-2019/IOC/ioc-buzzwords.png)
+![ioc 4](../WPF/media/vs-2019/IOC/ioc-buzzwords.png)
 
 Laten we bovenstaande buzz-words begrijpen. De volgende afbeelding verduidelijkt of het principes dan wel patronen betreft:
 
-![ioc 5](media/vs-2019/IOC/principles-and-patterns.png)
+![ioc 5](../WPF/media/vs-2019/IOC/principles-and-patterns.png)
 
 Zoals geïllustreerd zijn IoC en DIP ontwerpprincipes die best aangewend worden bij het implementeren van toepassingen. Omdat het principes zijn, reiken ze "beste praktijken" (best practices) aan, maar geven ze geen specifieke details over de implementatie. Dependency Injection (DI) is een patroon en IoC-container is een raamwerk.
 
@@ -65,7 +65,7 @@ De IoC-container is een raamwerk (framework) dat wordt gebruikt om automatische 
 
 De volgende afbeelding illustreert hoe we stap voor stap een losjes gekoppeld ontwerp gaan realiseren.
 
-![ioc 6](media/vs-2019/IOC/ioc-steps.png)
+![ioc 6](../WPF/media/vs-2019/IOC/ioc-steps.png)
 
 Bij IoC draait alles om het omkeren van controle. Stel dat je met een auto naar je werkplek rijdt: je bestuurt dan zelf de auto. Het IoC-principe stelt voor om de besturing om te keren, wat betekent dat je in plaats van zelf te rijden een taxi huurt, waarbij een andere persoon de auto zal besturen. Dit wordt dus omkering van de controle genoemd - van jou naar de taxichauffeur. Je hoeft zelf geen auto te besturen en je kunt de chauffeur zelf laten rijden zodat je je kan concentreren op je hoofdtaak. Denk aan het delegatieprincipe: elke klasse is in principe zo "lui" mogelijk en besteedt alle taken uit behalve de eigen kerntaak.
 
@@ -75,7 +75,7 @@ Het IoC-principe helpt bij het ontwerpen van losjes gekoppelde klassen en maakt 
 
 Je herinnert je zeker nog je schooldagen? Soms worden er events georganiseerd en vaak wonen we saaie lezingen bij.
 
-![ioc 4](media/vs-2019/DependencyInjection.png)
+![ioc 4](../DependencyInjection.png)
 
 Laat ons een poging doen om *College* en *Events* te relateren met behulp van *Inversion of Control* (IOC).
 
@@ -85,7 +85,7 @@ Laat ons een poging doen om *College* en *Events* te relateren met behulp van *I
 
 Stel dat je twee classes hebt: College en TechEvents. Zoals je kan zien in bovenstaande figuur kunnen er verschillende problemen opduiken:
 
-![ioc 5](media/vs-2019/DependencyInjection2.png)
+![ioc 5](../DependencyInjection2.png)
 
 Beide classes zijn sterk gekoppeld. Je kan geen College hebben zonder TechEvents omdat het TechEvents object aangemaakt wordt in de constructor van College.
 Wanneer we TechEvents wijzigen, moeten we College hercompileren, het is te zeggen: aanpassen. College controleert de creatie van Events. College kent het event dat georganiseerd wordt. Indien er een specifiek event georganiseerd moet worden zoals Weekend, FootballEvent of PartyEvent, dan moet class College aangepast worden aangezien College direct refereert aan Events.
@@ -106,7 +106,7 @@ Herinner je **SOLID**. "D" staat voor *Dependency Injection*.
 
 IOC kan bereikt worden door **Dependency Injection** (DI). Deze techniek laat toe om een concrete implementatie te injecteren in een klasse die een abstractie gebruikt, dit wil zeggen een interface. Het hoofdidee is om de sterke koppeling van classes te verminderen - de concrete implementatie van een abstractie wordt buiten de klasse getrokken!
 
-![ioc 5](media/vs-2019/DependencyInjection3.png)
+![ioc 5](../DependencyInjection3.png)
 
 Dit kan op 4 manieren bereikt worden:
 
@@ -234,7 +234,7 @@ coll.GetEvents();
 
 In een object-georiënteerd ontwerp moeten klassen losjes gekoppeld ontworpen worden. Losjes gekoppeld betekent dat wijzigingen in een klasse andere klassen niet zouden moeten dwingen te veranderen, zodat de hele applicatie onderhoudbaar en uitbreidbaar is. Laat ons vertrekken van een typische n-tier-architectuur, zoals weergegeven in de volgende afbeelding:
 
-![ioc 7](media/vs-2019/IOC/demo-architecture.png)
+![ioc 7](../WPF/media/vs-2019/IOC/demo-architecture.png)
 
 In de n-tier-architectuur spreekt de gebruikersinterface (UI) de servicelaag aan om gegevens op te halen of op te slaan. De servicelaag spreekt op zijn beurt de business-logica-klasse aan om bedrijfsregels op de gegevens toe te passen. De business-logica-klasse is afhankelijk van de data access klasse die de gegevens ophaalt of opslaat in de onderliggende database. Dit is een eenvoudig n-tier architectuurontwerp. Laten we ons concentreren op de BusinessLogic- en DataAccess-klassen om IoC te begrijpen.
 
@@ -283,7 +283,7 @@ Om alle bovenstaande problemen op te lossen en een losjes gekoppeld ontwerp te k
 
 Het volgende patroon implementeert bijvoorbeeld het IoC-principe, maar er zijn alternatieven.
 
-![ioc 7](media/vs-2019/IOC/ioc-patterns.png)
+![ioc 7](../WPF/media/vs-2019/IOC/ioc-patterns.png)
 
 Laten we het Factory-patroon gebruiken om IoC te implementeren, als de eerste stap naar losjes gekoppelde klassen.
 
@@ -492,7 +492,7 @@ Het Dependency Injection-patroon omvat 3 soorten klassen.
 
 De volgende afbeelding illustreert de relatie tussen deze klassen:
 
-![ioc 9](media/vs-2019/IOC/DI.png)
+![ioc 9](../WPF/media/vs-2019/IOC/DI.png)
 
 Zoals je kan zien, maakt de injector-klasse een object van de service-klasse en injecteert dat object in een client-object. Het DI-patroon ontslaat de client-klasse van de verantwoordelijkheid om een object van de service-klasse aan te maken.
 
@@ -543,7 +543,7 @@ Het probleem met het bovenstaande voorbeeld is dat we DataAccessFactory binnen d
 
 De volgende afbeelding illustreert de implementatie van het DI-patroon voor het bovenstaande voorbeeld:
 
-![ioc 10](media/vs-2019/IOC/DI-example.png)
+![ioc 10](../WPF/media/vs-2019/IOC/DI-example.png)
 
 ```csharp
 public class CustomerBusinessLogic
@@ -722,25 +722,25 @@ We installeren de Unity-container in Visual Studio met behulp van NuGet.
 
 Eerst moeten we een project maken om Unity te gebruiken. Dit kan een project van eender welk type zijn (klassenbibliotheek, console app, web app, WPF app, ...). We kiezen voor een console-toepassing om de Unity-container te demonstreren. Klik dus op "Nieuw project" op de startpagina van Visual Studio. Het opent de pop-up "Nieuw project" zoals hieronder.
 
-![ioc 4](media/vs-2019/IOC/unity1.png)
+![ioc 4](../WPF/media/vs-2019/IOC/unity1.png)
 
 Voer een naam in voor het project en een locatie en klik op OK. Dit zal een nieuw console-project creëren.
 
-![ioc 4](media/vs-2019/IOC/unity2.png)
+![ioc 4](../WPF/media/vs-2019/IOC/unity2.png)
 
 Nu moeten we Unity in dit project installeren om Unity dependency injection in het project te kunnen gebruiken. Klik dus met de rechtermuisknop op het projectknooppunt in de solution explorer en selecteer "NuGet-pakketten beheren", zoals hieronder wordt weergegeven.
 
-![ioc 4](media/vs-2019/IOC/unity3.png)
+![ioc 4](../WPF/media/vs-2019/IOC/unity3.png)
 
 Nu kunnen we zoeken naar Unity via het blader-tabblad van NuGet. Voer "Unity" in het zoekvak in en het zal alle bibliotheken of plugins weergeven die het woord "Unity" bevatten, zoals hieronder getoond.
 
-![ioc 4](media/vs-2019/IOC/unity4.png)
+![ioc 4](../WPF/media/vs-2019/IOC/unity4.png)
 
 Klik nu op de knop Installeren in het rechterdeelvenster, zoals hieronder weergegeven.
 
 Hiermee worden alle referenties van Unity aan uw project toegevoegd, zoals hieronder wordt weergegeven.
 
-![ioc 4](media/vs-2019/IOC/unity5.png)
+![ioc 4](../WPF/media/vs-2019/IOC/unity5.png)
 
 Nu zijn we klaar om Unity te gebruiken. Hier zullen we leren hoe we type mapping kunnen registreren en ophalen (resolving) met Unity.
 
@@ -1587,7 +1587,7 @@ public interface ICar
 
 ParameterOverride kan worden gebruikt om geregistreerde constructie-parameterwaarden te overschrijven.
 
-```csharp
+​```csharp
 var container = new UnityContainer()
                 .RegisterType<ICar, BMW>();
 
