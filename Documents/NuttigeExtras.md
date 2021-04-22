@@ -1,25 +1,25 @@
-## 14. Nuttige extra's
+## Nuttige extra's
 
-### 14.1. Boeken
+### 1. Boeken
 
 Er zijn quasi oneindig veel boeken over C# geschreven, althans zo lijkt het. Hier een selectie van boeken met een korte bespreking waarom ik denk dat ze voor jou een meerwaarde kunnen zijn bij het leren programmeren in C#:
 
-### 14.2. Beginner boeken
+### 2. Beginner boeken
 
 - [C# Programming](https://ineasysteps.com/products-page/all_books/c-sharp-programming-in-easy-steps/) van Mike McGrath: een uiterst compact, maar zeer helder en kleurrijk boekje.
 - [Microsoft Visual C# 2015: An introduction to OOP](https://www.amazon.com/Microsoft-Visual-2015-Introduction-Object-Oriented/dp/1285860233) van Joyce Farrell: Niet het meest sexy boek, maar wel het meest volledige qua overlap met de leerstof van deze cursus. Aanrader voor zij die wat meer in detail willen gaan en op zoek zijn naar oneindig veel potentiele examenvragen ;)
 - [Head First C#](https://www.bol.com/nl/f/head-first-c/37019965/?country=BE) van Andrew Stellman & Jennifer Greene: laat de ietwat bizarre, bijna kleuterachtige look and feel van de head first boeken je niet afschrikken. Ieder boek in deze serie is goud waard. De head first boeken zijn de ideale manier als je zoekt naar een alternatieve manier om complexe materie te begrijpen. Bekijk zeker ook de Head First Design Patterns en Head First Sql boeken in de reeks!
 
-### 14.3. Geavanceerd
+### 3. Geavanceerd
 
 - [C# Unleashed](https://www.bol.com/nl/f/c-5-0-unleashed/9200000009902560/?country=BE) van Bart De Smet: dé referentie om C# tot op het bot te begrijpen. Geschreven door een Belg die bij Microsoft in Redmond aan C# werkt.
 - [Code Complete](https://www.amazon.de/Code-Complete-Practical-Construction-Costruction/dp/0735619670) van Steve McConnell: een referentiewerk over 'programmeren in het algemeen'. Het boek is al jaar en dag het te lezen boek als je je als programmeur wilt verdiepen in wat nu 'correct programmeren' behelst. Als je op je CV kunt zetten dat je dit boek door en door kent dan zal elk IT-bedrijf je stante pede aannemen ;)
 
-### 14.4. Game based programmeren
+### 4. Game based programmeren
 
 Ideale manier om programmeren meer in de vingers te krijgen op een speelse manier:
 
-#### 14.4.1. Apps
+#### 4.1. Apps
 
 - [SoloLearn](https://play.google.com/store/apps/details?id=com.sololearn): Verplichte app! Simple as that!
 - [Enki](https://play.google.com/store/apps/details?id=com.enki.insights&hl=en) Net zoals SoloLearn maar dan anders.
@@ -27,7 +27,7 @@ Ideale manier om programmeren meer in de vingers te krijgen op een speelse manie
 - [Mimo](https://play.google.com/store/apps/details?id=com.getmimo) Speels en vrij beperkt in gratis versie, maar ideale aanvulling op SoloLearn.
 - [Screeps](https://screeps.com/) Een steam spel om te leren programmeren. Weliswaar Javascript (nuttig voor Web Programming) maar het concept is te cool om niet hier te vermelden en zoals je zal ontdekken: leren programmeren kan je in eender welke taal, en het zal ook je andere programmeer-ervaring verbeteren. Give it a go!
 
-#### 14.4.2. Websites
+#### 4.2. Websites
 
 - [Exercism](https://exercism.io/tracks/csharp)
 - [Coding game](https://www.codingame.com/start) zeer vet
@@ -39,7 +39,7 @@ Ideale manier om programmeren meer in de vingers te krijgen op een speelse manie
 - [Free Programming Book](https://books.goalkicker.com/): handig vorm gegeven gratis ebooks met tal van onderwerpen waaronder ook C# en het .NET Framework.
 - [Tutorials teacher](https://www.tutorialsteacher.com/csharp/csharp-tutorials)
 
-### 14.5. Tutorials
+### 5. Tutorials
 
 - [Dotnet beginning](http://dot.net/videos)
 - [C# Getting started interactive quickstart tutorials](https://docs.microsoft.com/en-us/dotnet/csharp/quick-starts/): aanrader.
@@ -49,11 +49,11 @@ Ideale manier om programmeren meer in de vingers te krijgen op een speelse manie
 - [Rob Miles's The C# Programming Yellow book](http://www.robmiles.com/c-yellow-book/): zeer vermakelijk, vlot geschreven C# boek(je).
 - [Open Source Game Clones](https://osgameclones.com/): "This site tries to gather open-source remakes of great old games in one place." Je vindt er ook tal van C# projecten terug zoals [GTA 2](https://code.google.com/archive/p/gta2net/). Klik bovenaan op "languages" en filter maar eens op C#.
 
-### 14.6. Cheat Sheets
+### 6. Cheat Sheets
 
 * [Laurence](./laurence_c.pdf)
 
-### 14.7. Streaming programmeurs
+### 7. Streaming programmeurs
 
 Ja hoor, ze bestaan. Meer en meer professionele én beginnende programmeurs streamen terwijl te programmeren. Dit is een ideale manier om te zien hoe andere mensen problemen aanpakken. De meeste programming streamers kan je terugvinden op youtube, maar ook op Twitch zijn er steeds meer. Enkele aanraders (bekijk zeker de filmpjes uit de archieven eens):
 
