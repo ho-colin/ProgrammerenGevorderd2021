@@ -275,10 +275,6 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 * [Interfaces](./Documents/Interfaces1.md)
 * [5 principes](./Documents/SOLID.md)
 
-## --. Nuttige extra's
-
-* [Overzicht boeken, tutorials, websites, ...](./Documents/NuttigeExtras.md)
-
 ## --. Uitdieping
 
 1. [Interfaces](./Documents/Interfaces1.md)
@@ -295,4 +291,8 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 * [Ondersteundende opdrachten](./Documents/Opdrachten.md)
 -->
+
+## 15. Nuttige extra's
+
+* [Overzicht boeken, tutorials, websites, ...](./Documents/NuttigeExtras.md)
 
