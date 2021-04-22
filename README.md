@@ -208,8 +208,8 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
   - [Exceptions](./Documents/WPF/WPF_5_Exceptions.md)
   - [Basic Controls](./Documents/WPF/WPF_6_ControlsBasic.md): Button, TextBlock, TextBox
   - [Layout Management](./Documents/WPF/WPF_7_LayoutManagement.md): Grid "basics"
-  - [Advanced Controls](./Documents/WPF/WPF_10_ControlsAdvanced.md): DataGrid "basics"
-  - IOC: "basics" (optioneel: )
+  - [List Controls](./Documents/WPF/WPF_11_ControlsList.md): DataGrid "basics"
+  - IOC: "basics" (optioneel: [Unity](./Documents/Patterns/Ioc.md))
 
 * Voorbeeldapplicatie: "Customer"
   * Repository: ADO .NET
