@@ -222,26 +222,35 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 * WPF
   * [Basic Controls](./Documents/WPF/WPF_6_ControlsBasic.md)
+  * [Menu and Status Bar](./Documents/WPF/WPF_13_MenuStatusBar.md)
+  * [Interfaces](./Documents/Interfaces1.md)
 * Evaluatie Team C
-
-<!--
 
 ### 14.4. (vr 30/04)
 
 - Evaluatie Team C
-- WPF
-  - [MaterialDesign (14:02)](https://www.youtube.com/watch?v=F0V01mYER5E&list=PLM3q9wWBZWb-_ZzoI8AFDxJRLYWTXDyYE&index=1)
-  - [Debugging (8:59)](https://www.youtube.com/watch?v=CHhgN5DoOMM&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=1)
-  - [Debugging Binding Problems (8:21)](https://www.youtube.com/watch?v=gr4Ye8EvvU0&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=2)
-  - [Debugging Binding Problems Revisited (3:37)](https://www.youtube.com/watch?v=TMpHLmDDwQo&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=3)
-  - [Styles (4:54)](https://www.youtube.com/watch?v=kC9-Xow-aEg&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=4)
-- Uitdieping C#
-  - [In, out, ref parameters, heap en stack geheugen (20:09)](https://www.youtube.com/watch?v=BpBc-Nhmlzk&list=PLM3q9wWBZWb_KX2UcyyFCXg1boSRP0N7N&index=1&t=338s)
-- Optioneel: Sciensano
-  - [Deel 1](https://www.youtube.com/watch?v=RcGVsTkHRpY&list=PLM3q9wWBZWb-gcO0tYtviQsohiNkQZzqd&index=1&t=3s)
-  - [Deel 2](https://www.youtube.com/watch?v=LPqaEm9ZWfE&list=PLM3q9wWBZWb-gcO0tYtviQsohiNkQZzqd&index=2)
-  - [Deel 3](https://www.youtube.com/watch?v=p0DVhGSPne0&list=PLM3q9wWBZWb-gcO0tYtviQsohiNkQZzqd&index=3)
-  - [WPF Covid Charts](https://www.youtube.com/watch?v=CzUEeWvsK18&list=PLM3q9wWBZWb_KX2UcyyFCXg1boSRP0N7N&index=2)
+
+- Team A en C: zelfstudie aan de hand van korte video's
+
+  - WPF
+    
+    - [MaterialDesign (14:02)](https://www.youtube.com/watch?v=F0V01mYER5E&list=PLM3q9wWBZWb-_ZzoI8AFDxJRLYWTXDyYE&index=1)
+    - [Debugging (8:59)](https://www.youtube.com/watch?v=CHhgN5DoOMM&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=1)
+    - [Debugging Binding Problems (8:21)](https://www.youtube.com/watch?v=gr4Ye8EvvU0&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=2)
+    - [Debugging Binding Problems Revisited (3:37)](https://www.youtube.com/watch?v=TMpHLmDDwQo&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=3)
+    - [Styles (4:54)](https://www.youtube.com/watch?v=kC9-Xow-aEg&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=4)
+    
+  - Optioneel: Sciensano
+    
+    - [Deel 1](https://www.youtube.com/watch?v=RcGVsTkHRpY&list=PLM3q9wWBZWb-gcO0tYtviQsohiNkQZzqd&index=1&t=3s)
+    
+    - [Deel 2](https://www.youtube.com/watch?v=LPqaEm9ZWfE&list=PLM3q9wWBZWb-gcO0tYtviQsohiNkQZzqd&index=2)
+    
+    - [Deel 3](https://www.youtube.com/watch?v=p0DVhGSPne0&list=PLM3q9wWBZWb-gcO0tYtviQsohiNkQZzqd&index=3)
+    
+    - [WPF Covid Charts](https://www.youtube.com/watch?v=CzUEeWvsK18&list=PLM3q9wWBZWb_KX2UcyyFCXg1boSRP0N7N&index=2)
+    
+      <!--
 
 ### 14.5. Basic controls, layout management, data binding 
 
@@ -263,8 +272,9 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 - WPF
   - [Styles](./Documents/WPF/WPF_12_Styles.md)            
-  - [Menu and Status Bar](./Documents/WPF/WPF_13_MenuStatusBar.md)
   - [Timer](./Documents/WPF/WPF_14_Timer.md)
+- Uitdieping C#
+  - [In, out, ref parameters, heap en stack geheugen (20:09)](https://www.youtube.com/watch?v=BpBc-Nhmlzk&list=PLM3q9wWBZWb_KX2UcyyFCXg1boSRP0N7N&index=1&t=338s)
 
 ### Inhaalweek (di 18/5)
 
@@ -277,7 +287,6 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 ## --. Uitdieping
 
-1. [Interfaces](./Documents/Interfaces1.md)
 2. [Generics](./Documents/Generics.md)
 3. [UML naar code](./Documents/UMLNaarCode.md)
 
