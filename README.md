@@ -275,7 +275,7 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
   - Nieuw venster openen en verbergen bij sluiten: notie UI-thread
 
-  - Microsoft IOC container:
+  - OPTIONEEL: Microsoft IOC container
 
     ![image-20210502095531816](Documents/WPF/image-20210502095531816.png)
 
@@ -293,7 +293,7 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
       ServiceProvider.GetRequiredService<IInterface>()
       ```
 
-    * IOC optioneel: [Unity](./Documents/Patterns/Ioc.md)
+    * Meer informatie met betrekking tot IOC: zie [Unity](./Documents/Patterns/Ioc.md) (OPTIONEEL).
 
   - Voorbeeld van een MessageBox: zie verwijder klant
 
@@ -328,6 +328,8 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 - WPF
   - [Styles](./Documents/WPF/WPF_12_Styles.md)            
   - [Timer](./Documents/WPF/WPF_14_Timer.md)
+  - Command pattern
+  - LVET TODO's
 
 ### 14.7. WPF: left overs (di 11/5)
 
