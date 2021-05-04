@@ -248,8 +248,6 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
     - [Deel 3](https://www.youtube.com/watch?v=p0DVhGSPne0&list=PLM3q9wWBZWb-gcO0tYtviQsohiNkQZzqd&index=3)
     
     - [WPF Covid Charts](https://www.youtube.com/watch?v=CzUEeWvsK18&list=PLM3q9wWBZWb_KX2UcyyFCXg1boSRP0N7N&index=2)
-    
-      <!--
 
 ### 14.5. Basic controls, layout management, data binding 
 
@@ -322,14 +320,16 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
   - [List Controls](./Documents/WPF/WPF_11_ControlsList.md)
 
   - Groepswerk: maak een venster voor productbeheer en implementeer databanktoegang...
+  
+  <!--
 
-### 14.6. List controls (vr 7/5)
+### 14.6. WPF: styles en timers (vr 7/5)
 
 - WPF
   - [Styles](./Documents/WPF/WPF_12_Styles.md)            
   - [Timer](./Documents/WPF/WPF_14_Timer.md)
 
-### 14.7. Stijlen, Timers (di 11/5)
+### 14.7. WPF: left overs (di 11/5)
 
 - WPF
   - Pages met MahApps
