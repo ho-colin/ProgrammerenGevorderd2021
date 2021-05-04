@@ -209,7 +209,6 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
   - [Basic Controls](./Documents/WPF/WPF_6_ControlsBasic.md): Button, TextBlock, TextBox
   - [Layout Management](./Documents/WPF/WPF_7_LayoutManagement.md): Grid "basics"
   - [List Controls](./Documents/WPF/WPF_11_ControlsList.md): DataGrid "basics"
-  - IOC: "basics" (optioneel: [Unity](./Documents/Patterns/Ioc.md))
 
 * Voorbeeldapplicatie: "Customer"
   * Repository: ADO .NET
@@ -257,24 +256,87 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 ### (di 4/5)
 
 - WPF
-  - [Basic Controls](./Documents/WPF/WPF_6_ControlsBasic.md) 
-  - [Layout Management](./Documents/WPF/WPF_7_LayoutManagement.md)
-  - [Data Binding](./Documents/WPF/WPF_8_DataBinding.md)         
+
+  - Herhaling
+
+    - Interfaces: hoe leg ik een "contract" op: ICrud
+    - Singleton patroon
+    - ObservableCollection, IPropertyNotifyChanged: Mode=TwoWay
+    - Menu en StatusBar
+    - Een venster centraal op je scherm plaatsen
+    - Layout management: Grid, DockPanel
+
+  - Resources: icons
+
+    - Icoontjes: Build Action "Content", "Copy if newer"
+    - Icoontjes bij elke menu item
+    - Icoon voor button: zie App.xaml, Resources (kan ook op niveau van venster)
+    - Icoon voor venster
+
+  - Applicatie afsluiten bij het sluiten van het hoofdvenster
+
+  - Nieuw venster openen en verbergen bij sluiten: notie UI-thread
+
+  - Microsoft IOC container:
+
+    ![image-20210502095531816](C:\Users\u2389\source\repos\ProgrammerenGevorderd2021\Documents\WPF\image-20210502095531816.png)
+
+    * Registratie in App.xaml.cs (vergelijk taalinstelling, globale exception handler): 
+
+      ```c#
+      ServiceCollection.AddTransient<IInterface, Class>()
+      ```
+
+      
+
+    * Elders ophalen van singleton: 
+
+      ```c#
+      ServiceProvider.GetRequiredService<IInterface>()
+      ```
+
+    * IOC optioneel: [Unity](./Documents/Patterns/Ioc.md)
+
+  - Voorbeeld van een MessageBox: zie verwijder klant
+
+  - Controleer TextBox per toetsaanslag om een knop beschikbaar te stellen of niet
+
+  - Vertaling en taalinstelling:
+
+    - public class in Translations.resx
+
+    - Per alternatieve taal: een bijkomend .resx bestand zonder code behind
+
+    - Editeer je vertalingen via Visual Studio
+
+    - In App.xaml.cs (vergelijk globale exception handler): 
+
+      ```c#
+      Translations.Culture = new System.Globalization.CultureInfo("nl-BE"); // en-US nl-BE
+      ```
+
+  - [ValueConverter](./Documents/WPF/WPF_9_ValueConverter.md)
+
+  - [Advanced Controls](./Documents/WPF/WPF_10_ControlsAdvanced.md)   
+
+  - [List Controls](./Documents/WPF/WPF_11_ControlsList.md)
+
+  - Groepswerk: maak een venster voor productbeheer en implementeer databanktoegang...
 
 ### 14.6. List controls (vr 7/5)
 
 - WPF
-  - [ValueConverter](./Documents/WPF/WPF_9_ValueConverter.md)
-  - [Advanced Controls](./Documents/WPF/WPF_10_ControlsAdvanced.md)   
-  - [List Controls](./Documents/WPF/WPF_11_ControlsList.md)
-
-### 14.7. Stijlen, menu- en statusbar, Timers (di 11/5)
-
-- WPF
   - [Styles](./Documents/WPF/WPF_12_Styles.md)            
   - [Timer](./Documents/WPF/WPF_14_Timer.md)
+
+### 14.7. Stijlen, Timers (di 11/5)
+
+- WPF
+  - Pages met MahApps
 - Uitdieping C#
   - [In, out, ref parameters, heap en stack geheugen (20:09)](https://www.youtube.com/watch?v=BpBc-Nhmlzk&list=PLM3q9wWBZWb_KX2UcyyFCXg1boSRP0N7N&index=1&t=338s)
+  - Communicatie: TCP, UDP, websockets
+  - Security
 
 ### Inhaalweek (di 18/5)
 
