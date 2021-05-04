@@ -277,7 +277,7 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
   - Microsoft IOC container:
 
-    ![image-20210502095531816](C:\Users\u2389\source\repos\ProgrammerenGevorderd2021\Documents\WPF\image-20210502095531816.png)
+    ![image-20210502095531816](Documents/WPF/image-20210502095531816.png)
 
     * Registratie in App.xaml.cs (vergelijk taalinstelling, globale exception handler): 
 
