@@ -285,15 +285,13 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
       ServiceCollection.AddTransient<IInterface, Class>()
       ```
 
-      
-
-    * Elders ophalen van singleton: 
+    * Elders ophalen van een nieuwe instantie van Class die IInterface implementeert: 
 
       ```c#
-      ServiceProvider.GetRequiredService<IInterface>()
+    ServiceProvider.GetRequiredService<IInterface>()
       ```
-
-    * Meer informatie met betrekking tot IOC: zie [Unity](./Documents/Patterns/Ioc.md) (OPTIONEEL).
+    
+    * Meer informatie met betrekking tot IOC: zie [Unity](./Documents/Patterns/Ioc.md).
 
   - Voorbeeld van een MessageBox: zie verwijder klant
 
@@ -312,6 +310,16 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
       ```c#
       Translations.Culture = new System.Globalization.CultureInfo("nl-BE"); // en-US nl-BE
       ```
+  
+  - Groepswerk: maak een venster voor productbeheer en implementeer databanktoegang...
+
+### 14.6. WPF: laatste loodjes (vr 7/5)
+
+- WPF
+
+  - DataGrid: sync databank
+
+  - Connection string in een xml configuratiebestand: RepositoryConfig.settings
 
   - [ValueConverter](./Documents/WPF/WPF_9_ValueConverter.md)
 
@@ -319,19 +327,15 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
   - [List Controls](./Documents/WPF/WPF_11_ControlsList.md)
 
-  - Groepswerk: maak een venster voor productbeheer en implementeer databanktoegang...
-  
-  <!--
-
-### 14.6. WPF: styles en timers (vr 7/5)
-
-- WPF
   - [Styles](./Documents/WPF/WPF_12_Styles.md)            
-  - [Timer](./Documents/WPF/WPF_14_Timer.md)
-  - Command pattern
-  - LVET TODO's
 
-### 14.7. WPF: left overs (di 11/5)
+  - [Timer](./Documents/WPF/WPF_14_Timer.md)
+
+  - Command pattern: een inleiding
+
+    <!--
+
+### 14.7. WPF: XUnit testing, TCP en UDP, SSL (di 11/5)
 
 - WPF
   - Pages met MahApps
