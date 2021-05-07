@@ -331,7 +331,7 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
   - [Timer](./Documents/WPF/WPF_14_Timer.md)
 
-  - Command pattern: een inleiding
+  - Command pattern: [een inleiding](./Documents/WPF/CommandPattern.md)
 
   - Debugging en tracing met [SeriLog](https://serilog.net/): [een inleiding](./Documents/SeriLog.md)
 
