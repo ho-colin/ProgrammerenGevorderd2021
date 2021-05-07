@@ -139,7 +139,7 @@ De StringFormat property doet precies wat de naam beschrijft: de output string w
 De eerste TextBlock's krijgen hun waarden door te binden aan het hogerliggende Window en hiervan breedte en hoogte te gebruiken. Met behulp van de StringFormat property worden de waarden geformateerd. Voor de breedte gebruiken we een geformateerde string en voor de hoogte het currency formaat. De waarde wordt bepaald door het double type en bijgevolg kunnen we dezelfde formaatspecificaties gebruiken als we zouden doen bij double.ToString(). Hier vind je een lijst: http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx.
 
 Merk ook op dat we een eigen tekst kunnen opnemen bij StringFormat - je kan met andere woorden eigen tekst introduceren voor of na de waarde die je toont via binding. We omgeven de eigenlijke waarde waaraan we binden, met accolades, met hierbij twee waarden: een referentie naar de waarde die we wensen te formateren en de format string, gescheiden door een dubbelpunt.
-In het geval van de laatste twee waarden binden we aan de huidige datum (DateTime.Now) en stellen deze eerst voor als datum in een specifiek formaat en vervolgens als een tijd (uren en minuten) . Je kan meer lezen over het formateren van DataTime door deze link te volgen: http://msdn.microsoft.com/en-us/library/az4se3k1.aspx.
+In het geval van de laatste twee waarden binden we aan de huidige datum (DateTime.Now) en stellen deze eerst voor als datum in een specifiek formaat en vervolgens als een tijd (uren en minuten) . Je kan meer lezen over het formateren van DateTime door deze link te volgen: http://msdn.microsoft.com/en-us/library/az4se3k1.aspx.
 
 ### Formatting zonder extra text
 
