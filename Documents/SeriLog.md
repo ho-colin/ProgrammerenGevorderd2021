@@ -2,7 +2,7 @@
 
 ## Installatie als nuget pakket(ten)
 
-![image-20210505170104557](C:\Users\u2389\source\repos\ProgrammerenGevorderd2021\Documents\image-20210505170104557.png)
+![image-20210505170104557](./image-20210505170104557.png)
 
 ## Configuratie in code (*object chaining*): zie App.xaml.cs
 
