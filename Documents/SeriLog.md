@@ -4,7 +4,7 @@
 
 ![image-20210505170104557](./image-20210505170104557.png)
 
-## Configuratie in code (*object chaining*): zie App.xaml.cs
+## Configuratie in code
 
 ```c#
 Log.Logger = new LoggerConfiguration().
@@ -18,13 +18,16 @@ WriteTo.Debug().
 CreateLogger();
 ```
 
+* Te doen bij opstart, bijvoorbeeld in App.xaml.cs
+* "Object Chaining"
+
 ## Output
 
 * Debug console
 
 * Json bestand
 
-* vele andere mogelijkheden!
+* Vele andere mogelijkheden: zie website SeriLog!
 
   ## Afsluiten
 
