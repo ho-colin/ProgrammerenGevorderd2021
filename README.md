@@ -333,6 +333,8 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
   - Command pattern: een inleiding
 
+  - Debugging en tracing met [SeriLog](https://serilog.net/): [een inleiding](./Documents/SeriLog.md)
+
     <!--
 
 ### 14.7. WPF: XUnit testing, TCP en UDP, SSL (di 11/5)
