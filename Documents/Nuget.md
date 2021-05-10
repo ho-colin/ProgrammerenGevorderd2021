@@ -47,24 +47,24 @@ Na het installeren en compileren van het project worden de verwijzingen toegevoe
 
 Individuele ontwikkelaars kunnen het globale register op NuGet.org gebruiken om pakketten te zoeken en te downloaden die ze nodig hebben voor hun apps. Een bedrijf kan een strategie erop hebben ingericht welke pakketten bruikbaar zijn en waar je ze kan vinden.
 
-![Schermopname van NuGet.org met een lijst met populaire pakketten.](C:\Users\u2389\source\repos\ProgrammerenGevorderd2021\Documents\finding-nuget.png)
+![Schermopname van NuGet.org met een lijst met populaire pakketten.](./finding-nuget.png)
 
 Pakketten kunnen zich op verschillende locaties bevinden. Sommige van deze bronnen zijn mogelijk openbaar beschikbaar. Sommige zijn mogelijk beperkt en alleen beschikbaar voor werknemers van een specifiek bedrijf. Hier volgen enkele plaatsen waar pakketten zich kunnen bevinden:
 
 - **Registers**. Een voorbeeld kan een globaal register zijn, zoals het NuGet.org-register. Je kan je eigen registers hosten. Deze kunnen privé of openbaar zijn. Services zoals GitHub en Azure DevOps stellen persoonlijke registers beschikbaar.
 - **Bestanden**. Je kan een pakket installeren vanuit een lokale map. Installeren vanuit een pakket komt vaak voor als je je eigen .NET-bibliotheken wilt ontwikkelen en het pakket lokaal wilt testen, of als je om een of andere reden geen register wilt gebruiken.
 
-![Diagram waarin de relatie tussen pakketmakers, pakkethosts en pakketconsumenten wordt aangegeven.](C:\Users\u2389\source\repos\ProgrammerenGevorderd2021\Documents\nuget-roles.png)
+![Diagram waarin de relatie tussen pakketmakers, pakkethosts en pakketconsumenten wordt aangegeven.](./nuget-roles.png)
 
 ### NuGet-register en dotnet-hulpprogramma
 
 Wanneer je `dotnet add package <name of dependency>` uitvoert, gaat .NET naar een globaal register met de naam NuGet.org-register en zoekt daar naar de code die je wilt downloaden. Deze bevindt zich op `https://nuget.org`. Je kan hier ook bladeren naar pakketten als je de pagina bezoekt via een browser. Elk pakket heeft een toegewezen website die je kan bezoeken.
 
-![Schermafbeelding van de landingspagina voor een NuGet-pakket.](C:\Users\u2389\source\repos\ProgrammerenGevorderd2021\Documents\Documents\nuget-info.png)
+![Schermafbeelding van de landingspagina voor een NuGet-pakket.](./nuget-info.png)
 
 Op deze sites kan je meer informatie vinden over waar de broncode zich bevindt. Je kan ook informatie vinden zoals metrische gegevens over downloads en informatie over onderhoud.
 
-![Schermopname van informatie en metrische gegevens voor een NuGet-pakket.](C:\Users\u2389\source\repos\ProgrammerenGevorderd2021\Documents\Documents\nuget-downloads.png)
+![Schermopname van informatie en metrische gegevens voor een NuGet-pakket.](./nuget-downloads.png)
 
 ### .NET-opdrachten
 
