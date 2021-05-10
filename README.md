@@ -124,13 +124,7 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 <!--
 
-1. [Reguliere expressies](./Documents/Regex.md)
-2. [Debugging](./Documents/Debugging.md)
-3. [Geheugen management](./Documents/GeheugenManagement.md)
-4. [Parameters doorgeven by reference](./Documents/OutEnRef.md)
-5. [In, out, ref parameters: video](https://youtu.be/BpBc-Nhmlzk)
-6. [Jagged arrays](./Documents/JaggedArrays.md)
-7. [C# 9.0](./Documents/Cs9.md)
+1. 
 
 -->
 
@@ -141,16 +135,6 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 * [xUnit en Visual Studio 2019: test frameworks en generatoren](./Documents/xUnit1.md)
 * [xUnit Cheat Sheet](./Documents/xUnit2.md)
 * [xUnit](./Documents/xUnitPart1.pdf)
-
-<!--
-
-## --. TCP communicatie (nuget)
-
-[SimpleTCP](./Documents/SimpleTCP.md)
-
-## --. Jason (nuget)
-
--->
 
 ## 12. ADO .NET
 
@@ -331,39 +315,48 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
   - [Timer](./Documents/WPF/WPF_14_Timer.md)
 
-  - Command pattern: [een inleiding](./Documents/WPF/CommandPattern.md)
-
   - Debugging en tracing met [SeriLog](https://serilog.net/): [een inleiding](./Documents/SeriLog.md)
 
-    <!--
 
 ### 14.7. WPF: XUnit testing, TCP en UDP, SSL (di 11/5)
 
 - WPF
-  - Pages met MahApps
-- Uitdieping C#
-  - [In, out, ref parameters, heap en stack geheugen (20:09)](https://www.youtube.com/watch?v=BpBc-Nhmlzk&list=PLM3q9wWBZWb_KX2UcyyFCXg1boSRP0N7N&index=1&t=338s)
-  - Communicatie: TCP, UDP, websockets
-  - Security
+  - Command pattern: [een inleiding](./Documents/WPF/CommandPattern.md)
+  
+- Uitdieping
 
-### Inhaalweek (di 18/5)
+  <!--
 
-### Inhaalweek (vr 21/5)
+  - [UML naar code](./Documents/UMLNaarCode.md)
+  - [Reguliere expressies](./Documents/Regex.md)
+  - [Debugging](./Documents/Debugging.md)
 
-## --. SOLID
+  -->
+
+  - [Geheugen management](./Documents/GeheugenManagement.md)
+  - [Parameters doorgeven by reference](./Documents/OutEnRef.md)
+  - [Jagged arrays](./Documents/JaggedArrays.md)
+  - [C# 9.0](./Documents/Cs9.md)
+  - [Nuget packages](./Nuget.md)
+  - [Communicatie: TCP, UDP, websockets, beveiliging](./Documents/SimpleTCP.md)
+
+  <!--
+
+## 15. Uitdieping
+
+- [In, out, ref parameters, heap en stack geheugen (20:09)](https://www.youtube.com/watch?v=BpBc-Nhmlzk&list=PLM3q9wWBZWb_KX2UcyyFCXg1boSRP0N7N&index=1&t=338s)
+- [In, out, ref parameters: video](https://youtu.be/BpBc-Nhmlzk)
+- [Generics](./Documents/Generics.md)
+
+## 16. SOLID
 
 * [Interfaces](./Documents/Interfaces1.md)
 * [5 principes](./Documents/SOLID.md)
 
-## --. Uitdieping
-
-2. [Generics](./Documents/Generics.md)
-3. [UML naar code](./Documents/UMLNaarCode.md)
-
-```
-- Laatste week mei, eerste week juni: eindevaluatie - voorstelling eindopdracht (twee kansen)
+```text
+- 1/6 en 4/6: eindevaluatie - "eerste kans" voorstelling eindopdracht
 - Eerste examendag: 25/5/2021
-- Laatste examendag: 22/6/2021
+- Laatste examendag: 21/6/2021
 ```
 
 ## Oefeningen
