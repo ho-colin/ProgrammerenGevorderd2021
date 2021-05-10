@@ -318,7 +318,7 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
   - Debugging en tracing met [SeriLog](https://serilog.net/): [een inleiding](./Documents/SeriLog.md)
 
 
-### 14.7. WPF: XUnit testing, TCP en UDP, SSL (di 11/5)
+### 14.7. C# 9, netwerkcommunicatie en beveiliging (di 11/5)
 
 - WPF
   - Command pattern: [een inleiding](./Documents/WPF/CommandPattern.md)
@@ -337,7 +337,7 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
   - [Parameters doorgeven by reference](./Documents/OutEnRef.md)
   - [Jagged arrays](./Documents/JaggedArrays.md)
   - [C# 9.0](./Documents/Cs9.md)
-  - [Nuget packages](./Nuget.md)
+  - [Nuget packages](./Documents/Nuget.md)
   - [Communicatie: TCP, UDP, websockets, beveiliging](./Documents/SimpleTCP.md)
 
   <!--
