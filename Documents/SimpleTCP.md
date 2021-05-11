@@ -128,7 +128,7 @@ We installeren WireShark om TCP/UDP communicatie te bekijken: [eavesdropping](ht
 
 ## HTTP en HTTPS
 
-![Wat is het verschil tussen HTTP en HTTPS?](C:\Users\u2389\source\repos\ProgrammerenGevorderd2021\Documents\iStock-1168740317.jpg)
+![Wat is het verschil tussen HTTP en HTTPS?](./iStock-1168740317.jpg)
 
 ### HTTP: Geen Encryptie van Gegevens
 
@@ -150,7 +150,7 @@ Naast het versleutelen van de gegevens die tussen de server en uw browser worden
 
 Ik bekijk het als volgt, HTTP in HTTPS is het equivalent van een bestemming, terwijl SSL het equivalent is van een reis. Het eerste is verantwoordelijk om de gegevens op uw scherm weer te geven en het tweede bepaalt de manier waarop deze op het scherm terechtkomen. Samen zorgen ze voor een veilige gegevensoverdracht.
 
-![image-20210508115041644](C:\Users\u2389\source\repos\ProgrammerenGevorderd2021\Documents\image-20210508115041644.png)
+![image-20210508115041644](./image-20210508115041644.png)
 
 ### De Voordelen en Nadelen van HTTPS
 
@@ -188,7 +188,7 @@ Om een OpenSSL gebaseerde server en client te maken moet je een set SSL certific
 
 ## SSL: eerste kennismaking
 
-![img](C:\Users\u2389\source\repos\ProgrammerenGevorderd2021\Documents\image01-fs8.png)
+![img](./image01-fs8.png)
 
 Voor wie SSL/TLS nog nieuw is én voor de ervaren rotten die hun kennis willen opfrissen, beginnen we met een reeks over de basisprincipes van SSL. 
 
@@ -200,7 +200,7 @@ Er wordt vaak gedacht dat SSL alleen nodig is wanneer een bezoeker gegevens vers
 
 SSL is gebaseerd op de versleuteling van gegevens met behulp van een private en een public key.
 
-![What is Public and Private Key in Cryptography? – An Introduction](C:\Users\u2389\source\repos\ProgrammerenGevorderd2021\Documents\public-key-vs-private-key.png)
+![What is Public and Private Key in Cryptography? – An Introduction](./public-key-vs-private-key.png)
 
 ### Private key
 
@@ -214,7 +214,7 @@ De public key wordt tijdens het genereren van een CSR aangemaakt en mag publiek 
 
 Hoe sterk de encryptie van een certificaat is, is grotendeels te danken aan het versleutelingsalgoritme dat gebruikt is om de private key te genereren. Hackers zijn er dus op gebrand om deze versleutelingsalgoritmes te kraken: wanneer het algoritme op straat ligt, kan er met behulp van de public key worden teruggerekend naar de private key. Het RSA algoritme was tot voor kort het meest gebruikte algoritme, maar **het ECC algoritme, of Elliptic Curve Cryptography algoritme**, krijgt steeds meer voet aan de grond. Dit algoritme kan een veel kleinere key creëren die nog steeds net zo veilig is als de veel langere RSA keys. Zo is een ECC key van 228 bits net zo veilig als een RSA key van 2380 bits. Steeds meer Certificate Authorities stappen daarom over op ECC keys.
 
-![img](C:\Users\u2389\source\repos\ProgrammerenGevorderd2021\Documents\image02_1.png)
+![img](./image02_1.png)
 
 Eerst gaan we het over Certificate Signing Requests (CSR's) hebben. Deze kleine bestanden spelen een cruciale rol bij het aanvragen van een SSL/TLS-certificaat, maar wat zijn ze precies en hoe kan je er eentje eenvoudig genereren?
 
