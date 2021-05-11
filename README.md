@@ -342,6 +342,15 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
   - Video's
     - [In, out, ref parameters, heap en stack geheugen (20:09)](https://www.youtube.com/watch?v=BpBc-Nhmlzk&list=PLM3q9wWBZWb_KX2UcyyFCXg1boSRP0N7N&index=1&t=338s)
   
+  
+  
+  # Booster session
+  
+  1. ADO .NET aan de hand van voorbeeld KlantBeheer
+  2. XUnit testing aan de hand van voorbeeld KlantBeheer
+  3. Optioneel: iIntro WPF MVVM
+  4. Gebruik forum voor vragen in verband met eindevaluatie: informatie nuttig voor iedereen
+  
   <!--
 
 ## 15. Uitdieping
