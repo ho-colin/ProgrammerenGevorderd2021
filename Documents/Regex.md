@@ -221,6 +221,10 @@ Het is duidelijk dat een MatchEvaluator parameter erg veel kan, en dit is nog ma
 
 Zoek/vervang (search/replace) operaties zijn tot veel in staat als je Regular Expressions gebruikt, en zelfs tot nog meer met de MatchEvaluator parameter. Hierdoor zijn de mogelijkheden om strings te manipuleren vrijwel eindeloos.
 
+
+
+<!--
+
 ## Regex Modifiers
 
 In previous articles, we talked about what Regular Expressions are and how to use them in C# for matching, replacing and so on. At this point, you should already have realized how powerful Regular Expressions are and how they can help you in a lot of situations, but they get even more powerful when you know about the possible **modifiers**.
@@ -336,3 +340,5 @@ The above modifiers are the most interesting ones, but there's a few more, which
 - **RegexOptions.ExplicitCapture**: Normally, a set of parentheses in a Regex acts as a capturing group, allowing you to access each captured value through an index. If you specify the ExplicitCapture modifier, this behavior is changed so that only named groups are captured and stored for later retrieval.
 - **RegexOptions.IgnorePatternWhitespace**: When this modifier is enabled, whitespace in the Regex is ignored and you are even allowed to include comments, prefixed with the hash (#) char.
 - **RegexOptions.RightToLeft**: Changes matching to start from right and move left, instead of the default from left to right.
+
+-->

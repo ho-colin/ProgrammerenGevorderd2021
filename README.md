@@ -320,10 +320,11 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 ### 14.7. C# 9, netwerkcommunicatie en beveiliging (di 11/5)
 
-- WPF
+- **Optioneel**: naar WPF  MVVM
+  
   - Command pattern: [een inleiding](./Documents/WPF/CommandPattern.md)
   
-- Uitdieping
+- **Optioneel**: uitdieping
 
   <!--
 
