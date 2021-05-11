@@ -1,6 +1,6 @@
 ## Jagged Arrays
 
-Jagged arrays (letterlijk *gekartelde arrays*) zijn arrays van arrays maar van verschillende lengte. In tegenstelling tot de eerdere meer-dimensionale arrays moeten de interne arrays steeds dezelfde lengte hebben, bijvoorbeld 3 bij 2 bij 4. Bij jagged arrays hoeft dat dus niet:
+Jagged arrays (letterlijk *gekartelde arrays*) zijn arrays van arrays maar van verschillende lengte. In tegenstelling tot de eerdere meer-dimensionale arrays moeten de interne arrays steeds dezelfde lengte hebben, bijvoorbeeld 3 bij 2 bij 4. Bij jagged arrays hoeft dat dus niet:
 
 ![jagged array](https://timdams.gitbooks.io/csharpfromantwerp/content/assets/5_arrays/jagged.png)
 

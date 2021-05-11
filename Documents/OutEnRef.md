@@ -34,7 +34,7 @@ static void Main(string[] args)
 
 Dan krijgen we volgende, terechte, foutmelding:
 
-![img](C:\Users\u2389\source\repos\ProgrammerenGevorderd2021\Documents\outref1.png)
+![img](./outref1.png)
 
 Door nu het out keyword te gebruiken geven we expliciet aan dat we beseffen dat de parameter in kwestie pas binnen de methode een waarde zal toegekend krijgen.
 
@@ -101,5 +101,4 @@ Tweede bedraagt na method:12
 ```
 
 Merk dus op dat enkel de variabele tweede aangepast wordt buiten de methode doordat we deze by reference doorgeven.
-
 

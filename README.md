@@ -328,25 +328,26 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
   <!--
 
   - [UML naar code](./Documents/UMLNaarCode.md)
-  - [Reguliere expressies](./Documents/Regex.md)
   - [Debugging](./Documents/Debugging.md)
-
+  
   -->
-
+  
   - [Geheugen management](./Documents/GeheugenManagement.md)
   - [Parameters doorgeven by reference](./Documents/OutEnRef.md)
   - [Jagged arrays](./Documents/JaggedArrays.md)
-  - [C# 9.0](./Documents/Cs9.md)
   - [Nuget packages](./Documents/Nuget.md)
+  - [Reguliere expressies](./Documents/Regex.md)
   - [Communicatie: TCP, UDP, websockets, beveiliging](./Documents/SimpleTCP.md)
-
+  - Video's
+    - [In, out, ref parameters, heap en stack geheugen (20:09)](https://www.youtube.com/watch?v=BpBc-Nhmlzk&list=PLM3q9wWBZWb_KX2UcyyFCXg1boSRP0N7N&index=1&t=338s)
+  
   <!--
 
 ## 15. Uitdieping
 
-- [In, out, ref parameters, heap en stack geheugen (20:09)](https://www.youtube.com/watch?v=BpBc-Nhmlzk&list=PLM3q9wWBZWb_KX2UcyyFCXg1boSRP0N7N&index=1&t=338s)
-- [In, out, ref parameters: video](https://youtu.be/BpBc-Nhmlzk)
+- 
 - [Generics](./Documents/Generics.md)
+- [C# 9.0](./Documents/Cs9.md)
 
 ## 16. SOLID
 
