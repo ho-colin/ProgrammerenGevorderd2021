@@ -68,21 +68,25 @@ GO
 waarbij *_gemeentes* een *Dictionary<int, Gemeente>* is, dan kunnen we slechts eenmaal een connectie openen naar SqlServer, een instantie aanmaken van class **SqlBulkCopy**, vervolgens een geschikte instantie aanmaken van class **DataTable** met de juiste kolommen (gebruik voor het gemak dezelfde namen als de kolomnamen van de tabel in de database), vervolgens je instanties van class gemeente overbrengen naar de instantie van class *DataTable*, je instantie van class *SqlBulkCopy* vertellen met welke kolommen in de database tabel de kolommen van de instantie van class *DataTable* overeenkomen en tot slot de eigenlijke transfer uitvoeren met method **WriteToServer** van class *SqlBulkCopy*:
 
 ````Csharp
+// Stap 1: stel een gepaste DataTable samen: types moeten overeenkomen met de types van de kolommen van je databanktabel
+
+var table = new DataTable(); // mag maar moet niet een naam hebben
+table.Columns.Add("Id", typeof(int));
+table.Columns.Add("gemeentenaam", typeof(string));
+foreach (var gemeente in _gemeentes.Values)
+{
+  table.Rows.Add(gemeente.NIScode, gemeente.GemeenteNaam);
+}
+
+// Stap 2: bulk upload van DataTable naar de overeenkomstige databanktabel
 using (SqlConnection connection = new SqlConnection(ConnStr))
 {
   connection.Open();
   // Transaction not allowed!
   using (SqlBulkCopy bulkCopy = new SqlBulkCopy(connection))
   {
-    DataTable table = new DataTable();
-    table.Columns.Add("Id", typeof(int));
-    table.Columns.Add("gemeentenaam", typeof(string));
-    foreach (var gemeente in _gemeentes.Values)
-    {
-      table.Rows.Add(gemeente.NIScode, gemeente.GemeenteNaam);
-    }
     bulkCopy.DestinationTableName = "gemeente";
-    bulkCopy.ColumnMappings.Add("Id", "Id");
+    bulkCopy.ColumnMappings.Add("Id", "Id"); // welke kolomnaam in de datatable komt overeen met welke kolomnaam in de databanktabel
     bulkCopy.ColumnMappings.Add("gemeentenaam", "gemeentenaam");
     bulkCopy.WriteToServer(table);
   }
