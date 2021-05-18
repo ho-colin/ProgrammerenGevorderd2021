@@ -21,6 +21,8 @@ Een DOM parser is mogelijkerwijze nog trager dan string manipulatie: alles wordt
 Wij zullen met SAX onmiddellijk een DataTable samenstellen terwijl we tag per tag verwerken. Een DataTable kan namelijk bijzonder efficiënt opgeladen worden in SQLServer en laat LINQ toe!
 
 ```c#
+internal class XmlField { public string Db { get; set; } public Type Type { get; set; } }
+
 // We leggen een overzichtstabel aan: xml tag, databank veldnaam, type:
 private static Dictionary<string, XmlField> _typeMap = new()
 {
