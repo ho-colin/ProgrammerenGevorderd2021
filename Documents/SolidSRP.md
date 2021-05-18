@@ -733,7 +733,7 @@ public double GetCharge(int daysRented)
 
 Dit is het principe van "least knowledge", is een object-oriented software design principe. Een methode van een object mag enkel wie oproepen:
 
-```
+```text
 - het object zelf
 - een argument van de methode
 - elk object dat in de methode gecreerd is

@@ -158,18 +158,17 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 1. [Beschrijving](./Documents/PG_Eval2_OpgaveAdresbeheer_001.pdf): zie ook Chamilo onder opdrachten
 2. Tips
-   1. Gebruik de "bulk upload" techniek beschreven in hoofdstuk ADO .NET
-   2. Meerlagig (meer dan 3):
+   1. Gebruik XmlTextReader, zie verder (booster session).
+   2. Gebruik de "bulk upload" techniek beschreven in hoofdstuk ADO .NET
+   3. Meerlagig (meer dan 3):
       1. console app voor het opladen van de gegevens
       2. domeinlaag voor de business logica
       3. ADO .NET repository
       4. unit test suite
       5. WPF
-   3. XML bestand uitlezen
-      1. Zelf lijn per lijn uit elkaar puzzelen
-      2. XML parser gebruiken: bekijk bijvoorbeeld in hoofdstuk LINQ de paragraaf die "Paginatie" behandelt
-   4. WPF: vrij, maar implementeer wat in de opdracht staat
+   4. WPF: vrij, maar implementeer wat in de opdracht staat en lees deze dus goed!
       1. MaterialDesign wordt geapprecieerd, maar is niet verplicht
+      2. MVVM wordt geapprecieerd, maar is niet verplicht
 
 ## 14. WPF
 
@@ -346,16 +345,18 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
   
   # Booster session
   
-  1. ADO .NET aan de hand van voorbeeld KlantBeheer
-  2. XUnit testing aan de hand van voorbeeld KlantBeheer
-  3. Optioneel: iIntro WPF MVVM
-  4. Gebruik forum voor vragen in verband met eindevaluatie: informatie nuttig voor iedereen
+  1. [Gebruik van app.config](./Documents/BoosterAppConfig.md)
+  2. [Snelle verwerking van grote XML bestanden](./Documents/XMLParsing.md)
+  3. [XUnit testing aan de hand van voorbeeld KlantBeheer](./Documents/BoosterXUnit.md)
+  4. ADO .NET aan de hand van voorbeeld KlantBeheer
+  5. Optioneel: [intro WPF MVVM](./Documents/BoosterMVVM.md)
+  6. Gebruik Chamilo "Forum" voor vragen in verband met eindevaluatie: informatie nuttig voor iedereen!
+  
   
   <!--
 
 ## 15. Uitdieping
 
-- 
 - [Generics](./Documents/Generics.md)
 - [C# 9.0](./Documents/Cs9.md)
 
@@ -372,7 +373,7 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
 
 ## Oefeningen
 
-* [Ondersteundende opdrachten](./Documents/Opdrachten.md)
+* [Ondersteunende opdrachten](./Documents/Opdrachten.md)
 -->
 
 ## 15. Nuttige extra's
