@@ -60,7 +60,7 @@ foreach(var dbItem in _typeMap.Values)
 }
 ```
 
-We lezen het xml bestand onmiddellijk in naar de gegevensstructuur die we efficiënt kunnen opladen in de databank, namelijk een DataTable:
+We lezen het xml bestand onmiddellijk in naar de gegevensstructuur die we efficiënt kunnen opladen in de databank, namelijk een DataTable. We gebruiken hier kennis over het xml bestand: de tags staan altijd in dezelfde volgorde!
 
 ```C#
 var myXmlReader = new XmlTextReader(fileName);
