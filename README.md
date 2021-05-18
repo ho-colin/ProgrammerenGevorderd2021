@@ -351,6 +351,7 @@ Meer informatie: [Werken met Git](./Documents/WerkenMetGit.md)
   4. ADO .NET aan de hand van voorbeeld KlantBeheer
   5. Optioneel: [intro WPF MVVM](./Documents/BoosterMVVM.md)
   6. Gebruik Chamilo "Forum" voor vragen in verband met eindevaluatie: informatie nuttig voor iedereen!
+  7. Optioneel: [Timing method](./Documents/Timing.md)
   
   
   <!--
