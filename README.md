@@ -62,7 +62,7 @@ Bekijk volgende video's (YouTube):
 Lees volgende pagina's:
 
   1. [Unit testing](./Documents/UnitTestingTDD2.md)
-  4. [Test methods: beknopt overzicht](./Documents/UnitTestingTestMethods.pdf)
+  2. [Test methods: beknopt overzicht](./Documents/UnitTestingTestMethods.pdf)
 
 Oefen op volgende *walk through* en werk de oplossing zelfstandig uit met Visual Studio 2019:
 
@@ -70,11 +70,11 @@ Oefen op volgende *walk through* en werk de oplossing zelfstandig uit met Visual
 
 ### 5.2. xUnit
 
-* [Automated tests](./Documents/AutomatedTests.pdf)
-* [Test first](./Documents/TestFirst.pdf)
-* [xUnit en Visual Studio 2019: test frameworks en generatoren](./Documents/xUnit1.md)
-* [xUnit Cheat Sheet](./Documents/xUnit2.md)
-* [xUnit](./Documents/xUnitPart1.pdf)
+1. [Automated tests](./Documents/AutomatedTests.pdf)
+2. [Test first](./Documents/TestFirst.pdf)
+3. [xUnit en Visual Studio 2019: test frameworks en generatoren](./Documents/xUnit1.md)
+4. [xUnit Cheat Sheet](./Documents/xUnit2.md)
+5. [xUnit](./Documents/xUnitPart1.pdf)
 
 ## 6. Git
 
@@ -89,33 +89,30 @@ Raadpleeg volgende link voor meer informatie: [Werken met Git](./Documents/Werke
 
 ## 7. Lambda, delegate, event, extension method
 
-2. [Presentatie](./Documents/DelegatesEvents.pdf)
+1. [Presentatie](./Documents/DelegatesEvents.pdf)
 2. Events: een eenvoudig voorbeeld en een vergelijking met werken via een interface
-2. Video's: https://www.youtube.com/playlist?list=PLM3q9wWBZWb90CajLrVZcenmxIBCqyaFq (de twee laatste video's leggen oefening Klant/Ober/Kok uit, zie Presentatie)
+3. Video's: https://www.youtube.com/playlist?list=PLM3q9wWBZWb90CajLrVZcenmxIBCqyaFq (de twee laatste video's leggen oefening Klant/Ober/Kok uit, zie Presentatie)
 
 ## 8. IO
 
 1. [Eerste stappen](./Documents/FileIO.md)
 2. [Presentatie](./Documents/FileIO.pdf)
-
-**Maak volgende oefening:**
-
-* [Adresinformatie](./Documents/OpgaveAdresinfo.md) met [invoergegevens](./Documents/adresInfo.zip)
+3. Maak volgende oefening:
+   * [Adresinformatie](./Documents/OpgaveAdresinfo.md) met [invoergegevens](./Documents/adresInfo.zip)
 
 ## 9. LINQ
 
 1. [Stap voor stap](./Documents/Linq.md)
-3. [Oefening: SportsStore](./Documents/SportsStore.md)
+2. [Oefening: SportsStore](./Documents/SportsStore.md)
 
 ## 10. C# voor gevorderden
 
 1. [Null coalescing](./Documents/NullCoalescing.md)
 2. [Null conditional operator](./Documents/NullConditionalOperator.md)
-
-1. Condities: [switch statement](./Documents/switch.md)
-2. [Willem Tell](./Documents/WillemTellTernary.md): speciale inheritance keywords, speciale operatoren zoals **ternary ?:**
-3. [Culture](./Documents/Culture.md)
-4. [Reflection](./Documents/Reflection.md)
+3. Condities: [switch statement](./Documents/switch.md)
+4. [Willem Tell](./Documents/WillemTellTernary.md): speciale inheritance keywords, speciale operatoren zoals **ternary ?:**
+5. [Culture](./Documents/Culture.md)
+6. [Reflection](./Documents/Reflection.md)
 
 ## 12. ADO .NET
 
@@ -130,54 +127,46 @@ Raadpleeg volgende link voor meer informatie: [Werken met Git](./Documents/Werke
 
 ### 13.1. Eerste stappen
 
-* [Walkthrough](./Documents/WPF/WPFIntro.md)
-* [Platform Uno of MAUI](./Documents/WPF/UnoOrMaui.md)
-* [Inleiding](./Documents/WPF/WPF_1_XAML.md)
-* Opzet voorbeeldapplicatie "KlantenBeheer":
-  * SQLServer databank
-  * Repository: ADO .NET
-  * Domeinlaag
-  * xUnit test suite
-  * Optioneel: console app voor testdoeleinden
+1. [Walkthrough](./Documents/WPF/WPFIntro.md)
+2. [Platform Uno of MAUI](./Documents/WPF/UnoOrMaui.md)
+3. [Inleiding](./Documents/WPF/WPF_1_XAML.md)
+4. Opzet voorbeeldapplicatie "KlantenBeheer":
+  1. SQLServer databank
+  2. Repository: ADO .NET
+  3. Domeinlaag
+  4. xUnit test suite
+  5. Optioneel: console app voor testdoeleinden
 
 ### 13.2. Basis
 
-- [Events](./Documents/WPF/WPF_2_Events.md)              
-- [Application](./Documents/WPF/WPF_3_AppCommandLine.md)
-- [Resources](./Documents/WPF/WPF_4_Resources.md)   
+1. [Events](./Documents/WPF/WPF_2_Events.md)              
+2. [Application](./Documents/WPF/WPF_3_AppCommandLine.md)
+3. [Resources](./Documents/WPF/WPF_4_Resources.md)   
   - Icoontjes: Build Action **"Content"**, **"Copy if newer"**
   - Icoontjes bij elke menu item
   - Icoon voor button: zie App.xaml, Resources (kan ook op niveau van venster)
   - Icoon voor venster        
-- [Exceptions](./Documents/WPF/WPF_5_Exceptions.md)
-- [Basic Controls](./Documents/WPF/WPF_6_ControlsBasic.md): Button, TextBlock, TextBox
-- [Layout Management](./Documents/WPF/WPF_7_LayoutManagement.md): Grid "basics"
-- [List Controls](./Documents/WPF/WPF_11_ControlsList.md): DataGrid "basics"
-
-* [Basic Controls](./Documents/WPF/WPF_6_ControlsBasic.md)
-* [Menu and Status Bar](./Documents/WPF/WPF_13_MenuStatusBar.md)
-* [Interfaces](./Documents/Interfaces1.md)
-
-- [MaterialDesign (14:02)](https://www.youtube.com/watch?v=F0V01mYER5E&list=PLM3q9wWBZWb-_ZzoI8AFDxJRLYWTXDyYE&index=1)
-- [Debugging (8:59)](https://www.youtube.com/watch?v=CHhgN5DoOMM&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=1)
-- [Debugging Binding Problems (8:21)](https://www.youtube.com/watch?v=gr4Ye8EvvU0&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=2)
-- [Debugging Binding Problems Revisited (3:37)](https://www.youtube.com/watch?v=TMpHLmDDwQo&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=3)
-- [Styles (4:54)](https://www.youtube.com/watch?v=kC9-Xow-aEg&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=4)
-
-- Optioneel: Sciensano
-  
+4. [Exceptions](./Documents/WPF/WPF_5_Exceptions.md)
+5. [Basic Controls](./Documents/WPF/WPF_6_ControlsBasic.md): Button, TextBlock, TextBox
+6. [Layout Management](./Documents/WPF/WPF_7_LayoutManagement.md): Grid "basics"
+7. [List Controls](./Documents/WPF/WPF_11_ControlsList.md): DataGrid "basics"
+8. [Basic Controls](./Documents/WPF/WPF_6_ControlsBasic.md)
+9. [Menu and Status Bar](./Documents/WPF/WPF_13_MenuStatusBar.md)
+10. [Interfaces](./Documents/Interfaces1.md)
+11. [MaterialDesign (14:02)](https://www.youtube.com/watch?v=F0V01mYER5E&list=PLM3q9wWBZWb-_ZzoI8AFDxJRLYWTXDyYE&index=1)
+12. [Debugging (8:59)](https://www.youtube.com/watch?v=CHhgN5DoOMM&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=1)
+13. [Debugging Binding Problems (8:21)](https://www.youtube.com/watch?v=gr4Ye8EvvU0&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=2)
+14. [Debugging Binding Problems Revisited (3:37)](https://www.youtube.com/watch?v=TMpHLmDDwQo&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=3)
+15. [Styles (4:54)](https://www.youtube.com/watch?v=kC9-Xow-aEg&list=PLM3q9wWBZWb9ZkhEDkQLqQ43qtDSL_ANJ&index=4)
+16. Optioneel: Sciensano 
   - [Deel 1](https://www.youtube.com/watch?v=RcGVsTkHRpY&list=PLM3q9wWBZWb-gcO0tYtviQsohiNkQZzqd&index=1&t=3s)
-  
   - [Deel 2](https://www.youtube.com/watch?v=LPqaEm9ZWfE&list=PLM3q9wWBZWb-gcO0tYtviQsohiNkQZzqd&index=2)
-  
   - [Deel 3](https://www.youtube.com/watch?v=p0DVhGSPne0&list=PLM3q9wWBZWb-gcO0tYtviQsohiNkQZzqd&index=3)
-  
   - [WPF Covid Charts](https://www.youtube.com/watch?v=CzUEeWvsK18&list=PLM3q9wWBZWb_KX2UcyyFCXg1boSRP0N7N&index=2)
 
 ### 13.5. In de praktijk
 
-- Zie voorbeeldapplicatie ["KlantBeheer"](https://github.com/lucvervoort/ProgrammerenGevorderd2021Oefeningen/tree/main/KlantbeheerLes):
-
+* Zie voorbeeldapplicatie ["KlantBeheer"](https://github.com/lucvervoort/ProgrammerenGevorderd2021Oefeningen/tree/main/KlantbeheerLes):
   - Interfaces: hoe leg ik een "contract" op (ICrud)
   - Singleton patroon
   - ObservableCollection, IPropertyNotifyChanged: Mode=TwoWay
@@ -199,51 +188,51 @@ Raadpleeg volgende link voor meer informatie: [Werken met Git](./Documents/Werke
 
 ### 13.6. Laatste loodjes
 
-- Zie voorbeeldapplicatie ["KlantBeheer"](https://github.com/lucvervoort/ProgrammerenGevorderd2021Oefeningen/tree/main/KlantbeheerLes):
+1. Zie voorbeeldapplicatie ["KlantBeheer"](https://github.com/lucvervoort/ProgrammerenGevorderd2021Oefeningen/tree/main/KlantbeheerLes):
   - DataGrid: hoe synchroniseren we met de databank?
-- [ValueConverter](./Documents/WPF/WPF_9_ValueConverter.md)
-- [Advanced Controls](./Documents/WPF/WPF_10_ControlsAdvanced.md)   
-- [List Controls](./Documents/WPF/WPF_11_ControlsList.md)
-- [Styles](./Documents/WPF/WPF_12_Styles.md)            
-- [Timer](./Documents/WPF/WPF_14_Timer.md)
-- Debugging en tracing met [SeriLog](https://serilog.net/): [een inleiding](./Documents/SeriLog.md)
+2. [ValueConverter](./Documents/WPF/WPF_9_ValueConverter.md)
+3. [Advanced Controls](./Documents/WPF/WPF_10_ControlsAdvanced.md)   
+4. [List Controls](./Documents/WPF/WPF_11_ControlsList.md)
+5. [Styles](./Documents/WPF/WPF_12_Styles.md)            
+6. [Timer](./Documents/WPF/WPF_14_Timer.md)
+7. Debugging en tracing met [SeriLog](https://serilog.net/): [een inleiding](./Documents/SeriLog.md)
 
 ## 14. "Booster" sessie
 
-  1. [Configuraties buiten je applicatie: gebruik app.config](./Documents/BoosterAppConfig.md)
-  2. [Snelle verwerking van grote XML bestanden](./Documents/XMLParsing.md)
-  3. [XUnit testing aan de hand van voorbeeldapplicatie "KlantBeheer"](./Documents/BoosterXUnit.md)
-  4. ADO .NET aan de hand van voorbeeldapplicatie ["KlantBeheer"](https://github.com/lucvervoort/ProgrammerenGevorderd2021Oefeningen/tree/main/KlantbeheerLes)
-  5. Optioneel: [Timing method](./Documents/Timing.md)
+1. [Configuraties buiten je applicatie: gebruik app.config](./Documents/BoosterAppConfig.md)
+2. [Snelle verwerking van grote XML bestanden](./Documents/XMLParsing.md)
+3. [XUnit testing aan de hand van voorbeeldapplicatie "KlantBeheer"](./Documents/BoosterXUnit.md)
+4. ADO .NET aan de hand van voorbeeldapplicatie ["KlantBeheer"](https://github.com/lucvervoort/ProgrammerenGevorderd2021Oefeningen/tree/main/KlantbeheerLes)
+5. Optioneel: [Timing method](./Documents/Timing.md)
 
 ## 15. Optioneel
 
 ### WPF  MVVM
 
-  - [MVVM](./Documents/BoosterMVVM.md)
-  - [Command pattern](./Documents/WPF/CommandPattern.md)
+1. [MVVM](./Documents/BoosterMVVM.md)
+2. [Command pattern](./Documents/WPF/CommandPattern.md)
 
 ### C# development
 
-  - [UML naar code](./Documents/UMLNaarCode.md)
-  - [Debugging](./Documents/Debugging.md)
-  - [Geheugen management](./Documents/GeheugenManagement.md)
-  - [Parameters doorgeven by reference](./Documents/OutEnRef.md)
-  - [Jagged arrays](./Documents/JaggedArrays.md)
-  - [Nuget packages](./Documents/Nuget.md)
-  - [Reguliere expressies](./Documents/Regex.md)
-  - [Communicatie: TCP, UDP, websockets, beveiliging](./Documents/SimpleTCP.md)
-  - Video's
-    - [In, out, ref parameters, heap en stack geheugen (20:09)](https://www.youtube.com/watch?v=BpBc-Nhmlzk&list=PLM3q9wWBZWb_KX2UcyyFCXg1boSRP0N7N&index=1&t=338s)
-  - [Generics](./Documents/Generics.md)
-  - [C# 9.0](./Documents/Cs9.md)
+1. [UML naar code](./Documents/UMLNaarCode.md)
+2. [Debugging](./Documents/Debugging.md)
+3. [Geheugen management](./Documents/GeheugenManagement.md)
+4. [Parameters doorgeven by reference](./Documents/OutEnRef.md)
+5. [Jagged arrays](./Documents/JaggedArrays.md)
+6. [Nuget packages](./Documents/Nuget.md)
+7. [Reguliere expressies](./Documents/Regex.md)
+8. [Communicatie: TCP, UDP, websockets, beveiliging](./Documents/SimpleTCP.md)
+9. Video's
+  - [In, out, ref parameters, heap en stack geheugen (20:09)](https://www.youtube.com/watch?v=BpBc-Nhmlzk&list=PLM3q9wWBZWb_KX2UcyyFCXg1boSRP0N7N&index=1&t=338s)
+10. [Generics](./Documents/Generics.md)
+11. [C# 9.0](./Documents/Cs9.md)
 
 ### C# en SOLID
 
-* [Interfaces](./Documents/Interfaces1.md)
-* [5 principes](./Documents/SOLID.md)
-* [Microsoft IOC container](./Documents/MSIOCContainer.md): zie voorbeeldapplicatie "KlantBeheer"
-* Meer informatie met betrekking tot IOC: zie [Unity](./Documents/Patterns/Ioc.md).
+1. [Interfaces](./Documents/Interfaces1.md)
+2. [5 principes](./Documents/SOLID.md)
+3. [Microsoft IOC container](./Documents/MSIOCContainer.md): zie voorbeeldapplicatie "KlantBeheer"
+4. Meer informatie met betrekking tot IOC: zie [Unity](./Documents/Patterns/Ioc.md).
 
 ## 16. Nuttige extra's
 
@@ -252,25 +241,18 @@ Raadpleeg volgende link voor meer informatie: [Werken met Git](./Documents/Werke
 ## Eindopdracht
 
 1. [Beschrijving](./Documents/PG_Eval2_OpgaveAdresbeheer_001.pdf): zie ook Chamilo onder opdrachten
-
 2. Tips
-
    1. Gebruik **XmlTextReader**, zie "booster" sessie hierboven
-
    2. Gebruik de **"bulk upload"** techniek beschreven in hoofdstuk ADO .NET
-
    3. **Meerlagig** (meer dan 3):
       1. console app voor het opladen van de gegevens
       2. domeinlaag voor de business logica
       3. ADO .NET repository
       4. unit test suite
-      5. WPF
-      
+      5. WPF      
    4. **WPF**: vrij, maar implementeer wat in de opdracht staat en lees deze dus goed!
-      1. MaterialDesign wordt geapprecieerd, maar is niet verplicht
-      
-      2. MVVM wordt geapprecieerd, maar is niet verplicht
-      
+      1. MaterialDesign wordt geapprecieerd, maar is niet verplicht     
+      2. MVVM wordt geapprecieerd, maar is niet verplicht     
    5. Gebruik **Chamilo "Forum"** voor vragen in verband met eindevaluatie: informatie nuttig voor iedereen!
 
 ## Tussentijdse evaluatie
