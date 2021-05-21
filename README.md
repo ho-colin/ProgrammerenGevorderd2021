@@ -166,7 +166,7 @@ Raadpleeg volgende link voor meer informatie: [Werken met Git](./Documents/Werke
 
 ### 13.5. In de praktijk
 
-* Zie voorbeeldapplicatie ["KlantBeheer"](https://github.com/lucvervoort/ProgrammerenGevorderd2021Oefeningen/tree/main/KlantbeheerLes):
+Zie voorbeeldapplicatie ["KlantBeheer"](https://github.com/lucvervoort/ProgrammerenGevorderd2021Oefeningen/tree/main/KlantbeheerLes):
   - Interfaces: hoe leg ik een "contract" op (ICrud)
   - Singleton patroon
   - ObservableCollection, IPropertyNotifyChanged: Mode=TwoWay
