@@ -214,24 +214,24 @@ Raadpleeg volgende link voor meer informatie: [Werken met Git](./Documents/Werke
 
 ### C# development
 
-1. [UML naar code](./Documents/UMLNaarCode.md)
-2. [Debugging](./Documents/Debugging.md)
-3. [Geheugen management](./Documents/GeheugenManagement.md)
-4. [Parameters doorgeven by reference](./Documents/OutEnRef.md)
-5. [Jagged arrays](./Documents/JaggedArrays.md)
-6. [Nuget packages](./Documents/Nuget.md)
-7. [Reguliere expressies](./Documents/Regex.md)
-8. [Communicatie: TCP, UDP, websockets, beveiliging](./Documents/SimpleTCP.md)
-9. Video's
+<!-- 1. [UML naar code](./Documents/UMLNaarCode.md) -->
+1. [Debugging](./Documents/Debugging.md)
+2. [Geheugen management](./Documents/GeheugenManagement.md)
+3. [Parameters doorgeven by reference](./Documents/OutEnRef.md)
+4. [Jagged arrays](./Documents/JaggedArrays.md)
+5. [Nuget packages](./Documents/Nuget.md)
+6. [Reguliere expressies](./Documents/Regex.md)
+7. [Communicatie: TCP, UDP, websockets, beveiliging](./Documents/SimpleTCP.md)
+8. Video's
   - [In, out, ref parameters, heap en stack geheugen (20:09)](https://www.youtube.com/watch?v=BpBc-Nhmlzk&list=PLM3q9wWBZWb_KX2UcyyFCXg1boSRP0N7N&index=1&t=338s)
-10. [Generics](./Documents/Generics.md)
-11. [C# 9.0](./Documents/Cs9.md)
+9. [Generics](./Documents/Generics.md)
+10. [C# 9.0](./Documents/Cs9.md)
 
 ### C# en SOLID
 
 1. [Interfaces](./Documents/Interfaces1.md)
 2. [5 principes](./Documents/SOLID.md)
-3. [Microsoft IOC container](./Documents/MSIOCContainer.md): zie voorbeeldapplicatie "KlantBeheer"
+3. [Microsoft IOC container](./Documents/MSIOCContainer.md): zie voorbeeldapplicatie ["KlantBeheer"](https://github.com/lucvervoort/ProgrammerenGevorderd2021Oefeningen/tree/main/KlantbeheerLes)
 4. Meer informatie met betrekking tot IOC: zie [Unity](./Documents/Patterns/Ioc.md).
 
 ## 16. Nuttige extra's
