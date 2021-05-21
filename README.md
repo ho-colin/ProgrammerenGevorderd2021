@@ -130,12 +130,12 @@ Raadpleeg volgende link voor meer informatie: [Werken met Git](./Documents/Werke
 1. [Walkthrough](./Documents/WPF/WPFIntro.md)
 2. [Platform Uno of MAUI](./Documents/WPF/UnoOrMaui.md)
 3. [Inleiding](./Documents/WPF/WPF_1_XAML.md)
-4. Opzet voorbeeldapplicatie "KlantenBeheer":
-  1. SQLServer databank
-  2. Repository: ADO .NET
-  3. Domeinlaag
-  4. xUnit test suite
-  5. Optioneel: console app voor testdoeleinden
+4. Opzet voorbeeldapplicatie ["KlantenBeheer"](https://github.com/lucvervoort/ProgrammerenGevorderd2021Oefeningen/tree/main/KlantbeheerLes):
+  - SQLServer databank
+  - Repository: ADO .NET
+  - Domeinlaag
+  - xUnit test suite
+  - Console app voor het opladen van informatie naar de databank of voor testen
 
 ### 13.2. Basis
 
